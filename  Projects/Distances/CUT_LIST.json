@@ -1,0 +1,139 @@
+{
+  "projectName": "Distances",
+  "cutCount": 18,
+  "totalRecommendedSeconds": 90,
+  "cuts": [
+    {
+      "cut": "CUT01",
+      "role": "導入。Blue Hourの空気と作品トーンを提示する。",
+      "recommendedSeconds": 3,
+      "dialogue": false,
+      "asset": "CUT/CUT01.mp4"
+    },
+    {
+      "cut": "CUT02",
+      "role": "主人公の孤独。距離のテーマを視線で見せる。",
+      "recommendedSeconds": 4,
+      "dialogue": false,
+      "asset": "CUT/CUT02.mp4"
+    },
+    {
+      "cut": "CUT03",
+      "role": "相手の存在を示す。まだ直接つながらない距離感。",
+      "recommendedSeconds": 4,
+      "dialogue": false,
+      "asset": "CUT/CUT03.mp4"
+    },
+    {
+      "cut": "CUT04",
+      "role": "二人の位置関係を提示する。",
+      "recommendedSeconds": 5,
+      "dialogue": false,
+      "asset": "CUT/CUT04.mp4"
+    },
+    {
+      "cut": "CUT05",
+      "role": "沈黙。話す前のためらい。",
+      "recommendedSeconds": 4.5,
+      "dialogue": false,
+      "asset": "CUT/CUT05.mp4"
+    },
+    {
+      "cut": "CUT06",
+      "role": "最初のセリフ。感情を小さく出す。",
+      "recommendedSeconds": 6,
+      "dialogue": true,
+      "dialogueAsset": "Dialogue/CUT06_dialogue.wav",
+      "asset": "CUT/CUT06.mp4"
+    },
+    {
+      "cut": "CUT07",
+      "role": "相手の反応。返答より表情を優先する。",
+      "recommendedSeconds": 4,
+      "dialogue": false,
+      "asset": "CUT/CUT07.mp4"
+    },
+    {
+      "cut": "CUT08",
+      "role": "記憶、回想、または距離の象徴を挿入する。",
+      "recommendedSeconds": 5,
+      "dialogue": false,
+      "asset": "CUT/CUT08.mp4"
+    },
+    {
+      "cut": "CUT09",
+      "role": "手元や小物で言えない感情を見せる。",
+      "recommendedSeconds": 4,
+      "dialogue": false,
+      "asset": "CUT/CUT09.mp4"
+    },
+    {
+      "cut": "CUT10",
+      "role": "少し近づく。距離が変化する始まり。",
+      "recommendedSeconds": 5,
+      "dialogue": false,
+      "asset": "CUT/CUT10.mp4"
+    },
+    {
+      "cut": "CUT11",
+      "role": "言葉にする直前の迷い。",
+      "recommendedSeconds": 4.5,
+      "dialogue": false,
+      "asset": "CUT/CUT11.mp4"
+    },
+    {
+      "cut": "CUT12",
+      "role": "二つ目のセリフ。核心に触れるが言い切らない。",
+      "recommendedSeconds": 6,
+      "dialogue": true,
+      "dialogueAsset": "Dialogue/CUT12_dialogue.wav",
+      "asset": "CUT/CUT12.mp4"
+    },
+    {
+      "cut": "CUT13",
+      "role": "間。セリフの意味を観客に残す。",
+      "recommendedSeconds": 4,
+      "dialogue": false,
+      "asset": "CUT/CUT13.mp4"
+    },
+    {
+      "cut": "CUT14",
+      "role": "二人の距離が縮む動き。",
+      "recommendedSeconds": 5,
+      "dialogue": false,
+      "asset": "CUT/CUT14.mp4"
+    },
+    {
+      "cut": "CUT15",
+      "role": "空気感。Blue Hourと余韻を強める。",
+      "recommendedSeconds": 5,
+      "dialogue": false,
+      "asset": "CUT/CUT15.mp4"
+    },
+    {
+      "cut": "CUT16",
+      "role": "決心。感情のピーク前の静けさ。",
+      "recommendedSeconds": 6,
+      "dialogue": false,
+      "asset": "CUT/CUT16.mp4"
+    },
+    {
+      "cut": "CUT17",
+      "role": "クライマックスの余韻。絶対に急いで切らない。",
+      "recommendedSeconds": 8,
+      "dialogue": true,
+      "dialogueAsset": "Dialogue/CUT17_dialogue.wav",
+      "asset": "CUT/CUT17.mp4"
+    },
+    {
+      "cut": "CUT18",
+      "role": "締め。肩を寄せるあと約1秒残して終える。",
+      "recommendedSeconds": 7,
+      "dialogue": false,
+      "asset": "CUT/CUT18.mp4"
+    }
+  ],
+  "globalAssets": {
+    "unsorted": []
+  }
+}

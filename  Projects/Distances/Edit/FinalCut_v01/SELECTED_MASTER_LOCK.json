@@ -1,0 +1,78 @@
+{
+  "project": "Distances Final Cut",
+  "version": "FinalCut_v01",
+  "createdAt": "2026-07-02T00:00:00+09:00",
+  "studio": "FLYSTAR77 STUDIO",
+  "priority": [
+    "Emotion",
+    "Reality",
+    "Rhythm",
+    "Visual effects"
+  ],
+  "productionRules": [
+    "Never overwrite originals",
+    "Create a new version",
+    "Preserve cinematic pacing",
+    "Minimal transitions",
+    "Emotion before spectacle",
+    "Always choose reality"
+  ],
+  "lockPolicy": {
+    "originals": "read_only",
+    "selectedMasters": "read_only",
+    "replacementRequiresApproval": true,
+    "deleteRequiresApproval": true
+  },
+  "lockedSelectedMasters": [
+    {
+      "cut": "CUT01",
+      "path": "CUT/CUT01.mp4",
+      "sizeBytes": 5971784,
+      "sha256": "2595863b941a0143a288c877e5d77df726d56f4472512e0a1ce7cbab1d3d477b",
+      "status": "locked",
+      "notes": "Matches staging file in Watch. Use as source reference only."
+    },
+    {
+      "cut": "CUT17",
+      "path": "CUT/CUT17.mp4",
+      "sizeBytes": 4440091,
+      "sha256": "817458ad70b5d5bb2f6bc803390187747f7f32683d1b70821511960b0686d227",
+      "status": "locked",
+      "notes": "CUT17 afterglow must not be rushed or shortened below emotional need."
+    }
+  ],
+  "stagingDuplicates": [
+    {
+      "path": "Watch/dreamina-2026-06-30-2884-\u3010\u2460 CINEMATIC STYLE\u3011 Ultra cinematic Japa....mp4",
+      "matchesCut": "CUT01",
+      "sha256": "2595863b941a0143a288c877e5d77df726d56f4472512e0a1ce7cbab1d3d477b"
+    },
+    {
+      "path": "Watch/f.mp4",
+      "matchesCut": "CUT17",
+      "sha256": "817458ad70b5d5bb2f6bc803390187747f7f32683d1b70821511960b0686d227"
+    }
+  ],
+  "missingRequiredAssets": [
+    "CUT/CUT02.mp4",
+    "CUT/CUT03.mp4",
+    "CUT/CUT04.mp4",
+    "CUT/CUT05.mp4",
+    "CUT/CUT06.mp4",
+    "CUT/CUT07.mp4",
+    "CUT/CUT08.mp4",
+    "CUT/CUT09.mp4",
+    "CUT/CUT10.mp4",
+    "CUT/CUT11.mp4",
+    "CUT/CUT12.mp4",
+    "CUT/CUT13.mp4",
+    "CUT/CUT14.mp4",
+    "CUT/CUT15.mp4",
+    "CUT/CUT16.mp4",
+    "CUT/CUT18.mp4",
+    "Dialogue/CUT06_dialogue.wav",
+    "Dialogue/CUT12_dialogue.wav",
+    "Dialogue/CUT17_dialogue.wav"
+  ],
+  "editStatus": "blocked_until_required_assets_are_available"
+}

@@ -1,0 +1,28 @@
+{
+  "processed": {
+    "/Users/yamamotohiroshi/Documents/Codex/2026-06-21/p/FLYSTAR77/Projects/Distances/Watch/dreamina-2026-06-30-2884-【① CINEMATIC STYLE】 Ultra cinematic Japa....mp4": {
+      "size": 5971784,
+      "mtimeNs": 1782793914813680746,
+      "copiedTo": "Import/dreamina-2026-06-30-2884-【① CINEMATIC STYLE】 Ultra cinematic Japa....mp4",
+      "processedAt": "2026-07-01T01:04:33"
+    },
+    "/Users/yamamotohiroshi/Documents/Codex/2026-06-21/p/FLYSTAR77/Projects/Distances/Watch/dreamina-2026-06-30-1606-Slow handheld camera. Very subtle forwar....mp4": {
+      "size": 4440091,
+      "mtimeNs": 1782761816317127044,
+      "copiedTo": "Import/dreamina-2026-06-30-1606-Slow handheld camera. Very subtle forwar....mp4",
+      "processedAt": "2026-07-01T01:38:33"
+    }
+  },
+  "copied": [
+    {
+      "source": "/Users/yamamotohiroshi/Documents/Codex/2026-06-21/p/FLYSTAR77/Projects/Distances/Watch/dreamina-2026-06-30-2884-【① CINEMATIC STYLE】 Ultra cinematic Japa....mp4",
+      "copiedTo": "Import/dreamina-2026-06-30-2884-【① CINEMATIC STYLE】 Ultra cinematic Japa....mp4",
+      "processedAt": "2026-07-01T01:04:33"
+    },
+    {
+      "source": "/Users/yamamotohiroshi/Documents/Codex/2026-06-21/p/FLYSTAR77/Projects/Distances/Watch/dreamina-2026-06-30-1606-Slow handheld camera. Very subtle forwar....mp4",
+      "copiedTo": "Import/dreamina-2026-06-30-1606-Slow handheld camera. Very subtle forwar....mp4",
+      "processedAt": "2026-07-01T01:38:33"
+    }
+  ]
+}

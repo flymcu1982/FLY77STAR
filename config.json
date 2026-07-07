@@ -1,0 +1,19 @@
+{
+  "studio": "FLYSTAR77 STUDIO",
+  "watcher": {
+    "pollSeconds": 5,
+    "settleSeconds": 3,
+    "importMode": "apply",
+    "recursive": true,
+    "runImportAssets": true
+  },
+  "projects": [
+    {
+      "name": "Distances",
+      "projectPath": "Projects/Distances",
+      "watchFolders": [
+        "Projects/Distances/Watch"
+      ]
+    }
+  ]
+}

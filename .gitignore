@@ -1,0 +1,12 @@
+.DS_Store
+*.log
+*.tmp
+*.cache
+
+# Local exports can be large. Track final deliverables only when intentional.
+Exports/*.mp4
+Projects/*/Export/*.mp4
+
+# OS/editor noise
+.vscode/
+.idea/

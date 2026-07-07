@@ -1,0 +1,1224 @@
+{
+  "schema": "flystar77.palmier.edit_project.v1",
+  "generatedAt": "2026-06-30T16:48:01.845832+00:00",
+  "studio": "FLYSTAR77 STUDIO",
+  "project": {
+    "name": "Distances",
+    "version": "v1.0",
+    "status": "production_start",
+    "primaryFormat": "9:16",
+    "releaseTargets": [
+      "TikTok",
+      "Instagram Reels",
+      "YouTube"
+    ]
+  },
+  "sourceDocuments": {
+    "editPlan": "Edit/EDIT_PLAN.md",
+    "cutList": "CUT_LIST.json",
+    "project": "project.json",
+    "palmierHandoff": "Edit/PALMIER_HANDOFF.md"
+  },
+  "timeline": {
+    "name": "Distances_main_90s",
+    "fps": 30,
+    "resolution": {
+      "width": 1080,
+      "height": 1920,
+      "aspectRatio": "9:16"
+    },
+    "totalRecommendedSeconds": 90,
+    "tracks": [
+      {
+        "id": "V1_main",
+        "type": "video",
+        "purpose": "CUT01-CUT18 main picture"
+      },
+      {
+        "id": "A1_dialogue",
+        "type": "audio",
+        "purpose": "CUT06/CUT12/CUT17 dialogue"
+      },
+      {
+        "id": "A2_bgm",
+        "type": "audio",
+        "purpose": "thin BGM bed and fades"
+      },
+      {
+        "id": "A3_environment",
+        "type": "audio",
+        "purpose": "embedded ambience and room tone"
+      }
+    ],
+    "sequence": [
+      {
+        "order": 1,
+        "cut": "CUT01",
+        "asset": "CUT/CUT01.mp4",
+        "assetExists": true,
+        "track": "V1_main",
+        "startSeconds": 0.0,
+        "endSeconds": 3.0,
+        "startTimecode": "00:00.0",
+        "endTimecode": "00:03.0",
+        "recommendedSeconds": 3.0,
+        "role": "導入。Blue Hourの空気と作品トーンを提示する。",
+        "editTiming": "0.5秒以内に世界観が伝わるフレームを選ぶ。終端は短いフェード可。",
+        "transition": {
+          "in": {
+            "type": "none",
+            "durationSeconds": 0.0
+          },
+          "out": {
+            "type": "short_fade",
+            "durationSeconds": 0.3,
+            "note": "導入の空気を残すため、終端のみ短いフェード可。"
+          }
+        },
+        "fade": {
+          "videoInSeconds": 0.0,
+          "videoOutSeconds": 0.3,
+          "clipAudioInSeconds": 0.0,
+          "clipAudioOutSeconds": 0.2,
+          "bgmOutSeconds": 0.0,
+          "ambientOutSeconds": 0.0
+        },
+        "bgmSync": {
+          "mode": "thin_bed",
+          "targetGainDb": -26.0,
+          "notes": "全体に薄く敷き、感情と環境音を優先する。"
+        },
+        "dialogueSync": {
+          "enabled": false,
+          "asset": null,
+          "assetExists": false,
+          "track": "A1_dialogue",
+          "timelineStartSeconds": null,
+          "preRollSeconds": 0.0,
+          "postHoldSeconds": 0.0,
+          "priority": null,
+          "syncPoint": "セリフなし。環境音を薄く残す。",
+          "notes": "セリフなし。環境音を薄く残す。"
+        },
+        "environment": {
+          "keep": true,
+          "source": "embedded_clip_audio_or_ambient_track",
+          "targetGainDb": -28.0,
+          "notes": "環境音を完全に消さず、部屋鳴りや空気を薄く残す。"
+        }
+      },
+      {
+        "order": 2,
+        "cut": "CUT02",
+        "asset": "CUT/CUT02.mp4",
+        "assetExists": false,
+        "track": "V1_main",
+        "startSeconds": 3.0,
+        "endSeconds": 7.0,
+        "startTimecode": "00:03.0",
+        "endTimecode": "00:07.0",
+        "recommendedSeconds": 4.0,
+        "role": "主人公の孤独。距離のテーマを視線で見せる。",
+        "editTiming": "視線が動く前後を残し、表情のピークで切らない。",
+        "transition": {
+          "in": {
+            "type": "cut",
+            "durationSeconds": 0.0
+          },
+          "out": {
+            "type": "cut",
+            "durationSeconds": 0.0
+          }
+        },
+        "fade": {
+          "videoInSeconds": 0.0,
+          "videoOutSeconds": 0.0,
+          "clipAudioInSeconds": 0.0,
+          "clipAudioOutSeconds": 0.0,
+          "bgmOutSeconds": 0.0,
+          "ambientOutSeconds": 0.0
+        },
+        "bgmSync": {
+          "mode": "entry",
+          "targetGainDb": -24.0,
+          "notes": "BGMの入りを視線の動きに合わせ、作品の距離感を作る。"
+        },
+        "dialogueSync": {
+          "enabled": false,
+          "asset": null,
+          "assetExists": false,
+          "track": "A1_dialogue",
+          "timelineStartSeconds": null,
+          "preRollSeconds": 0.0,
+          "postHoldSeconds": 0.0,
+          "priority": null,
+          "syncPoint": "セリフなし。BGMの入りに合わせる。",
+          "notes": "セリフなし。BGMの入りに合わせる。"
+        },
+        "environment": {
+          "keep": true,
+          "source": "embedded_clip_audio_or_ambient_track",
+          "targetGainDb": -28.0,
+          "notes": "環境音を完全に消さず、部屋鳴りや空気を薄く残す。"
+        }
+      },
+      {
+        "order": 3,
+        "cut": "CUT03",
+        "asset": "CUT/CUT03.mp4",
+        "assetExists": false,
+        "track": "V1_main",
+        "startSeconds": 7.0,
+        "endSeconds": 11.0,
+        "startTimecode": "00:07.0",
+        "endTimecode": "00:11.0",
+        "recommendedSeconds": 4.0,
+        "role": "相手の存在を示す。まだ直接つながらない距離感。",
+        "editTiming": "相手の存在が分かる瞬間を中央に置く。",
+        "transition": {
+          "in": {
+            "type": "cut",
+            "durationSeconds": 0.0
+          },
+          "out": {
+            "type": "cut",
+            "durationSeconds": 0.0
+          }
+        },
+        "fade": {
+          "videoInSeconds": 0.0,
+          "videoOutSeconds": 0.0,
+          "clipAudioInSeconds": 0.0,
+          "clipAudioOutSeconds": 0.0,
+          "bgmOutSeconds": 0.0,
+          "ambientOutSeconds": 0.0
+        },
+        "bgmSync": {
+          "mode": "thin_bed",
+          "targetGainDb": -26.0,
+          "notes": "全体に薄く敷き、感情と環境音を優先する。"
+        },
+        "dialogueSync": {
+          "enabled": false,
+          "asset": null,
+          "assetExists": false,
+          "track": "A1_dialogue",
+          "timelineStartSeconds": null,
+          "preRollSeconds": 0.0,
+          "postHoldSeconds": 0.0,
+          "priority": null,
+          "syncPoint": "セリフなし。環境音の空気を残す。",
+          "notes": "セリフなし。環境音の空気を残す。"
+        },
+        "environment": {
+          "keep": true,
+          "source": "embedded_clip_audio_or_ambient_track",
+          "targetGainDb": -28.0,
+          "notes": "環境音を完全に消さず、部屋鳴りや空気を薄く残す。"
+        }
+      },
+      {
+        "order": 4,
+        "cut": "CUT04",
+        "asset": "CUT/CUT04.mp4",
+        "assetExists": false,
+        "track": "V1_main",
+        "startSeconds": 11.0,
+        "endSeconds": 16.0,
+        "startTimecode": "00:11.0",
+        "endTimecode": "00:16.0",
+        "recommendedSeconds": 5.0,
+        "role": "二人の位置関係を提示する。",
+        "editTiming": "距離が見える引き構図を優先。短くしすぎない。",
+        "transition": {
+          "in": {
+            "type": "cut",
+            "durationSeconds": 0.0
+          },
+          "out": {
+            "type": "cut",
+            "durationSeconds": 0.0
+          }
+        },
+        "fade": {
+          "videoInSeconds": 0.0,
+          "videoOutSeconds": 0.0,
+          "clipAudioInSeconds": 0.0,
+          "clipAudioOutSeconds": 0.0,
+          "bgmOutSeconds": 0.0,
+          "ambientOutSeconds": 0.0
+        },
+        "bgmSync": {
+          "mode": "thin_bed",
+          "targetGainDb": -26.0,
+          "notes": "全体に薄く敷き、感情と環境音を優先する。"
+        },
+        "dialogueSync": {
+          "enabled": false,
+          "asset": null,
+          "assetExists": false,
+          "track": "A1_dialogue",
+          "timelineStartSeconds": null,
+          "preRollSeconds": 0.0,
+          "postHoldSeconds": 0.0,
+          "priority": null,
+          "syncPoint": "セリフなし。",
+          "notes": "セリフなし。"
+        },
+        "environment": {
+          "keep": true,
+          "source": "embedded_clip_audio_or_ambient_track",
+          "targetGainDb": -28.0,
+          "notes": "環境音を完全に消さず、部屋鳴りや空気を薄く残す。"
+        }
+      },
+      {
+        "order": 5,
+        "cut": "CUT05",
+        "asset": "CUT/CUT05.mp4",
+        "assetExists": false,
+        "track": "V1_main",
+        "startSeconds": 16.0,
+        "endSeconds": 20.5,
+        "startTimecode": "00:16.0",
+        "endTimecode": "00:20.5",
+        "recommendedSeconds": 4.5,
+        "role": "沈黙。話す前のためらい。",
+        "editTiming": "口を開く前、手や視線の迷いを残す。",
+        "transition": {
+          "in": {
+            "type": "cut",
+            "durationSeconds": 0.0
+          },
+          "out": {
+            "type": "breath_cut",
+            "durationSeconds": 0.0,
+            "note": "CUT06へ息継ぎでつなぐ。"
+          }
+        },
+        "fade": {
+          "videoInSeconds": 0.0,
+          "videoOutSeconds": 0.0,
+          "clipAudioInSeconds": 0.0,
+          "clipAudioOutSeconds": 0.0,
+          "bgmOutSeconds": 0.0,
+          "ambientOutSeconds": 0.0
+        },
+        "bgmSync": {
+          "mode": "thin_bed",
+          "targetGainDb": -26.0,
+          "notes": "全体に薄く敷き、感情と環境音を優先する。"
+        },
+        "dialogueSync": {
+          "enabled": false,
+          "asset": null,
+          "assetExists": false,
+          "track": "A1_dialogue",
+          "timelineStartSeconds": null,
+          "preRollSeconds": 0.0,
+          "postHoldSeconds": 0.0,
+          "priority": null,
+          "syncPoint": "セリフなし。CUT06へ息継ぎでつなぐ。",
+          "notes": "セリフなし。CUT06へ息継ぎでつなぐ。"
+        },
+        "environment": {
+          "keep": true,
+          "source": "embedded_clip_audio_or_ambient_track",
+          "targetGainDb": -28.0,
+          "notes": "環境音を完全に消さず、部屋鳴りや空気を薄く残す。"
+        }
+      },
+      {
+        "order": 6,
+        "cut": "CUT06",
+        "asset": "CUT/CUT06.mp4",
+        "assetExists": false,
+        "track": "V1_main",
+        "startSeconds": 20.5,
+        "endSeconds": 26.5,
+        "startTimecode": "00:20.5",
+        "endTimecode": "00:26.5",
+        "recommendedSeconds": 6.0,
+        "role": "最初のセリフ。感情を小さく出す。",
+        "editTiming": "セリフ前0.5秒を残す。セリフ後1.0秒以上ホールド。",
+        "transition": {
+          "in": {
+            "type": "cut",
+            "durationSeconds": 0.0
+          },
+          "out": {
+            "type": "cut",
+            "durationSeconds": 0.0
+          }
+        },
+        "fade": {
+          "videoInSeconds": 0.0,
+          "videoOutSeconds": 0.0,
+          "clipAudioInSeconds": 0.0,
+          "clipAudioOutSeconds": 0.0,
+          "bgmOutSeconds": 0.0,
+          "ambientOutSeconds": 0.0
+        },
+        "bgmSync": {
+          "mode": "duck_under_dialogue",
+          "targetGainDb": -30.0,
+          "notes": "セリフを邪魔しない音量まで自然に下げる。"
+        },
+        "dialogueSync": {
+          "enabled": true,
+          "asset": "Dialogue/CUT06_dialogue.wav",
+          "assetExists": false,
+          "track": "A1_dialogue",
+          "timelineStartSeconds": 21.0,
+          "preRollSeconds": 0.5,
+          "postHoldSeconds": 1.0,
+          "priority": "emotion_change",
+          "syncPoint": "`Dialogue/CUT06_dialogue.wav`。声の出だしを口元ではなく感情の変化に合わせる。",
+          "notes": "声の出だしは口元だけでなく、表情が変わる瞬間へ合わせる。"
+        },
+        "environment": {
+          "keep": true,
+          "source": "embedded_clip_audio_or_ambient_track",
+          "targetGainDb": -32.0,
+          "notes": "環境音を完全に消さず、部屋鳴りや空気を薄く残す。"
+        }
+      },
+      {
+        "order": 7,
+        "cut": "CUT07",
+        "asset": "CUT/CUT07.mp4",
+        "assetExists": false,
+        "track": "V1_main",
+        "startSeconds": 26.5,
+        "endSeconds": 30.5,
+        "startTimecode": "00:26.5",
+        "endTimecode": "00:30.5",
+        "recommendedSeconds": 4.0,
+        "role": "相手の反応。返答より表情を優先する。",
+        "editTiming": "返事を急がず、受け取る表情で見せる。",
+        "transition": {
+          "in": {
+            "type": "cut",
+            "durationSeconds": 0.0
+          },
+          "out": {
+            "type": "cut",
+            "durationSeconds": 0.0
+          }
+        },
+        "fade": {
+          "videoInSeconds": 0.0,
+          "videoOutSeconds": 0.0,
+          "clipAudioInSeconds": 0.0,
+          "clipAudioOutSeconds": 0.0,
+          "bgmOutSeconds": 0.0,
+          "ambientOutSeconds": 0.0
+        },
+        "bgmSync": {
+          "mode": "thin_bed",
+          "targetGainDb": -26.0,
+          "notes": "全体に薄く敷き、感情と環境音を優先する。"
+        },
+        "dialogueSync": {
+          "enabled": false,
+          "asset": null,
+          "assetExists": false,
+          "track": "A1_dialogue",
+          "timelineStartSeconds": null,
+          "preRollSeconds": 0.0,
+          "postHoldSeconds": 0.0,
+          "priority": null,
+          "syncPoint": "セリフなし。CUT06の余韻を受ける。",
+          "notes": "セリフなし。CUT06の余韻を受ける。"
+        },
+        "environment": {
+          "keep": true,
+          "source": "embedded_clip_audio_or_ambient_track",
+          "targetGainDb": -28.0,
+          "notes": "環境音を完全に消さず、部屋鳴りや空気を薄く残す。"
+        }
+      },
+      {
+        "order": 8,
+        "cut": "CUT08",
+        "asset": "CUT/CUT08.mp4",
+        "assetExists": false,
+        "track": "V1_main",
+        "startSeconds": 30.5,
+        "endSeconds": 35.5,
+        "startTimecode": "00:30.5",
+        "endTimecode": "00:35.5",
+        "recommendedSeconds": 5.0,
+        "role": "記憶、回想、または距離の象徴を挿入する。",
+        "editTiming": "BGMの小さな変化に合わせて入れる。",
+        "transition": {
+          "in": {
+            "type": "cut",
+            "durationSeconds": 0.0
+          },
+          "out": {
+            "type": "cut",
+            "durationSeconds": 0.0
+          }
+        },
+        "fade": {
+          "videoInSeconds": 0.0,
+          "videoOutSeconds": 0.0,
+          "clipAudioInSeconds": 0.0,
+          "clipAudioOutSeconds": 0.0,
+          "bgmOutSeconds": 0.0,
+          "ambientOutSeconds": 0.0
+        },
+        "bgmSync": {
+          "mode": "thin_bed",
+          "targetGainDb": -26.0,
+          "notes": "全体に薄く敷き、感情と環境音を優先する。"
+        },
+        "dialogueSync": {
+          "enabled": false,
+          "asset": null,
+          "assetExists": false,
+          "track": "A1_dialogue",
+          "timelineStartSeconds": null,
+          "preRollSeconds": 0.0,
+          "postHoldSeconds": 0.0,
+          "priority": null,
+          "syncPoint": "セリフなし。",
+          "notes": "セリフなし。"
+        },
+        "environment": {
+          "keep": true,
+          "source": "embedded_clip_audio_or_ambient_track",
+          "targetGainDb": -28.0,
+          "notes": "環境音を完全に消さず、部屋鳴りや空気を薄く残す。"
+        }
+      },
+      {
+        "order": 9,
+        "cut": "CUT09",
+        "asset": "CUT/CUT09.mp4",
+        "assetExists": false,
+        "track": "V1_main",
+        "startSeconds": 35.5,
+        "endSeconds": 39.5,
+        "startTimecode": "00:35.5",
+        "endTimecode": "00:39.5",
+        "recommendedSeconds": 4.0,
+        "role": "手元や小物で言えない感情を見せる。",
+        "editTiming": "手の動きが止まる瞬間を残す。",
+        "transition": {
+          "in": {
+            "type": "cut",
+            "durationSeconds": 0.0
+          },
+          "out": {
+            "type": "cut",
+            "durationSeconds": 0.0
+          }
+        },
+        "fade": {
+          "videoInSeconds": 0.0,
+          "videoOutSeconds": 0.0,
+          "clipAudioInSeconds": 0.0,
+          "clipAudioOutSeconds": 0.0,
+          "bgmOutSeconds": 0.0,
+          "ambientOutSeconds": 0.0
+        },
+        "bgmSync": {
+          "mode": "thin_bed",
+          "targetGainDb": -26.0,
+          "notes": "全体に薄く敷き、感情と環境音を優先する。"
+        },
+        "dialogueSync": {
+          "enabled": false,
+          "asset": null,
+          "assetExists": false,
+          "track": "A1_dialogue",
+          "timelineStartSeconds": null,
+          "preRollSeconds": 0.0,
+          "postHoldSeconds": 0.0,
+          "priority": null,
+          "syncPoint": "セリフなし。環境音を近くする。",
+          "notes": "セリフなし。環境音を近くする。"
+        },
+        "environment": {
+          "keep": true,
+          "source": "embedded_clip_audio_or_ambient_track",
+          "targetGainDb": -25.0,
+          "notes": "手元や小物の近さを出すため、環境音を少し近くする。"
+        }
+      },
+      {
+        "order": 10,
+        "cut": "CUT10",
+        "asset": "CUT/CUT10.mp4",
+        "assetExists": false,
+        "track": "V1_main",
+        "startSeconds": 39.5,
+        "endSeconds": 44.5,
+        "startTimecode": "00:39.5",
+        "endTimecode": "00:44.5",
+        "recommendedSeconds": 5.0,
+        "role": "少し近づく。距離が変化する始まり。",
+        "editTiming": "動きの始点と終点を切らない。",
+        "transition": {
+          "in": {
+            "type": "cut",
+            "durationSeconds": 0.0
+          },
+          "out": {
+            "type": "cut",
+            "durationSeconds": 0.0
+          }
+        },
+        "fade": {
+          "videoInSeconds": 0.0,
+          "videoOutSeconds": 0.0,
+          "clipAudioInSeconds": 0.0,
+          "clipAudioOutSeconds": 0.0,
+          "bgmOutSeconds": 0.0,
+          "ambientOutSeconds": 0.0
+        },
+        "bgmSync": {
+          "mode": "thin_bed",
+          "targetGainDb": -26.0,
+          "notes": "全体に薄く敷き、感情と環境音を優先する。"
+        },
+        "dialogueSync": {
+          "enabled": false,
+          "asset": null,
+          "assetExists": false,
+          "track": "A1_dialogue",
+          "timelineStartSeconds": null,
+          "preRollSeconds": 0.0,
+          "postHoldSeconds": 0.0,
+          "priority": null,
+          "syncPoint": "セリフなし。",
+          "notes": "セリフなし。"
+        },
+        "environment": {
+          "keep": true,
+          "source": "embedded_clip_audio_or_ambient_track",
+          "targetGainDb": -28.0,
+          "notes": "環境音を完全に消さず、部屋鳴りや空気を薄く残す。"
+        }
+      },
+      {
+        "order": 11,
+        "cut": "CUT11",
+        "asset": "CUT/CUT11.mp4",
+        "assetExists": false,
+        "track": "V1_main",
+        "startSeconds": 44.5,
+        "endSeconds": 49.0,
+        "startTimecode": "00:44.5",
+        "endTimecode": "00:49.0",
+        "recommendedSeconds": 4.5,
+        "role": "言葉にする直前の迷い。",
+        "editTiming": "CUT12のセリフに向けて沈黙を作る。",
+        "transition": {
+          "in": {
+            "type": "cut",
+            "durationSeconds": 0.0
+          },
+          "out": {
+            "type": "pause_cut",
+            "durationSeconds": 0.0,
+            "note": "CUT12の前に0.3秒ほど間を残す。"
+          }
+        },
+        "fade": {
+          "videoInSeconds": 0.0,
+          "videoOutSeconds": 0.0,
+          "clipAudioInSeconds": 0.0,
+          "clipAudioOutSeconds": 0.0,
+          "bgmOutSeconds": 0.0,
+          "ambientOutSeconds": 0.0
+        },
+        "bgmSync": {
+          "mode": "thin_bed",
+          "targetGainDb": -26.0,
+          "notes": "全体に薄く敷き、感情と環境音を優先する。"
+        },
+        "dialogueSync": {
+          "enabled": false,
+          "asset": null,
+          "assetExists": false,
+          "track": "A1_dialogue",
+          "timelineStartSeconds": null,
+          "preRollSeconds": 0.0,
+          "postHoldSeconds": 0.0,
+          "priority": null,
+          "syncPoint": "セリフなし。CUT12の前に0.3秒ほど間を残す。",
+          "notes": "セリフなし。CUT12の前に0.3秒ほど間を残す。"
+        },
+        "environment": {
+          "keep": true,
+          "source": "embedded_clip_audio_or_ambient_track",
+          "targetGainDb": -28.0,
+          "notes": "環境音を完全に消さず、部屋鳴りや空気を薄く残す。"
+        }
+      },
+      {
+        "order": 12,
+        "cut": "CUT12",
+        "asset": "CUT/CUT12.mp4",
+        "assetExists": false,
+        "track": "V1_main",
+        "startSeconds": 49.0,
+        "endSeconds": 55.0,
+        "startTimecode": "00:49.0",
+        "endTimecode": "00:55.0",
+        "recommendedSeconds": 6.0,
+        "role": "二つ目のセリフ。核心に触れるが言い切らない。",
+        "editTiming": "セリフ前0.5秒、セリフ後1.5秒を残す。",
+        "transition": {
+          "in": {
+            "type": "cut",
+            "durationSeconds": 0.0
+          },
+          "out": {
+            "type": "cut",
+            "durationSeconds": 0.0
+          }
+        },
+        "fade": {
+          "videoInSeconds": 0.0,
+          "videoOutSeconds": 0.0,
+          "clipAudioInSeconds": 0.0,
+          "clipAudioOutSeconds": 0.0,
+          "bgmOutSeconds": 0.0,
+          "ambientOutSeconds": 0.0
+        },
+        "bgmSync": {
+          "mode": "duck_under_dialogue",
+          "targetGainDb": -30.0,
+          "notes": "セリフを邪魔しない音量まで自然に下げる。"
+        },
+        "dialogueSync": {
+          "enabled": true,
+          "asset": "Dialogue/CUT12_dialogue.wav",
+          "assetExists": false,
+          "track": "A1_dialogue",
+          "timelineStartSeconds": 49.5,
+          "preRollSeconds": 0.5,
+          "postHoldSeconds": 1.5,
+          "priority": "natural_voice_front",
+          "syncPoint": "`Dialogue/CUT12_dialogue.wav`。声をBGMより前に出すが、音量は自然に。",
+          "notes": "BGMを少し下げ、声を前に出しすぎず自然に聞かせる。"
+        },
+        "environment": {
+          "keep": true,
+          "source": "embedded_clip_audio_or_ambient_track",
+          "targetGainDb": -32.0,
+          "notes": "環境音を完全に消さず、部屋鳴りや空気を薄く残す。"
+        }
+      },
+      {
+        "order": 13,
+        "cut": "CUT13",
+        "asset": "CUT/CUT13.mp4",
+        "assetExists": false,
+        "track": "V1_main",
+        "startSeconds": 55.0,
+        "endSeconds": 59.0,
+        "startTimecode": "00:55.0",
+        "endTimecode": "00:59.0",
+        "recommendedSeconds": 4.0,
+        "role": "間。セリフの意味を観客に残す。",
+        "editTiming": "無音にしすぎず、環境音で余韻を支える。",
+        "transition": {
+          "in": {
+            "type": "cut",
+            "durationSeconds": 0.0
+          },
+          "out": {
+            "type": "cut",
+            "durationSeconds": 0.0
+          }
+        },
+        "fade": {
+          "videoInSeconds": 0.0,
+          "videoOutSeconds": 0.0,
+          "clipAudioInSeconds": 0.0,
+          "clipAudioOutSeconds": 0.0,
+          "bgmOutSeconds": 0.0,
+          "ambientOutSeconds": 0.0
+        },
+        "bgmSync": {
+          "mode": "thin_bed",
+          "targetGainDb": -26.0,
+          "notes": "全体に薄く敷き、感情と環境音を優先する。"
+        },
+        "dialogueSync": {
+          "enabled": false,
+          "asset": null,
+          "assetExists": false,
+          "track": "A1_dialogue",
+          "timelineStartSeconds": null,
+          "preRollSeconds": 0.0,
+          "postHoldSeconds": 0.0,
+          "priority": null,
+          "syncPoint": "セリフなし。CUT12の意味を受ける。",
+          "notes": "セリフなし。CUT12の意味を受ける。"
+        },
+        "environment": {
+          "keep": true,
+          "source": "embedded_clip_audio_or_ambient_track",
+          "targetGainDb": -28.0,
+          "notes": "環境音を完全に消さず、部屋鳴りや空気を薄く残す。"
+        }
+      },
+      {
+        "order": 14,
+        "cut": "CUT14",
+        "asset": "CUT/CUT14.mp4",
+        "assetExists": false,
+        "track": "V1_main",
+        "startSeconds": 59.0,
+        "endSeconds": 64.0,
+        "startTimecode": "00:59.0",
+        "endTimecode": "01:04.0",
+        "recommendedSeconds": 5.0,
+        "role": "二人の距離が縮む動き。",
+        "editTiming": "身体の向きが変わる瞬間を切らない。",
+        "transition": {
+          "in": {
+            "type": "cut",
+            "durationSeconds": 0.0
+          },
+          "out": {
+            "type": "cut",
+            "durationSeconds": 0.0
+          }
+        },
+        "fade": {
+          "videoInSeconds": 0.0,
+          "videoOutSeconds": 0.0,
+          "clipAudioInSeconds": 0.0,
+          "clipAudioOutSeconds": 0.0,
+          "bgmOutSeconds": 0.0,
+          "ambientOutSeconds": 0.0
+        },
+        "bgmSync": {
+          "mode": "thin_bed",
+          "targetGainDb": -26.0,
+          "notes": "全体に薄く敷き、感情と環境音を優先する。"
+        },
+        "dialogueSync": {
+          "enabled": false,
+          "asset": null,
+          "assetExists": false,
+          "track": "A1_dialogue",
+          "timelineStartSeconds": null,
+          "preRollSeconds": 0.0,
+          "postHoldSeconds": 0.0,
+          "priority": null,
+          "syncPoint": "セリフなし。",
+          "notes": "セリフなし。"
+        },
+        "environment": {
+          "keep": true,
+          "source": "embedded_clip_audio_or_ambient_track",
+          "targetGainDb": -28.0,
+          "notes": "環境音を完全に消さず、部屋鳴りや空気を薄く残す。"
+        }
+      },
+      {
+        "order": 15,
+        "cut": "CUT15",
+        "asset": "CUT/CUT15.mp4",
+        "assetExists": false,
+        "track": "V1_main",
+        "startSeconds": 64.0,
+        "endSeconds": 69.0,
+        "startTimecode": "01:04.0",
+        "endTimecode": "01:09.0",
+        "recommendedSeconds": 5.0,
+        "role": "空気感。Blue Hourと余韻を強める。",
+        "editTiming": "画の美しさを優先。BGMを少し広げる。",
+        "transition": {
+          "in": {
+            "type": "cut",
+            "durationSeconds": 0.0
+          },
+          "out": {
+            "type": "cut",
+            "durationSeconds": 0.0
+          }
+        },
+        "fade": {
+          "videoInSeconds": 0.0,
+          "videoOutSeconds": 0.0,
+          "clipAudioInSeconds": 0.0,
+          "clipAudioOutSeconds": 0.0,
+          "bgmOutSeconds": 0.0,
+          "ambientOutSeconds": 0.0
+        },
+        "bgmSync": {
+          "mode": "expand",
+          "targetGainDb": -22.0,
+          "notes": "Blue Hourの空気感に合わせて少しだけ広げる。"
+        },
+        "dialogueSync": {
+          "enabled": false,
+          "asset": null,
+          "assetExists": false,
+          "track": "A1_dialogue",
+          "timelineStartSeconds": null,
+          "preRollSeconds": 0.0,
+          "postHoldSeconds": 0.0,
+          "priority": null,
+          "syncPoint": "セリフなし。",
+          "notes": "セリフなし。"
+        },
+        "environment": {
+          "keep": true,
+          "source": "embedded_clip_audio_or_ambient_track",
+          "targetGainDb": -28.0,
+          "notes": "環境音を完全に消さず、部屋鳴りや空気を薄く残す。"
+        }
+      },
+      {
+        "order": 16,
+        "cut": "CUT16",
+        "asset": "CUT/CUT16.mp4",
+        "assetExists": false,
+        "track": "V1_main",
+        "startSeconds": 69.0,
+        "endSeconds": 75.0,
+        "startTimecode": "01:09.0",
+        "endTimecode": "01:15.0",
+        "recommendedSeconds": 6.0,
+        "role": "決心。感情のピーク前の静けさ。",
+        "editTiming": "目線、呼吸、体の小さな動きを残す。",
+        "transition": {
+          "in": {
+            "type": "cut",
+            "durationSeconds": 0.0
+          },
+          "out": {
+            "type": "cut",
+            "durationSeconds": 0.0
+          }
+        },
+        "fade": {
+          "videoInSeconds": 0.0,
+          "videoOutSeconds": 0.0,
+          "clipAudioInSeconds": 0.0,
+          "clipAudioOutSeconds": 0.0,
+          "bgmOutSeconds": 0.0,
+          "ambientOutSeconds": 0.0
+        },
+        "bgmSync": {
+          "mode": "thin_bed",
+          "targetGainDb": -26.0,
+          "notes": "全体に薄く敷き、感情と環境音を優先する。"
+        },
+        "dialogueSync": {
+          "enabled": false,
+          "asset": null,
+          "assetExists": false,
+          "track": "A1_dialogue",
+          "timelineStartSeconds": null,
+          "preRollSeconds": 0.0,
+          "postHoldSeconds": 0.0,
+          "priority": null,
+          "syncPoint": "セリフなし。CUT17の直前に急がない。",
+          "notes": "セリフなし。CUT17の直前に急がない。"
+        },
+        "environment": {
+          "keep": true,
+          "source": "embedded_clip_audio_or_ambient_track",
+          "targetGainDb": -28.0,
+          "notes": "環境音を完全に消さず、部屋鳴りや空気を薄く残す。"
+        }
+      },
+      {
+        "order": 17,
+        "cut": "CUT17",
+        "asset": "CUT/CUT17.mp4",
+        "assetExists": true,
+        "track": "V1_main",
+        "startSeconds": 75.0,
+        "endSeconds": 83.0,
+        "startTimecode": "01:15.0",
+        "endTimecode": "01:23.0",
+        "recommendedSeconds": 8.0,
+        "role": "クライマックスの余韻。絶対に急いで切らない。",
+        "editTiming": "最低8秒。表情や沈黙を最後まで残す。",
+        "transition": {
+          "in": {
+            "type": "cut",
+            "durationSeconds": 0.0
+          },
+          "out": {
+            "type": "held_cut",
+            "durationSeconds": 0.0,
+            "note": "余韻を切らず、表情と沈黙を最後まで残す。"
+          }
+        },
+        "fade": {
+          "videoInSeconds": 0.0,
+          "videoOutSeconds": 0.0,
+          "clipAudioInSeconds": 0.0,
+          "clipAudioOutSeconds": 0.0,
+          "bgmOutSeconds": 0.0,
+          "ambientOutSeconds": 0.0
+        },
+        "bgmSync": {
+          "mode": "duck_then_sink",
+          "targetGainDb": -31.0,
+          "notes": "セリフ中は静かに、後半からCUT18へ向けて自然に沈める。"
+        },
+        "dialogueSync": {
+          "enabled": true,
+          "asset": "Dialogue/CUT17_dialogue.wav",
+          "assetExists": false,
+          "track": "A1_dialogue",
+          "timelineStartSeconds": 76.0,
+          "preRollSeconds": 1.0,
+          "postHoldSeconds": 2.0,
+          "priority": "afterglow",
+          "syncPoint": "`Dialogue/CUT17_dialogue.wav`。セリフ後2秒以上ホールド。余韻を切らない。",
+          "notes": "セリフ後2秒以上ホールドし、余韻を急いで切らない。"
+        },
+        "environment": {
+          "keep": true,
+          "source": "embedded_clip_audio_or_ambient_track",
+          "targetGainDb": -32.0,
+          "notes": "環境音を完全に消さず、部屋鳴りや空気を薄く残す。"
+        }
+      },
+      {
+        "order": 18,
+        "cut": "CUT18",
+        "asset": "CUT/CUT18.mp4",
+        "assetExists": false,
+        "track": "V1_main",
+        "startSeconds": 83.0,
+        "endSeconds": 90.0,
+        "startTimecode": "01:23.0",
+        "endTimecode": "01:30.0",
+        "recommendedSeconds": 7.0,
+        "role": "締め。肩を寄せるあと約1秒残して終える。",
+        "editTiming": "肩を寄せる動作後、約1秒残す。最後は自然なフェードアウト。",
+        "transition": {
+          "in": {
+            "type": "cut",
+            "durationSeconds": 0.0
+          },
+          "out": {
+            "type": "fade_to_black",
+            "durationSeconds": 1.2,
+            "note": "映像、BGM、環境音を同時に自然に落とす。"
+          }
+        },
+        "fade": {
+          "videoInSeconds": 0.0,
+          "videoOutSeconds": 1.2,
+          "clipAudioInSeconds": 0.0,
+          "clipAudioOutSeconds": 1.2,
+          "bgmOutSeconds": 1.2,
+          "ambientOutSeconds": 1.2
+        },
+        "bgmSync": {
+          "mode": "final_fade",
+          "targetGainDb": -36.0,
+          "notes": "終端でBGM、環境音、映像を同時にフェードアウト。"
+        },
+        "dialogueSync": {
+          "enabled": false,
+          "asset": null,
+          "assetExists": false,
+          "track": "A1_dialogue",
+          "timelineStartSeconds": null,
+          "preRollSeconds": 0.0,
+          "postHoldSeconds": 0.0,
+          "priority": null,
+          "syncPoint": "セリフなし。BGMと環境音を同時に落とす。",
+          "notes": "セリフなし。BGMと環境音を同時に落とす。"
+        },
+        "environment": {
+          "keep": true,
+          "source": "embedded_clip_audio_or_ambient_track",
+          "targetGainDb": -30.0,
+          "notes": "肩を寄せる動作後の1秒を残し、終端で自然に落とす。"
+        }
+      }
+    ]
+  },
+  "audioPlan": {
+    "bgm": {
+      "track": "A2_bgm",
+      "assetCandidates": [],
+      "assetRequired": false,
+      "globalRule": "BGMは全体に薄く敷き、CUT06、CUT12、CUT17では下げる。",
+      "finalFadeStartsAtCut": "CUT18"
+    },
+    "dialogue": [
+      {
+        "enabled": true,
+        "asset": "Dialogue/CUT06_dialogue.wav",
+        "assetExists": false,
+        "track": "A1_dialogue",
+        "timelineStartSeconds": 21.0,
+        "preRollSeconds": 0.5,
+        "postHoldSeconds": 1.0,
+        "priority": "emotion_change",
+        "syncPoint": "`Dialogue/CUT06_dialogue.wav`。声の出だしを口元ではなく感情の変化に合わせる。",
+        "notes": "声の出だしは口元だけでなく、表情が変わる瞬間へ合わせる。",
+        "cut": "CUT06",
+        "startTimecode": "00:20.5"
+      },
+      {
+        "enabled": true,
+        "asset": "Dialogue/CUT12_dialogue.wav",
+        "assetExists": false,
+        "track": "A1_dialogue",
+        "timelineStartSeconds": 49.5,
+        "preRollSeconds": 0.5,
+        "postHoldSeconds": 1.5,
+        "priority": "natural_voice_front",
+        "syncPoint": "`Dialogue/CUT12_dialogue.wav`。声をBGMより前に出すが、音量は自然に。",
+        "notes": "BGMを少し下げ、声を前に出しすぎず自然に聞かせる。",
+        "cut": "CUT12",
+        "startTimecode": "00:49.0"
+      },
+      {
+        "enabled": true,
+        "asset": "Dialogue/CUT17_dialogue.wav",
+        "assetExists": false,
+        "track": "A1_dialogue",
+        "timelineStartSeconds": 76.0,
+        "preRollSeconds": 1.0,
+        "postHoldSeconds": 2.0,
+        "priority": "afterglow",
+        "syncPoint": "`Dialogue/CUT17_dialogue.wav`。セリフ後2秒以上ホールド。余韻を切らない。",
+        "notes": "セリフ後2秒以上ホールドし、余韻を急いで切らない。",
+        "cut": "CUT17",
+        "startTimecode": "01:15.0"
+      }
+    ],
+    "environment": {
+      "track": "A3_environment",
+      "assetCandidates": [],
+      "useEmbeddedClipAudio": true,
+      "globalRule": "環境音は完全に消さない。セリフ箇所では薄く下げる。"
+    }
+  },
+  "transitionPlan": {
+    "default": "cut",
+    "exceptions": [
+      {
+        "cut": "CUT01",
+        "type": "short_fade",
+        "durationSeconds": 0.3
+      },
+      {
+        "cut": "CUT18",
+        "type": "fade_to_black",
+        "durationSeconds": 1.2
+      }
+    ]
+  },
+  "colorPlan": {
+    "look": "Kodak Vision3",
+    "timeOfDay": "Blue Hour",
+    "skinTone": "Warm Skin",
+    "contrast": "Natural Contrast"
+  },
+  "export": {
+    "draft": {
+      "path": "Projects/Distances/Export/Distances_draft_9x16.mp4",
+      "format": "mp4",
+      "codec": "h264",
+      "resolution": "1080x1920",
+      "fps": 30,
+      "audioSampleRateHz": 48000
+    },
+    "final": {
+      "path": "Exports/Distances_final_9x16.mp4",
+      "format": "mp4",
+      "codec": "h264",
+      "resolution": "1080x1920",
+      "fps": 30,
+      "audioLoudnessTargetLufs": -14
+    },
+    "platforms": [
+      {
+        "name": "TikTok",
+        "aspectRatio": "9:16",
+        "resolution": "1080x1920"
+      },
+      {
+        "name": "Instagram Reels",
+        "aspectRatio": "9:16",
+        "resolution": "1080x1920"
+      },
+      {
+        "name": "YouTube",
+        "aspectRatio": "9:16",
+        "resolution": "1080x1920"
+      }
+    ]
+  },
+  "palmierInstructions": [
+    "CUT01からCUT18まで順番通りにV1_mainへ配置する。",
+    "recommendedSecondsを基準に尺を調整し、セリフ後は急に切らない。",
+    "CUT06、CUT12、CUT17はdialogueSyncを優先してA1_dialogueへ配置する。",
+    "BGMはA2_bgmへ薄く敷き、セリフ箇所ではduck_under_dialogueに従って下げる。",
+    "環境音はA3_environmentへ残し、完全な無音を避ける。",
+    "CUT17の余韻とCUT18の肩寄せ後1秒を必ず残す。",
+    "書き出し前にQC/QC_CHECKLIST.mdを確認する。"
+  ],
+  "mediaManifest": {
+    "files": [
+      {
+        "path": "CUT/CUT01.mp4",
+        "type": "video",
+        "exists": true
+      },
+      {
+        "path": "CUT/CUT17.mp4",
+        "type": "video",
+        "exists": true
+      }
+    ],
+    "stagingFiles": [
+      {
+        "path": "Watch/dreamina-2026-06-30-2884-【① CINEMATIC STYLE】 Ultra cinematic Japa....mp4",
+        "type": "video",
+        "exists": true
+      },
+      {
+        "path": "Watch/f.mp4",
+        "type": "video",
+        "exists": true
+      }
+    ],
+    "bgmCandidates": [],
+    "ambientCandidates": []
+  },
+  "missingAssets": [
+    "CUT/CUT02.mp4",
+    "CUT/CUT03.mp4",
+    "CUT/CUT04.mp4",
+    "CUT/CUT05.mp4",
+    "CUT/CUT06.mp4",
+    "CUT/CUT07.mp4",
+    "CUT/CUT08.mp4",
+    "CUT/CUT09.mp4",
+    "CUT/CUT10.mp4",
+    "CUT/CUT11.mp4",
+    "CUT/CUT12.mp4",
+    "CUT/CUT13.mp4",
+    "CUT/CUT14.mp4",
+    "CUT/CUT15.mp4",
+    "CUT/CUT16.mp4",
+    "CUT/CUT18.mp4",
+    "Dialogue/CUT06_dialogue.wav",
+    "Dialogue/CUT12_dialogue.wav",
+    "Dialogue/CUT17_dialogue.wav"
+  ]
+}

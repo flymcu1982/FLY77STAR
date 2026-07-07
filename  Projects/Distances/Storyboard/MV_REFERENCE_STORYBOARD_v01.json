@@ -1,0 +1,146 @@
+{
+  "project": "Distances",
+  "version": "MV_REFERENCE_STORYBOARD_v01",
+  "format": "9:16",
+  "durationSeconds": 90,
+  "characterReferences": {
+    "female": "Reference/Characters/FEMALE_character_reference.png",
+    "male": "Reference/Characters/MALE_character_reference.png"
+  },
+  "rules": [
+    "Emotion before spectacle",
+    "Always choose reality",
+    "Minimal transitions",
+    "Do not introduce characters as models",
+    "Show distance through behavior and framing"
+  ],
+  "cuts": [
+    {
+      "cut": "CUT01",
+      "seconds": [0, 3],
+      "character": "none",
+      "intent": "Blue hour world tone before the characters appear.",
+      "prompt": "Japanese blue hour street after rain, quiet empty walkway, soft city lights, cinematic 85mm, Kodak Vision3, natural contrast, static camera, gentle atmosphere, no people"
+    },
+    {
+      "cut": "CUT02",
+      "seconds": [3, 7],
+      "character": "male",
+      "intent": "The man's loneliness appears through his gaze.",
+      "prompt": "[MALE_REF] young Japanese man in dark plaid overshirt and jeans stands alone at blue hour, looking past the camera, restrained loneliness, cinematic 85mm, shallow depth, natural skin"
+    },
+    {
+      "cut": "CUT03",
+      "seconds": [7, 11],
+      "character": "female",
+      "intent": "The woman exists in the same emotional weather, still separate.",
+      "prompt": "[FEMALE_REF] young Japanese woman in cream cardigan and gray pleated skirt stands separately at blue hour, hands behind her back, quiet hesitation, soft warm skin, cinematic 85mm"
+    },
+    {
+      "cut": "CUT04",
+      "seconds": [11, 16],
+      "character": "both",
+      "intent": "Make the distance physical and visible.",
+      "prompt": "[MALE_REF] [FEMALE_REF] two young Japanese people separated across a quiet blue hour street, visible distance between them, restrained emotion, cinematic wide vertical frame"
+    },
+    {
+      "cut": "CUT05",
+      "seconds": [16, 20.5],
+      "character": "male",
+      "intent": "The hesitation before words.",
+      "prompt": "[MALE_REF] young man almost turns toward someone offscreen, stops before speaking, hand in pocket, quiet hesitation, blue hour side light, realistic cinematic close shot"
+    },
+    {
+      "cut": "CUT06",
+      "seconds": [20.5, 26.5],
+      "character": "male",
+      "intent": "First small emotional reveal.",
+      "prompt": "[MALE_REF] young man speaks softly toward someone offscreen, not looking directly at camera, vulnerable but restrained, warm skin, shallow focus, cinematic realism"
+    },
+    {
+      "cut": "CUT07",
+      "seconds": [26.5, 30.5],
+      "character": "female",
+      "intent": "Her reaction is the reply.",
+      "prompt": "[FEMALE_REF] young woman silently receives words from offscreen, eyes lower then return gently, cream cardigan, blue hour background, emotional restraint, cinematic close-up"
+    },
+    {
+      "cut": "CUT08",
+      "seconds": [30.5, 35.5],
+      "character": "symbol",
+      "intent": "Distance becomes a symbol.",
+      "prompt": "Symbolic memory insert, empty bench at blue hour, two faint reflections separated in glass, quiet urban night, Kodak Vision3, shallow depth, no characters visible"
+    },
+    {
+      "cut": "CUT09",
+      "seconds": [35.5, 39.5],
+      "character": "female",
+      "intent": "Unsaid feeling appears in the hand.",
+      "prompt": "[FEMALE_REF] close-up of young woman's hand lightly gripping cardigan sleeve, then relaxing, quiet unsaid feeling, warm skin, shallow focus, cinematic detail shot"
+    },
+    {
+      "cut": "CUT10",
+      "seconds": [39.5, 44.5],
+      "character": "both",
+      "intent": "The first visible change in distance.",
+      "prompt": "[MALE_REF] [FEMALE_REF] two people in the same quiet space, one takes a small step closer while distance remains, blue hour, restrained cinematic wide shot"
+    },
+    {
+      "cut": "CUT11",
+      "seconds": [44.5, 49],
+      "character": "female",
+      "intent": "Silence before the second line.",
+      "prompt": "[FEMALE_REF] young woman almost speaks, lips part slightly, then she holds silence, soft side light, shallow focus, emotional hesitation, realistic cinematic close-up"
+    },
+    {
+      "cut": "CUT12",
+      "seconds": [49, 55],
+      "character": "female",
+      "intent": "A quiet truth without explaining everything.",
+      "prompt": "[FEMALE_REF] young woman speaks softly toward someone offscreen, quiet truth without explanation, cream cardigan, blue hour, warm skin, cinematic 85mm close-up"
+    },
+    {
+      "cut": "CUT13",
+      "seconds": [55, 59],
+      "character": "male",
+      "intent": "The words land on him.",
+      "prompt": "[MALE_REF] young man absorbs her words in silence, eyes shift then settle, dark plaid shirt, soft blue hour background, restrained afterglow, cinematic close-up"
+    },
+    {
+      "cut": "CUT14",
+      "seconds": [59, 64],
+      "character": "both",
+      "intent": "Distance changes without announcement.",
+      "prompt": "[MALE_REF] [FEMALE_REF] two young people stand closer than before, bodies angled toward each other, still not touching, quiet emotional shift, cinematic vertical medium-wide"
+    },
+    {
+      "cut": "CUT15",
+      "seconds": [64, 69],
+      "character": "atmosphere",
+      "intent": "Let the emotion breathe outside the characters.",
+      "prompt": "Blue hour atmosphere shot, distant streetlight, soft wind through curtain or passing train light, quiet city texture, Kodak Vision3, natural contrast, emotional pause"
+    },
+    {
+      "cut": "CUT16",
+      "seconds": [69, 75],
+      "character": "male",
+      "intent": "Decision before the emotional center.",
+      "prompt": "[MALE_REF] young man decides to close the distance, small inhale before moving, restrained face, blue hour side light, cinematic 85mm, realistic emotion"
+    },
+    {
+      "cut": "CUT17",
+      "seconds": [75, 83],
+      "character": "both",
+      "intent": "Climax afterglow. Do not rush.",
+      "prompt": "[MALE_REF] [FEMALE_REF] close two-shot of young Japanese couple in quiet blue hour, close enough to share warmth but still restrained, emotional afterglow, cinematic realism"
+    },
+    {
+      "cut": "CUT18",
+      "seconds": [83, 90],
+      "character": "both",
+      "intent": "Final warmth remains.",
+      "prompt": "[MALE_REF] [FEMALE_REF] final quiet two-shot, shoulders gently touch, no dramatic embrace, soft blue hour light, warm skin, natural fade feeling, cinematic ending"
+    }
+  ],
+  "negativePrompt": "flashy effects, heavy glow, idol posing, fashion shoot pose, exaggerated acting, crying performance, fast camera movement, shaky handheld, neon cyberpunk, fantasy, text, subtitles, logos, distorted face, inconsistent clothing, extra fingers, crowd, overexposed skin, plastic skin, harsh beauty filter"
+}

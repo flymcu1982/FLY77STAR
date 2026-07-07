@@ -1,0 +1,60 @@
+{
+  "projectName": "Distances",
+  "studio": "FLYSTAR77 STUDIO",
+  "version": "v1.0",
+  "status": "production_start",
+  "format": {
+    "primary": "9:16",
+    "releaseTargets": [
+      "TikTok",
+      "Instagram Reels",
+      "YouTube"
+    ]
+  },
+  "cutCount": 18,
+  "priorityRules": [
+    "../../OPERATING_MANUAL.md",
+    "../../PRODUCTION_BIBLE.md",
+    "../../AI_RULES.md",
+    "../../CODEX_RULES.md",
+    "../../PALMIER_RULES.md",
+    "../../ProductionBible/RULE.md"
+  ],
+  "folders": {
+    "import": "Import",
+    "unsorted": "Unsorted",
+    "cut": "CUT",
+    "audio": "Audio",
+    "dialogue": "Dialogue",
+    "reference": "Reference",
+    "prompt": "Prompt",
+    "edit": "Edit",
+    "storyboard": "Storyboard",
+    "color": "Color",
+    "qc": "QC",
+    "delivery": "Delivery",
+    "export": "Export"
+  },
+  "files": {
+    "brief": "PROJECT_BRIEF.md",
+        "cutList": "CUT_LIST.json",
+        "editPlan": "Edit/EDIT_PLAN.md",
+        "palmierEditProject": "Edit/edit_project.json",
+        "palmierHandoff": "Edit/PALMIER_HANDOFF.md",
+        "status": "STATUS.md",
+        "qcChecklist": "QC/QC_CHECKLIST.md"
+  },
+  "pipeline": [
+    "企画",
+    "脚本",
+    "絵コンテ",
+    "キャラクター制作",
+    "映像生成",
+    "仮編集",
+    "本編集",
+    "カラー",
+    "音響",
+    "書き出し",
+    "広報"
+  ]
+}
