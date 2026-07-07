@@ -20,11 +20,20 @@
 FLYSTAR77/
 └── Projects/
     └── Distances/
-        ├── CUT動画/
-        ├── 音楽/
-        ├── セリフ/
-        ├── プロンプト/
-        └── 書き出し/
+        ├── Import/
+        ├── Unsorted/
+        ├── CUT/
+        ├── Audio/
+        ├── Dialogue/
+        ├── Reference/
+        ├── Prompt/
+        ├── Edit/
+        ├── Storyboard/
+        ├── Color/
+        ├── QC/
+        ├── Delivery/
+        ├── Export/
+        └── project.json
 ```
 
 不足しているフォルダがある場合は、自動で提案する。
