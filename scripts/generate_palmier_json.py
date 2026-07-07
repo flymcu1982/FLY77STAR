@@ -343,13 +343,14 @@ def build_edit_project(project_root: Path) -> dict[str, Any]:
     edit_rows = parse_edit_plan_table(edit_plan_path)
     media = detect_media(project_root)
     sequence, missing_assets = build_sequence(project_root, cut_list, edit_rows)
+    project_name = cut_list.get("projectName", project_json.get("projectName", project_root.name))
 
     return {
         "schema": "flystar77.palmier.edit_project.v1",
         "generatedAt": datetime.now(timezone.utc).isoformat(),
         "studio": project_json.get("studio", "FLYSTAR77 STUDIO"),
         "project": {
-            "name": cut_list.get("projectName", project_json.get("projectName")),
+            "name": project_name,
             "version": project_json.get("version", "v1.0"),
             "status": project_json.get("status"),
             "primaryFormat": project_json.get("format", {}).get("primary", "9:16"),
@@ -362,7 +363,7 @@ def build_edit_project(project_root: Path) -> dict[str, Any]:
             "palmierHandoff": "Edit/PALMIER_HANDOFF.md",
         },
         "timeline": {
-            "name": "Distances_main_90s",
+            "name": f"{project_name}_main_{cut_list.get('totalRecommendedSeconds', 90):g}s",
             "fps": 30,
             "resolution": {
                 "width": 1080,
@@ -417,7 +418,7 @@ def build_edit_project(project_root: Path) -> dict[str, Any]:
         },
         "export": {
             "draft": {
-                "path": "Projects/Distances/Export/Distances_draft_9x16.mp4",
+                "path": f"Projects/{project_name}/Export/{project_name}_draft_9x16.mp4",
                 "format": "mp4",
                 "codec": "h264",
                 "resolution": "1080x1920",
@@ -425,7 +426,7 @@ def build_edit_project(project_root: Path) -> dict[str, Any]:
                 "audioSampleRateHz": 48000,
             },
             "final": {
-                "path": "Exports/Distances_final_9x16.mp4",
+                "path": f"Exports/{project_name}_final_9x16.mp4",
                 "format": "mp4",
                 "codec": "h264",
                 "resolution": "1080x1920",
