@@ -1,0 +1,100 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## What this repository is
+
+FLYSTAR77 STUDIO OS — not a software application, but a rule-driven **AI video production management system**. The repo is the studio's brain: Markdown rule files define how a short film gets produced (planning → storyboard → character → generation → rough cut → final cut → color → sound → export → promotion), and a small set of stdlib-only Python scripts automate the file/folder bookkeeping around that pipeline. There is no app to build, lint, or test in the conventional sense — "correctness" here means the folder structure, naming conventions, and generated JSON/Markdown stay consistent with the rule files.
+
+Everything is written in Japanese. Preserve that when editing rule docs or generated production files.
+
+## Rule files — read in this order before doing anything
+
+Every rule doc restates the same priority list; treat it as authoritative for any decision about where a file goes or how a cut should be edited:
+
+1. `OPERATING_MANUAL.md` — the master doc: studio vision, 5 operating layers (制作/編集/広報/品質管理/自動化), naming rules, color/camera/audio rules, per-CUT editing exceptions (CUT17/CUT18), release specs.
+2. `PRODUCTION_BIBLE.md` — points to `ProductionBible/RULE.md` for detailed folder rules.
+3. `AI_RULES.md` — role split across the AI team (see below) and the "Golden Rule": AI performs *emotion*, not line-reading.
+4. `CODEX_RULES.md` — defines what the "Codex" role (i.e. what an agent working in this repo) may automate vs. must hand off.
+5. `PALMIER_RULES.md` — inputs/outputs contract for handing a cut project to Palmier for editing.
+
+Also load `PROMPT_GUIDE.md` (Dreamina prompt structure), `QUALITY_CONTROL.md` (pre-export checklist), and `GITHUB_OPERATIONS.md` (branching/CI/large-file policy) when the task touches those areas.
+
+## AI team role split (who does what)
+
+- **ChatGPT**: planning, direction, world-building, prompt design, owns the Production Bible.
+- **Codex** (this agent's role in this repo): project/folder management, file organization, generating edit instructions (`EDIT_PLAN.md`, `edit_project.json`), automation scripts, CI validation. Does **not** do the actual timeline edit.
+- **Dreamina**: video generation, lip-sync, character performance (external tool, not in this repo).
+- **Palmier**: rough cut, timeline generation, dialogue/BGM sync, fades, final export (external tool). Codex prepares its inputs; Codex never does Palmier's job itself.
+- **ElevenLabs**: narration/voice generation.
+
+When asked to do editing work (timeline placement, actual fades, dialogue sync execution, export), the correct action is to generate/update the hand-off artifacts (`Edit/EDIT_PLAN.md`, `Edit/edit_project.json`, `Edit/PALMIER_HANDOFF.md`) — not to simulate the edit yourself.
+
+## Known non-standard project: `StudioOpening`
+
+`Projects/StudioOpening` does not follow the standard project layout above — it uses a different structure (`Palmier/`, `Edit/`, `Assets/Videos/...`) inherited from an external Palmier bundle export, and several of its subfolder names carry a trailing colon (`Assets:`, `Videos:`, `Output:`, etc.) and/or a leading space, including a duplicate near-identical pair (`" Assets:"` and `"Assets:"`). None of the automation scripts (`validate_structure.py`, `import_assets.py`, `generate_palmier_json.py`) can operate on it as-is — they're written for the `Distances`-style layout. Treat it as a legacy/manual project; don't run the standard scripts against it, and don't rename/merge its folders without explicit user sign-off, since the `.palmier` bundles inside may be referenced by path from the external Palmier tool.
+
+## Commands
+
+All scripts are pure Python 3 stdlib (no `requirements.txt`/venv needed). CLI conventions are **not** consistent across scripts — some take `--root`/`--project`, others take a positional project path:
+
+```bash
+# Create a new project scaffold (standard folders + starter files)
+python3 scripts/create_project.py NewProjectName --cuts 18 [--root .]
+
+# Validate standard folders, required files, project.json/CUT_LIST.json consistency
+python3 scripts/validate_structure.py --project Distances [--root .]
+
+# Generate Edit/EDIT_PLAN.md from CUT_LIST.json
+python3 scripts/generate_edit_plan.py --project Distances [--force] [--root .]
+
+# Organize Import/ into CUT/Audio/Dialogue/Unsorted, update CUT_LIST.json (positional path, not --project)
+python3 scripts/import_assets.py Projects/Distances --dry-run
+python3 scripts/import_assets.py Projects/Distances --apply
+python3 scripts/import_assets.py Projects/Distances --assign Unsorted/video_001.mp4 CUT17
+
+# Generate Palmier's edit_project.json from CUT_LIST.json + EDIT_PLAN.md (positional path)
+python3 scripts/generate_palmier_json.py Projects/Distances [--output PATH]
+
+# Watch external folders (per config.json) and auto-import new assets
+python3 scripts/watch_import.py --project Distances --once --dry-run
+python3 scripts/watch_import.py --project Distances --once
+python3 scripts/watch_import.py --project Distances   # long-running, Ctrl+C to stop
+```
+
+CI (`.github/workflows/validate.yml`) runs `python scripts/validate_structure.py --project Distances` on every push/PR.
+
+Caution when testing any of the above with `--dry-run`/no-op flags: several still write report files as a side effect even in dry-run mode (`import_assets.py` always rewrites `Edit/import_report.md`, `watch_import.py` rewrites `Edit/watch_import_report.md`). If you run these just to sanity-check behavior, check `git diff` afterward and revert the report file if it clobbered a meaningful prior report.
+
+## Per-project structure and file relationships
+
+Each project lives at `Projects/<name>/` with standard subfolders (`Import`, `Unsorted`, `CUT`, `Audio`, `Dialogue`, `Reference`, `Prompt`, `Edit`, `Storyboard`, `Color`, `QC`, `Delivery`, `Export`) — except `StudioOpening`, see above. The data flow across scripts:
+
+```
+CUT_LIST.json  (per-CUT role, recommendedSeconds, dialogue flag, asset path)
+   ↓ generate_edit_plan.py
+Edit/EDIT_PLAN.md  (timeline table: CUT | timeline | duration | role | dialogue sync)
+   ↓ generate_palmier_json.py  (also reads project.json + scans media under CUT/Audio/Dialogue/Reference)
+Edit/edit_project.json  (schema "flystar77.palmier.edit_project.v1": full timeline, tracks, transitions,
+                          fades, BGM/dialogue/environment sync plans, export targets — this is what gets
+                          handed to Palmier)
+```
+
+`import_assets.py` is the other producer/consumer of `CUT_LIST.json`: it classifies files dropped in `Import/` by filename (`CUT_RE` regex `cut[\s_-]*(?<!\d)(1[0-8]|0?[1-9])(?!\d)` — the `(?<!\d)` guards against misparsing e.g. `cut19` as `CUT09`), routes video/image to `CUT/`, dialogue-hinted audio to `Dialogue/`, everything else audio to treated as music/BGM, and anything it can't confidently assign a CUT number to goes to `Unsorted/` for manual `--assign`. It never overwrites existing CUT files — collisions get `_take02`, `_take03`, etc.
+
+`generate_palmier_json.py`'s project name/title (timeline name, export filenames) is derived from `CUT_LIST.json`/`project.json`, so it's safe to run against any project. Its per-CUT *creative timing* is still **Distances-specific** and hardcoded as Python literals, not generic config: `DIALOGUE_HOLDS` (pre-roll/post-hold timing for CUT06/CUT12/CUT17), `transition_for()`/`fade_for()`/`bgm_sync_for()`/`environment_for()` (hardcoded behavior for CUT01/02/05/09/11/15/17/18). A new project reusing this generator will silently get Distances' CUT06/12/17/18 timing applied to its own cuts — these functions need generalizing (e.g. reading timing from `CUT_LIST.json` per cut) before they're meaningful for another title.
+
+`watch_import.py` reads `config.json` for `watchFolders` per project, polls them, copies new supported media (`.png/.jpg/.jpeg/.webp/.mp4/.mov/.wav/.mp3`) into that project's `Import/`, then invokes `import_assets.py`; state is tracked in `Edit/watch_state.json` and a report written to `Edit/watch_import_report.md`.
+
+## Naming conventions (enforced by `import_assets.py`'s regex, not just documentation)
+
+- CUT video: `CUT01.mp4` … `CUT18.mp4`
+- Dialogue: `CUT06_dialogue.wav`
+- Prompt: `CUT06_Dreamina.md`
+- CUT detection regex matches `cut` (any case) + optional separators + `1`-`18`, guarded so it can't start mid-way through a longer number; anything outside that range or unmatched goes to `Unsorted/`.
+
+## Git conventions (from `GITHUB_OPERATIONS.md`)
+
+- Branches: `main` (stable/deliverable), `develop` (in-progress), `project/<name>` (per-title work), `automation/<feature>` (script changes).
+- PR checklist expects: no violation of `OPERATING_MANUAL.md`/`PRODUCTION_BIBLE.md`, `validate_structure.py` passing, naming rules followed, `Edit/EDIT_PLAN.md` updated alongside any edit-instruction change, and no accidental large finished-video commits.
+- Large-file policy: only intentional finished deliverables are tracked; `.gitignore` excludes `Exports/*.mp4` and `Projects/*/Export/*.mp4`.
