@@ -23,7 +23,7 @@ IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg", ".webp"}
 VIDEO_EXTENSIONS = {".mp4", ".mov"}
 AUDIO_EXTENSIONS = {".wav", ".mp3"}
 DIALOGUE_HINTS = {"dialogue", "voice", "cut06", "cut6", "cut12", "cut17"}
-CUT_RE = re.compile(r"cut[\s_-]*(1[0-8]|0?[1-9])(?!\d)", re.IGNORECASE)
+CUT_RE = re.compile(r"cut[\s_-]*(?<!\d)(1[0-8]|0?[1-9])(?!\d)", re.IGNORECASE)
 
 
 @dataclass
