@@ -28,16 +28,19 @@ Production Bible
 - どちらも日付ファイルへの追記のみ。過去のエントリーは削除・修正しない。
 - 訂正したいときは、新しい日付のエントリーとして書き、元のエントリーにリンクを貼る。
 - 目的は「その時どう考えたか・何に気づいたか」という記録そのものを残すこと。後から見て内容が変わっていても書き換えない。
+- 例外: Discovery Logの昇格状態タグ(`#昇格候補` → `#昇格済み`)と、昇格先ノートへの1行リンク追記だけは認める。発見の内容そのものは変えない。詳細は [[05_Knowledge/_Index|Knowledge]] を参照。
 
 ## 3. 生の記憶と精製された知識を分ける(二層構造)
 
 - Founder's Journal / Discovery Log = 原液。分類や正しさを気にせず、思いついた瞬間・発見した瞬間にそのまま書く。
 - Knowledge / Company/Decisions = 精製後。「収穫の儀式」で見直し、繰り返し使えると分かったものだけを昇格させる。
+- Discovery LogからKnowledgeへの具体的な昇格基準(目安: 異なる日に3回以上使われたら候補)は [[05_Knowledge/_Index|Knowledge]] にまとめてある。
 
 ## 4. 収穫の儀式(定例の見直し)
 
-- 月次: Discovery Logを見返し、再現性のあるものを `05_Knowledge` へ昇格。
+- 月次: Discovery Logの `#昇格候補` タグを見返し、[[05_Knowledge/_Index|Knowledge]] へ昇格。
 - 半年〜年次: Founder's Journalを読み返し、`01_Founders_Journal/_節目の振り返り.md` にまとめる。方針として固まったものは `03_Company/Vision_Mission.md` や `Decisions/` に反映。
+- 年次: Knowledgeの全ノートの「最終確認日」を棚卸しする。古くなったものは `08_Archive` へ移す(詳細: [[05_Knowledge/_Index|Knowledge]])。
 
 ## 5. GitHubとの役割分担
 
@@ -55,3 +58,8 @@ Production Bible
 - [[09_Daily_Studio_Report/_Index|Daily Studio Report]] は1項目1行、1日分で20行を超えない。
 - 詳しい経緯は書かず、該当する場所([[02_Discovery_Log/_Index|Discovery Log]] や [[06_Projects/_Index|Projects]] など)にリンクするだけにする。
 - 報告することがないAI社員は書かない。「特になし」で埋めない。
+
+## 8. 書く前に一度検索する(重複を防ぐ)
+
+- 新しくDiscovery LogやKnowledgeを書く前に、[[00_Start_Here/用語集|用語集]] と [[05_Knowledge/_Index|Knowledge]] を検索する。
+- すでに同じ気づきがあれば、新規に書かず既存ノートにリンクする。これがVaultを「検索しやすく、迷わない」状態に保つ最初の一歩。
