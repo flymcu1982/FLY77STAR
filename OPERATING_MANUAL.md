@@ -1,6 +1,6 @@
 # FLYSTAR77 STUDIO OS v1.0
 
-Codexはこのファイルを参照して作業する。
+Claude Code（CTO）はこのファイルを参照して作業する。
 
 ## Priority Rules
 
@@ -18,6 +18,11 @@ Codexはこのファイルを参照して作業する。
 不足しているフォルダやファイルがあれば、自動で提案する。
 
 作業開始時は、まずプロジェクト構成を確認し、改善点があれば報告する。
+
+## Organization
+
+- **YU — CEO**: 最終判断者。すべての意思決定はYUの承認をもって確定する。
+- それ以外のAI/ツールは全員「AI社員」として、担当領域内では自律的に判断・提案する。詳細な役割分担、得意な仕事、禁止事項、作業開始前に読むべきファイルは `AI_RULES.md` を参照する。
 
 ## Vision
 
@@ -73,33 +78,49 @@ FLYSTAR77 STUDIO OSは、以下の5レイヤーで運用する。
 
 ## AI Team
 
-### ChatGPT
+### YU（CEO）
+
+役割:
+
+- 最終判断
+- 全体方針の承認
+
+### ChatGPT / Claude（チャット）
 
 役割:
 
 - 企画
+- 戦略
 - 演出
 - プロンプト設計
 - 世界観設計
+- 脚本
 - Production Bible管理
 
-### Dreamina
+### Claude Code（CTO）
 
 役割:
 
-- 映像生成
+- GitHub運用
+- Web公開（Netlify連携）
+- フォルダ・ファイル整理
+- 編集指示生成
+- 自動化スクリプト管理
+- Palmierとの連携
+
+### Higgsfield / Nano Banana
+
+役割:
+
+- キャラクター・ビジュアル生成
+
+### Seedance / Gemini Omni Flash
+
+役割:
+
+- MV・動画生成
 - リップシンク
 - キャラクター演技
-
-### Codex
-
-役割:
-
-- 制作進行
-- フォルダ管理
-- 編集指示生成
-- ファイル整理
-- Palmierとの連携
 
 ### Palmier
 
@@ -118,6 +139,24 @@ FLYSTAR77 STUDIO OSは、以下の5レイヤーで運用する。
 - ナレーション
 - セリフ
 - ボイス制作
+
+### Obsidian
+
+役割:
+
+- 会社の記憶・社内Wiki
+
+### GitHub
+
+役割:
+
+- 資産保管庫
+
+### Netlify
+
+役割:
+
+- 公式サイト公開
 
 ## Standard Folder Structure
 
@@ -258,15 +297,17 @@ AIにセリフを読ませるのではない。
 
 - Reels
 
-## Codex Rule
+## Claude Code Rule（CTO）
 
-Codexは:
+Claude Codeは:
 
 - `Projects/` フォルダを管理する。
 - 不足ファイルを通知する。
 - Palmierへ編集指示を生成する。
 - Production Bibleを最優先ルールとして扱う。
 - GitHub運用時は構成検証スクリプトを実行する。
+- Web公開（Netlify連携）を管理する。
+- 作業終了時は、変更内容を必ず日本語で要約し、必要に応じてGitへコミットする。
 
 ## Palmier Rule
 
@@ -290,7 +331,7 @@ Palmierは:
 
 ## Automation Rule
 
-Codexで自動化する:
+Claude Codeで自動化する:
 
 - プロジェクト作成
 - 標準フォルダ作成
@@ -301,6 +342,8 @@ Codexで自動化する:
 - EDIT_PLAN生成
 - 構成検証
 - GitHub Actionsによる自動チェック
+- Web公開（Netlify連携）
+- 作業終了時の日本語要約とGitコミット
 
 Palmierへ渡す:
 
@@ -333,24 +376,28 @@ v2.0
 ## Long Term Vision
 
 ```text
-ChatGPT
+YU（CEO）
 ↓
-Codex
+ChatGPT / Claude
 ↓
-Dreamina
+Claude Code
+↓
+Higgsfield / Nano Banana
+↓
+Seedance / Gemini Omni Flash
 ↓
 Palmier
 ↓
 Premiere（必要時）
 ↓
-SNS
+SNS / Netlify
 ↓
 AI広報
 ```
 
 ## Short Instruction Template
 
-Codexへは短い指示だけ出す。
+Claude Codeへは短い指示だけ出す。
 
 例:
 

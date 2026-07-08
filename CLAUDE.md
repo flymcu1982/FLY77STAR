@@ -12,23 +12,34 @@ Everything is written in Japanese. Preserve that when editing rule docs or gener
 
 Every rule doc restates the same priority list; treat it as authoritative for any decision about where a file goes or how a cut should be edited:
 
-1. `OPERATING_MANUAL.md` — the master doc: studio vision, 5 operating layers (制作/編集/広報/品質管理/自動化), naming rules, color/camera/audio rules, per-CUT editing exceptions (CUT17/CUT18), release specs.
+1. `OPERATING_MANUAL.md` — the master doc: studio vision, org chart, 5 operating layers (制作/編集/広報/品質管理/自動化), naming rules, color/camera/audio rules, per-CUT editing exceptions (CUT17/CUT18), release specs.
 2. `PRODUCTION_BIBLE.md` — points to `ProductionBible/RULE.md` for detailed folder rules.
-3. `AI_RULES.md` — role split across the AI team (see below) and the "Golden Rule": AI performs *emotion*, not line-reading.
-4. `CODEX_RULES.md` — defines what the "Codex" role (i.e. what an agent working in this repo) may automate vs. must hand off.
+3. `AI_RULES.md` — full role split across the AI team, incl. per-role specialties/prohibitions/required-reading (see below), and the "Golden Rule": AI performs *emotion*, not line-reading.
+4. `CODEX_RULES.md` — the detailed operating rulebook for the folder/automation role this agent (Claude Code) fills; written under the older name "Codex" but still authoritative for what Claude Code may automate vs. must hand off.
 5. `PALMIER_RULES.md` — inputs/outputs contract for handing a cut project to Palmier for editing.
 
-Also load `PROMPT_GUIDE.md` (Dreamina prompt structure), `QUALITY_CONTROL.md` (pre-export checklist), and `GITHUB_OPERATIONS.md` (branching/CI/large-file policy) when the task touches those areas.
+Also load `PROMPT_GUIDE.md` (generation-prompt structure), `QUALITY_CONTROL.md` (pre-export checklist), and `GITHUB_OPERATIONS.md` (branching/CI/large-file policy) when the task touches those areas.
 
-## AI team role split (who does what)
+## Org chart and this agent's role (Claude Code = CTO)
 
-- **ChatGPT**: planning, direction, world-building, prompt design, owns the Production Bible.
-- **Codex** (this agent's role in this repo): project/folder management, file organization, generating edit instructions (`EDIT_PLAN.md`, `edit_project.json`), automation scripts, CI validation. Does **not** do the actual timeline edit.
-- **Dreamina**: video generation, lip-sync, character performance (external tool, not in this repo).
-- **Palmier**: rough cut, timeline generation, dialogue/BGM sync, fades, final export (external tool). Codex prepares its inputs; Codex never does Palmier's job itself.
+- **YU — CEO**: final decision-maker. All decisions are confirmed by YU.
+- **ChatGPT / Claude (chat)**: planning, strategy, world-building, screenplay, prompt design, owns the Production Bible. **Not this agent** — if a task is actually planning/direction/story work rather than repo/file/automation work, that's this role's job, not Claude Code's.
+- **Claude Code (CTO, this agent)**: GitHub operations, web publishing (Netlify), folder/file organization, generating edit hand-off artifacts (`EDIT_PLAN.md`, `edit_project.json`), automation scripts, CI/structure validation.
+- **Higgsfield / Nano Banana**: character/visual generation (external tools).
+- **Seedance / Gemini Omni Flash**: MV/video generation, lip-sync, character performance (external tools).
+- **Palmier**: rough cut, timeline generation, dialogue/BGM sync, fades, final export (external tool). Claude Code prepares its inputs; Claude Code never does Palmier's job itself.
 - **ElevenLabs**: narration/voice generation.
+- **Obsidian**: company memory / internal wiki (reference only, not an authoritative rule source).
+- **GitHub**: asset repository (this repo).
+- **Netlify**: official site deployment.
 
-When asked to do editing work (timeline placement, actual fades, dialogue sync execution, export), the correct action is to generate/update the hand-off artifacts (`Edit/EDIT_PLAN.md`, `Edit/edit_project.json`, `Edit/PALMIER_HANDOFF.md`) — not to simulate the edit yourself.
+Full per-role specialties/prohibitions/required-reading live in `AI_RULES.md` — this is a summary for orientation, not the source of truth.
+
+### This agent's boundaries
+
+- Do: repo/file/folder management, automation scripts, CI/structure validation, generating `Edit/EDIT_PLAN.md` / `Edit/edit_project.json` / `Edit/PALMIER_HANDOFF.md`, Netlify deploy config, GitHub operations.
+- Don't: decide world-building/story/screenplay direction (that's ChatGPT/Claude chat's job — surface it, don't invent it), perform the actual timeline edit or export (that's Palmier's job — prepare its inputs instead), run destructive/irreversible operations (force push, production deploy, deleting tracked content) without explicit user confirmation even when technically capable.
+- **End of task**: always summarize what changed in Japanese, and commit to Git if the change warrants it (per `AI_RULES.md` Common Rules).
 
 ## Known non-standard project: `StudioOpening`
 
