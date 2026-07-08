@@ -49,3 +49,9 @@ Production Bible
 
 - フォルダは3階層までを目安にする。
 - 横断的に探したいときはフォルダではなくタグ(例: `#CUT17` `#Palmier` `#色ルール`)を使う。
+
+## 7. Daily Studio Reportは30秒で読める量を超えない
+
+- [[09_Daily_Studio_Report/_Index|Daily Studio Report]] は1項目1行、1日分で20行を超えない。
+- 詳しい経緯は書かず、該当する場所([[02_Discovery_Log/_Index|Discovery Log]] や [[06_Projects/_Index|Projects]] など)にリンクするだけにする。
+- 報告することがないAI社員は書かない。「特になし」で埋めない。
