@@ -40,9 +40,9 @@ Production Bible
 - Knowledge / Company/Decisions = 精製後。「収穫の儀式」で見直し、繰り返し使えると分かったものだけを昇格させる。
 - Discovery LogからKnowledgeへの具体的な昇格基準(目安: 異なる日に3回以上使われたら候補)は [[05_Knowledge/_Index|Knowledge]] にまとめてある。
 
-## 4. 収穫の儀式(定例の見直し)
+## 4. 収穫の儀式(見直しのタイミング)
 
-- 月次: Discovery Logの `#昇格候補` タグを見返し、[[05_Knowledge/_Index|Knowledge]] へ昇格。
+- **Knowledge Review**: カレンダーではなく件数トリガー。未レビューのDiscovery Logが**10件たまったら**実施する(詳細: [[05_Knowledge/_Index|Knowledge]])。
 - 半年〜年次: Founder's Journalを読み返し、`01_Founders_Journal/_節目の振り返り.md` にまとめる。方針として固まったものは `03_Company/Vision_Mission.md` や `Decisions/` に反映。
 - 年次: Knowledgeの全ノートの「最終確認日」を棚卸しする。古くなったものは `08_Archive` へ移す(詳細: [[05_Knowledge/_Index|Knowledge]])。
 
