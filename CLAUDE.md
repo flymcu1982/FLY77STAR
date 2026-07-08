@@ -41,6 +41,15 @@ Full per-role specialties/prohibitions/required-reading live in `AI_RULES.md` �
 - Don't: decide world-building/story/screenplay direction (that's ChatGPT/Claude chat's job — surface it, don't invent it), perform the actual timeline edit or export (that's Palmier's job — prepare its inputs instead), run destructive/irreversible operations (force push, production deploy, deleting tracked content) without explicit user confirmation even when technically capable.
 - **End of task**: always summarize what changed in Japanese, and commit to Git if the change warrants it (per `AI_RULES.md` Common Rules).
 
+## AI Production Policy (ads/CM/client work only)
+
+Full policy text lives in `PRODUCTION_BIBLE.md` and `OPERATING_MANUAL.md` — this is Claude Code's operational checklist derived from it. Applies only to advertising/CM/client-work deliverables, not the studio's own narrative shorts (e.g. `Distances`).
+
+- Never treat a raw Suno-only (or similar AI-music-only) track, or any AI-only-generated asset, as the final commercial deliverable — that requires human re-arrangement/re-recording/mix/master first. Flag it rather than packaging it as final.
+- When generating/updating hand-off or delivery artifacts (`Delivery/`, `Edit/PALMIER_HANDOFF.md`, export notes) for ad/CM/client work, include a record of what was AI-generated and with which tool — don't silently omit this.
+- Lyrics, composition/arrangement direction, melody direction, staging intent, and final creative sign-off are YU's calls, not this agent's — surface open decisions to YU rather than deciding them.
+- Don't reference or imply a tie-in with a real brand, competition, or company name unless formal permission is already confirmed in the project's files; if the work is a fictional brand or CM-style piece, make sure that's explicitly labeled as fiction somewhere in the deliverable/handoff notes.
+
 ## Known non-standard project: `StudioOpening`
 
 `Projects/StudioOpening` does not follow the standard project layout above — it uses a different structure (`Palmier/`, `Edit/`, `Assets/Videos/...`) inherited from an external Palmier bundle export, and several of its subfolder names carry a trailing colon (`Assets:`, `Videos:`, `Output:`, etc.) and/or a leading space, including a duplicate near-identical pair (`" Assets:"` and `"Assets:"`). None of the automation scripts (`validate_structure.py`, `import_assets.py`, `generate_palmier_json.py`) can operate on it as-is — they're written for the `Distances`-style layout. Treat it as a legacy/manual project; don't run the standard scripts against it, and don't rename/merge its folders without explicit user sign-off, since the `.palmier` bundles inside may be referenced by path from the external Palmier tool.
