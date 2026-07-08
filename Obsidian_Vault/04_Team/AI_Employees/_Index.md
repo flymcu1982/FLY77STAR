@@ -19,7 +19,7 @@ FLY77STARで働くAI社員・AI部署のハブノートを置く場所です。P
 - [[MASTER]] (内容未定義)
 - [[VIRAL]] (内容未定義)
 
-CINE / SOUL / CUT / MASTER / VIRALは、現時点でGitHub上の `AI_RULES.md` にまだ定義がありません。既存の役割(Higgsfield、Palmierなど)の新しい呼び方なのか、追加の部署なのかは、GitHub側のルール変更を伴うためYUの確認が必要です。
+CINE / SOUL / CUT / MASTER / VIRALは、現時点でGitHub上の `AI_RULES.md` にまだ定義がありません。既存の役割(Higgsfield、Palmierなど)の新しい呼び方なのか、追加の部署なのかは、GitHub側のルール変更を伴うためYUの確認が必要です。対応候補の提案表: [[03_Company/Decisions/2026-07-09_未決事項リスト|未決事項リスト]]
 
 ## 日々の報告
 

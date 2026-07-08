@@ -1,21 +1,21 @@
 ---
-aliases: []
+aliases: [ルカ]
 type: character
 ---
 
 # RUKA
-
-内容未定義。世界観チーム(ChatGPT/Claude(チャット)・YU)が今後追加します。
+（女優。ドラマ・演技主体のキャスト。21歳設定）
 
 ## 概要
 
-(未定義)
+- 役割: ACTORS部門
+- 出演作: Distance（RUIと共演。遠距離恋愛・組紐ブレスレットのモチーフ）
 
 ## 関連
 
 - Knowledge:
-- Projects:
+- Projects: [[06_Projects/Distances/Overview|Distances]]
 - People:
-- AI Employees:
+- Characters: [[RUI]]
 - Prompt:
 - GitHub(正本):
