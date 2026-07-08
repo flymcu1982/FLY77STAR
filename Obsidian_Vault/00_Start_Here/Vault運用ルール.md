@@ -67,3 +67,12 @@ Production Bible
 
 - 新しくDiscovery LogやKnowledgeを書く前に、[[00_Start_Here/用語集|用語集]] と [[05_Knowledge/_Index|Knowledge]] を検索する。
 - すでに同じ気づきがあれば、新規に書かず既存ノートにリンクする。これがVaultを「検索しやすく、迷わない」状態に保つ最初の一歩。
+
+## 9. エンティティは必ずハブノートを持つ(検索性を保つ)
+
+- プロジェクト・キャラクター・ツール・概念など「名前を持つもの」は、1つだけ正式なハブノートを持つ。同じ名前の説明を複数箇所に書き散らさない。
+- ハブノートは [[99_Templates/Hub_Note|テンプレート]] を使い、frontmatterに `aliases`(別名・表記ゆれ)を設定する。検索・クイックスイッチャーがどの呼び方でも一発で到達できるようにするため。
+- ハブノート末尾には固定フォーマットの「関連」セクション(Knowledge/Projects/People/Characters/AI Employees/Prompt/GitHub正本)を置く。
+- 実在の人間・スタッフは [[04_Team/People/README|People]]、AI社員は [[04_Team/AI_Employees/_Index|AI Employees]]、作品内キャラクターは [[10_Characters/_Index|Characters]] と、この3つを混ぜない。検索した時に人物・AI社員・キャラクターが迷子にならないようにするため。
+- 新しいハブノートを作ったら、[[00_Start_Here/索引|索引]] に1行追加する。忘れても実害は小さいので気負わなくてよい。
+- 詳細な設計意図は [[03_Company/検索システム設計書|検索システム設計書]] を参照。
