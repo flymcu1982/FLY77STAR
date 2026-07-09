@@ -1,23 +1,76 @@
 ---
-aliases: []
+aliases: [ひな]
 type: character
 ---
 
 # HINA
-（内容未定義。⚠️出自の確認が必要）
+（Don't Stop 主演。19歳のキュートエネルギーメーカー）
 
-## 概要
+## 基本情報
+- 年齢: 19
+- 身長: 152cm（小柄）
+- 体型: 細身。華奢な印象
+- 血液型: O型（推定）
+- ポジション: メインボーカル / Energy Maker
+- MBTI: ENFP（推定）
+- 性格: 素直で明るい。実はかなりの努力家。見た目の可愛らしさと、裏での努力の落差が魅力
 
-(未定義)
+## ビジュアル（最終承認版）
 
-⚠️ **YUへの確認事項**: 「Don't Stop」主演として仮称**RIN**のキャラクターが存在した。HINAはRINの正式名なのか、別の新キャラクターなのか未確定。RINの改名であればaliasesに `RIN` を追加し、[[06_Projects/Dont_Stop/Overview|Don't Stop]]と紐付けること。詳細: [[03_Company/Decisions/2026-07-09_未決事項リスト|未決事項リスト]]
+### 髪型
+- **黒髪のみ。インナーカラーなし。** NANA との差別化
+- 長さ: 肩より 5～8cm 短め。顎ラインより上のショートボブ
+- スタイル: ふんわり毛束感。全体的に「若々しく動きやすい」印象
+- 前髪: NANAより軽めで、目元をより大きく見せるセット
+
+### 顔
+- **全体の雰囲気**: Kawaii Labs キュート系。大きな瞳、丸い輪郭、やや幼い顔立ち
+- **目**: 大きく丸い瞳。つり目でなく、下がり目気味。二重幅ふつう
+- **鼻**: 小さく、つんと立った鼻
+- **口**: ぷっくりした唇。血色ピンク
+- **肌**: 透明感のある肌。**そばかすは最小限**（1～2個程度）
+- **全体**: 「キラキラした 19歳」を目指す
+
+### メイク
+- リップ: 淡いピンク～レッド。グロスは控えめ
+- チーク: 薄めのピーチピンク。血色感重視だが、ギャルっぽくない
+- アイシャドー: ラメ控えめ。ナチュラルで若々しく
+
+## 性格・背景
+- **表面**: 素直で誰とでも仲良くなれる。笑顔が多い
+- **裏面**: 実は努力家。誰が見ていなくてもダンスや歌の練習を続ける
+- **モチベーション**: 「応援してくれる人たちを喜ばせたい」という純粋な動機
+- **他キャラとの関係**: 
+  - [[MIU]]（SE77NTH.センター）とは会う機会がありそう（コラボ先輩のイメージ）
+  - [[NANA]]（SE77NTH.）とは年が近く、対照的な魅力で共存できる
+
+## ビジュアル参考（Higgsfield 生成時）
+
+### 衣装（Don't Stop MV用）
+- **未定。YU と相談で決定予定**
+- 方向性: 若々しく、動きやすく、「止まらない」エネルギーを視覚化する
+
+### 世界観カラー
+- **主調**: ピンク系（血色・若々しさ）+ 黒（洗練）
+- **副調**: ゴールド・シルバー（キラキラ感）
+
+## Soul ID 生成時の必須プロンプト
+
+```
+- "East Asian Japanese" を明示
+- "19 years old, small and delicate"
+- "Kawaii Labs style cute face"
+- "Black short bob, shoulder-length minus 5-8cm"
+- "Large, round, downturned eyes"
+- "Minimal freckles (1-2 only)"
+- "Pure, innocent, hardworking personality"
+```
 
 ## 関連
 
 - Knowledge:
-- Projects: [[06_Projects/Dont_Stop/Overview|Don't Stop]](RINが改名先なら)
+- Projects: [[06_Projects/Dont_Stop/Overview|Don't Stop]]
 - People:
-- Characters:
-- AI Employees:
-- Prompt:
+- Characters: [[SE77NTH]], [[MIU]], [[NANA]], [[KAI]]
+- Prompt: 生成用プロンプト（Higgsfield 6パネルシート用）
 - GitHub(正本):
