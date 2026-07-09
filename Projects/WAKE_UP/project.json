@@ -1,0 +1,29 @@
+{
+  "projectName": "WAKE_UP",
+  "studio": "FLYSTAR77 STUDIO",
+  "version": "v1.0",
+  "status": "production_start",
+  "cutCount": 31,
+  "priorityRules": [
+    "../../OPERATING_MANUAL.md",
+    "../../PRODUCTION_BIBLE.md",
+    "../../AI_RULES.md",
+    "../../CODEX_RULES.md",
+    "../../PALMIER_RULES.md"
+  ],
+  "folders": {
+    "import": "Import",
+    "unsorted": "Unsorted",
+    "cut": "CUT",
+    "audio": "Audio",
+    "dialogue": "Dialogue",
+    "reference": "Reference",
+    "prompt": "Prompt",
+    "edit": "Edit",
+    "storyboard": "Storyboard",
+    "color": "Color",
+    "qc": "QC",
+    "delivery": "Delivery",
+    "export": "Export"
+  }
+}

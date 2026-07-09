@@ -20,7 +20,8 @@ type: project
 - [ ] ダイナー小物アセット(テーブル/メニュー/グラス)のコンセプト確認
 - [ ] 3色ウェイトレスユニフォーム(MIU/AYA/NANA 別カラー)の配色案
 - [ ] ローラースケート 動きシート生成テスト
-- [ ] 31カットのフレーム計算 最終確認(BPM 95.7)
+- [ ] 31カットのフレーム計算 最終確認(BPM 95.7)(GitHub側 `project.json` にはcutCount:31として登録済みだが、これは頭数の登録のみ。フレーム計算そのものはまだ未確認)
+- [ ] CUT01〜15の画像生成 + Palmier素材セット
 
 ## 関連
 
@@ -28,4 +29,4 @@ type: project
 - Projects:
 - Characters: [[10_Characters/SE77NTH|SE77NTH.]], [[10_Characters/MIU|MIU]], [[10_Characters/AYA|AYA]], [[10_Characters/NANA|NANA]]
 - Prompt:
-- GitHub(正本): `Projects/`配下の該当フォルダ（要確認）
+- GitHub(正本): `Projects/WAKE_UP/`
