@@ -1,6 +1,6 @@
 ---
 aliases: []
-type: person | character | ai_employee | project | tool | concept
+type: person | character | ai_employee | project | tool | concept | costume
 ---
 
 # 名前

@@ -82,3 +82,23 @@ Production Bible
 - ブランド・グループ・作品名などの固有名詞をVaultに初めて書く時は、書く前に [[00_Start_Here/用語集|用語集]] とハブノートで正式表記(綴り・読み・末尾記号など)を確認してから書く。ルール8「書く前に一度検索する」の固有名詞版。
 - 表記ゆれは単なるタイポではなく、検索性とブランド一貫性を損なう(実例: [[02_Discovery_Log/2026-07/2026-07-09_器が先行するとブランド表記が劣化する|器が先行するとブランド表記が劣化する]])。
 - 新しい固有名詞が生まれたら、その日のうちに用語集かハブノートに正式表記を登録する。
+
+## 11. Vault Managerが書いた内容は「原液」として扱う
+
+- [[05_Knowledge/Tool_Notes/Vault_Manager|Vault Manager]] (`scripts/vault_manager.py`) が自動で追記する「(自動記録)」付きのセクションは、機械的な生ログです。ハブノートの「概要」「ビジュアル」など手書きの節を上書きせず、専用セクションとして積み上がります。
+- ルール3「生の記憶と精製された知識を分ける」の応用形。自動記録された内容が固まってきたら、人か[[04_Team/AI_Employees/Claude_Code|Claude Code]]が読み返し、本文の該当セクションへ書き直して整理する。自動記録セクションを消す必要はない(記録として残してよい)。
+- 変更履歴は [[変更履歴]] に溜まる。Vaultの手動編集はここに載らない(それはGitのコミット履歴を見る)。
+
+## 12. Vaultの7区画とその役割
+
+会社の知識は、目的別に7つの区画で育てる。名前の系統(People/Characters/AI Employeesを混ぜない、と同じ考え方)。
+
+- **Daily Log**(今日やったこと/完成したこと/次回やること) — [[09_Daily_Studio_Report/_Index|Daily Studio Report]]
+- **Discovery**(発見/失敗/改善点/アイデア/次回試したい) — [[02_Discovery_Log/_Index|Discovery Log]]
+- **Decision Log**(採用したもの/却下したもの/採用理由) — [[03_Company/Decisions/README|Decisions]]
+- **Character Bible** — [[10_Characters/_Index|Characters]]
+- **Costume Bible**(デザインと採用理由。採用された正史のみ) — [[11_Costume_Bible/_Index|Costume Bible]]
+- **MV Bible**(脚本・絵コンテ・CUT・プロンプト) — [[06_Projects/_Index|Projects]]
+- **Prompt Library** — [[05_Knowledge/Prompt_Library/README|Prompt Library]]
+
+どこに何を書くか迷ったら、この7区画のどれに一番近いかで判断する。どれにも当てはまらない雑多な話は、無理にどれかへ入れず [[02_Discovery_Log/_Index|Discovery Log]] に「発見」として書いてよい(最も受け皿が広い区画のため)。
