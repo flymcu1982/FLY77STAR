@@ -18,6 +18,7 @@ type: project
 ### CUT
 
 - Story Bible改訂(2026-07-10)。渋谷を舞台にした[[AYA]]/[[MIU]]/[[NANA]]+[[KAI]]+[[HINA]]の群像劇(12カット、[[SE77NTH.]]第一章)へ差し替え。旧コンセプト(31カット、MIU単独)を廃止。CUT01〜12を新Story Bibleに基づき全て制作完了(Studio OS標準ワークフローVersion1)。実体はGitHub Projects/WAKE_UP/Storyboard/
+- CUT01の映画レベル絵コンテ(5パネル構成、ショットサイズ/カメラワーク/構図/BPM同期を明記)を作成。実体はGitHub Projects/WAKE_UP/Storyboard/CUT01_絵コンテ.md
 
 ## 次にやること
 
