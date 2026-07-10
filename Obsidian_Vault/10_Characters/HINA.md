@@ -44,6 +44,7 @@ type: character
   - [[MIU]]（SE77NTH.センター）とは会う機会がありそう（コラボ先輩のイメージ）
   - [[NANA]]（SE77NTH.）とは年が近く、対照的な魅力で共存できる
 - **他キャラとの関係の注記**: [[RIN]]とは別人物(2026-07-10決定。詳細: [[03_Company/Decisions/2026-07-10_HINAとRINの分離|決定ログ]])
+- [[06_Projects/WAKE_UP/Overview|WAKE UP]]にカメオ出演。白い服姿で帰り道の[[MIU]]・[[AYA]]・[[NANA]]とすれ違う。[[MIU]]だけが「どこかで会った気がする」と既視感を覚える。衣装はDon't Stop用とは別デザイン（未登録）
 
 ## ビジュアル参考（Higgsfield 生成時）
 
@@ -70,7 +71,7 @@ type: character
 ## 関連
 
 - Knowledge:
-- Projects: [[06_Projects/Dont_Stop/Overview|Don't Stop]]
+- Projects: [[06_Projects/Dont_Stop/Overview|Don't Stop]], [[06_Projects/WAKE_UP/Overview|WAKE UP]]
 - People:
 - Characters: [[SE77NTH]], [[MIU]], [[NANA]], [[KAI]]
 - Prompt: 生成用プロンプト（Higgsfield 6パネルシート用）

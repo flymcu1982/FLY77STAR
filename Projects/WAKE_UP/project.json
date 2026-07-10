@@ -3,7 +3,7 @@
   "studio": "FLYSTAR77 STUDIO",
   "version": "v1.0",
   "status": "production_start",
-  "cutCount": 31,
+  "cutCount": 12,
   "priorityRules": [
     "../../OPERATING_MANUAL.md",
     "../../PRODUCTION_BIBLE.md",

@@ -1,104 +1,104 @@
 # CUT02 — WAKE UP（SE77NTH.）
 
-Studio OS標準制作ワークフロー Version 1(詳細: GitHub `AI_WORKFLOW_V1.md`)で生成。Production Start(Pre Production)。
+Studio OS標準制作ワークフロー Version 1(詳細: GitHub `AI_WORKFLOW_V1.md`)で生成。Story Bible改訂版(2026-07-10)に基づく。旧コンセプト(夜の路地→POP DINERへ)は廃止。
 
 ## 生成前チェック
 
-- Character Bible: [[10_Characters/MIU|MIU]]のビジュアル・性格設定を確認
-- Costume Bible: MIUの私服(通勤/帰路用)は [[11_Costume_Bible/_Index|Costume Bible]] に未登録(CUT01と同じ既知の残課題)
-- Universe Rule: [[10_Characters/FLY77STAR_Universe|FLY77STAR Universe]] 「キャラクターは時間を生きる」— CUT02時点も現行era、矛盾なし
-- Production Bible: GitHub `PRODUCTION_BIBLE.md` のAI Production Policy(架空ブランドの明記)を確認。POP DINERは架空ブランドとして明記済み
-- 矛盾: あり(CUT01と同じ) — MIUの私服がCostume Bible未登録。本CUTでも仮の私服想定で進行
+- Character Bible: [[10_Characters/MIU|MIU]]・[[10_Characters/AYA|AYA]]のビジュアル設定を確認
+- Costume Bible: MIU・AYAの私服はいずれも [[11_Costume_Bible/_Index|Costume Bible]] に未登録
+- Universe Rule: [[10_Characters/FLY77STAR_Universe|FLY77STAR Universe]] 「キャラクターは時間を生きる」— 矛盾なし
+- Production Bible: GitHub `PRODUCTION_BIBLE.md` のAI Production Policy(架空ブランドの明記)を確認。実在の渋谷の地名は使うが、店舗・看板は架空表記とする
+- 矛盾: あり(既知) — MIU・AYAの私服が未登録。仮の私服想定で進行
 
 ## リレー実行ログ
 
 ```
 🎬 CINE — 演出・カメラ・照明・演技方針
-CUT01(閉店)から地続きで、MIUが夜の路地を歩きPOP DINERへ近づくシーンを設計。
-Take a Look Aroundの潜入トーンを継続し、背後からのローアングル・トラッキング
-ショットと、周囲を確認する仕草を指定。
+CUT01の続き。MIUが待つ場所へAYAが駆け寄ってくる構図。人混みの奥からAYAが
+フレームインし、MIUが振り返って気づくまでをワンカットで繋ぐ。
 状態: 完了
 
 🎭 SOUL — 感情・セリフ・心理描写
-感情を「日常からの逸脱の予感」「好奇心と一抹の高揚感」に設定。CUT01の疲労が
-薄れ、ネオンサインを見上げる瞬間に感情が切り替わる。セリフは無し(ノンバーバル)。
+待ち合わせ相手を見つけた安心感と高揚感。二人だけの軽い掛け合い、セリフは
+短く一言のみ。
 状態: 完了
 
 📷 CUT — 絵コンテ・構図・プロンプト
-背後トラッキング→ネオンサインへのパンの2段構図に変換し、画像生成Prompt・動画
-Promptへ落とし込んだ。
+人混み奥からのAYAの登場→MIUが振り返る→二人が向き合う3段構図。画像/動画
+Promptへ変換。
 状態: 完了
 
 🛡 MASTER — Character Bible / Costume Bible / Universe Rule / Production Bible照合
-MIUのビジュアルはCharacter Bibleと一致。私服はCostume Bible未登録(上記「生成前
-チェック」参照)。POP DINERの架空ブランド表記はProduction Bibleのポリシーに準拠。
+MIU・AYAのビジュアルはCharacter Bibleと一致。衣装は未登録(上記参照)。CUT01
+からの時間軸(BPM95.7)の連続性を確認。
 状態: 完了
 ```
 
 ## シーンタイトル
 
-夜の路地 — POP DINERへ
+AYA到着
 
 ## 時間
 
-0:06〜0:12 目安（BPM 95.7）
+0:08〜0:18 目安（BPM 95.7）
 
 ## 場所
 
-閉店後の路地、POP DINER外観に近づく通り
+渋谷スクランブル交差点付近、夜（CUT01と同一エリア）
 
 ## 出演者
 
-MIU
+MIU、AYA
 
 ## 演技
 
-一人で歩く。ふと足を止め、周囲を一瞬確認する仕草(スパイ映画的な警戒)。顔を上げてPOP DINERのネオン看板を見上げる。
+MIUが振り返る。AYAが人混みを縫って小走りで駆け寄り、軽く手を上げて合流。二人で顔を見合わせ小さく笑う。
 
 ## セリフ
 
-なし（ノンバーバル）
+AYA「(小声で)待った？」
 
 ## カメラ
 
-ローアングルのトラッキングショット(背後から追う) → POP DINERのネオンサインへゆっくりパン
+人混み奥からAYAが手前へ抜けてくるトラッキング → MIUが振り返る反応ショット → 二人を横並びで捉えるミディアム
 
 ## 照明
 
-街灯のオレンジ、POP DINERのネオン(ピンク/ブルー)とのコントラスト。近づくにつれてネオンの光量が増す。
+CUT01と同系統のネオン夜景。AYAが近づくにつれ、背後の光が徐々にソフトフォーカスへ
 
 ## 感情
 
-日常からの逸脱の予感。好奇心と一抹の高揚感(CUT01の疲労感からの切り替わり)
+待ち合わせ相手を見つけた安心感と高揚感。夜がここから動き出す予感
 
 ## 画像生成Prompt
 
 ```
-Low-angle tracking shot from behind, East Asian Japanese young woman (MIU), long
-light brown loose wavy hair with white hairband, walking alone down a quiet night
-street, glancing back briefly (spy-thriller alertness), retro diner "POP DINER"
-(fictional brand) neon sign in pink and blue glowing ahead, warm orange streetlights
-contrasted with cool neon, cinematic night photography, Soul ID locked for
-consistency, 35mm film grain
+Night street scene in Shibuya, East Asian Japanese young woman (AYA)
+walking quickly through a crowd toward camera, center-parted straight
+dark brown hair, nude-toned lips, silver accessories, raising a hand in
+greeting, East Asian Japanese young woman (MIU) turning to look at her
+with a small smile, long light brown wavy hair with white hairband,
+neon signage bokeh in background, warm anticipatory mood, cinematic
+medium shot, Soul ID locked for consistency, 35mm film grain
 ```
 
 ## 動画Prompt
 
 ```
-Tracking shot following MIU from behind at low angle, brief glance over her
-shoulder, then slow pan up to the glowing "POP DINER" neon sign, 5-6 seconds,
-handheld subtle sway, neon flicker synced loosely to BPM 95.7
+Tracking shot following AYA as she weaves through the crowd toward MIU,
+MIU turns and reacts with a smile, 6-7 seconds, natural crowd motion in
+background, neon bokeh, ambient city noise, ends on two-shot
 ```
 
 ## 編集指示
 
-CUT01からの繋ぎは暗転明けクロスフェード。CUT03への繋ぎはネオンサインのクローズアップからPOP DINER店内へのカットを想定。
+CUT01のMIUの視線誘導から直接繋ぐ。AYAのセリフ「待った？」でCUT03(3人集合)への流れを作る。
 
 ## 4者レビュー
 
 ```
-🎬 CINE「潜入トーンを継続できた。次はPOP DINER店内への入店ショットが欲しい。」
-🎭 SOUL「疲労から好奇心への感情の切り替わりが単調にならないよう、次CUTで表情の変化を強めたい。」
-📷 CUT「ネオンの色指定(ピンク/ブルー)は今後のPOP DINER関連CUTでも統一したい。」
-🛡 MASTER「Universe Rule・Production Bibleとの整合はOK。私服のCostume Bible登録は依然として残課題。」
+🎬 CINE「人混みからの合流はCUT01の視線誘導と自然に繋がった。」
+🎭 SOUL「二人の関係性の温度感はまだ薄め。セリフのトーンで補強したい。」
+📷 CUT「AYAのトラッキングは背景の人流生成が鍵になりそう。」
+🛡 MASTER「Character Bibleとの整合はOK。Costume Bible登録は残課題のまま。」
 ```

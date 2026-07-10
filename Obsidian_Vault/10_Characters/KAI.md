@@ -9,6 +9,7 @@ type: character
 ## 概要
 
 - 役割: ラッパー。SE77NTH.楽曲へのfeat.参加、[[06_Projects/STAR_LiGHT/Overview|STAR LiGHT]]では主演
+- [[06_Projects/WAKE_UP/Overview|WAKE UP]]では「謎のコック」として登場（MA-1期の意匠を使用）。[[MIU]]・[[AYA]]・[[NANA]]が迷い込む不思議なダイナーで彼女たちを出迎えるが、現実に戻ると姿が消えている
 - ビジュアルは**2つの時代（era）**で管理する。Soul IDも時代ごとに別登録:
 
 ### MA-1期（過去作用に保持）
@@ -23,7 +24,7 @@ type: character
 ## 関連
 
 - Knowledge:
-- Projects: [[06_Projects/STAR_LiGHT/Overview|STAR LiGHT]], [[06_Projects/Dont_Stop/Overview|Don't Stop]]
+- Projects: [[06_Projects/STAR_LiGHT/Overview|STAR LiGHT]], [[06_Projects/Dont_Stop/Overview|Don't Stop]], [[06_Projects/WAKE_UP/Overview|WAKE UP]]
 - People:
 - Characters: [[SE77NTH]]
 - Prompt:
