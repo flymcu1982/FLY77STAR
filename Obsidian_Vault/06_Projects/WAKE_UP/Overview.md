@@ -34,3 +34,4 @@ type: project
 ## CUT
 
 - CUT01完成(試験運用): 閉店ー[[FLY77STAR.]] CLOSET。[[MIU]]単独、ノンバーバル。[[CINE]]→[[SOUL]]→CUT→[[MASTER]]のリレーで生成。実体はGitHub Projects/WAKE_UP/Prompt/CUT01.md
+- CUT01をStudio OS標準ワークフローVersion1形式に更新。保存先をProjects/WAKE_UP/Storyboard/CUT01.mdへ移動(旧Prompt/から)

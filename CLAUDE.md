@@ -17,6 +17,7 @@ Every rule doc restates the same priority list; treat it as authoritative for an
 3. `AI_RULES.md` — full role split across the AI team, incl. per-role specialties/prohibitions/required-reading (see below), and the "Golden Rule": AI performs *emotion*, not line-reading.
 4. `CODEX_RULES.md` — the detailed operating rulebook for the folder/automation role this agent (Claude Code) fills; written under the older name "Codex" but still authoritative for what Claude Code may automate vs. must hand off.
 5. `PALMIER_RULES.md` — inputs/outputs contract for handing a cut project to Palmier for editing.
+6. `AI_WORKFLOW_V1.md` — the standard CINE→SOUL→CUT→MASTER relay for generating a single CUT's storyboard/prompt brief (`Projects/<title>/Storyboard/CUT<NN>.md`), used across all MV/drama/movie productions. The four role names aren't yet defined in `AI_RULES.md` (see `Obsidian_Vault/03_Company/Decisions/2026-07-09_未決事項リスト.md` item 1) — until that's resolved, whichever AI is asked performs all four passes itself to reproduce the relay shape.
 
 Also load `PROMPT_GUIDE.md` (generation-prompt structure), `QUALITY_CONTROL.md` (pre-export checklist), and `GITHUB_OPERATIONS.md` (branching/CI/large-file policy) when the task touches those areas.
 
