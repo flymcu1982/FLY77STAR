@@ -22,6 +22,7 @@ type: project
 - CUT02〜12にも[[Panel Storyboard]](映画レベル絵コンテ)を作成し、CUT01と合わせて全12カットで整備完了。実体はGitHub Projects/WAKE_UP/Storyboard/CUT<番号>_絵コンテ.md
 - CUT02に[[Director Notes]](Step 3.6、Studio OS v1.2)を作成。重要Panelの判定: Panel01([[AYA]]登場)を主人公初登場として選定。[[Panel Storyboard]]本体・Story Bibleとの整合を維持。実体はGitHub Projects/WAKE_UP/Storyboard/CUT02_Panel01_DirectorNotes.md
 - CUT03を制作(Studio OS v1.2)。CUT03.md/CUT03_絵コンテ.mdは既存かつStory Bibleと整合済みのため無変更。重要Panelを判定しPanel01([[NANA]]登場=主人公初登場)・Panel04(3人集結=象徴カット)の2件に[[Director Notes]]を作成。実体はGitHub Projects/WAKE_UP/Storyboard/CUT03_Panel01_DirectorNotes.md・CUT03_Panel04_DirectorNotes.md
+- CUT04を制作(Studio OS v1.2)。CUT04.md/CUT04_絵コンテ.mdは既存かつStory Bibleと整合済みのため無変更。並び順([[MIU]]・[[AYA]]・[[NANA]])がCUT03からCUT04で一貫していることを確認。重要Panelを判定しPanel01(CUT03→CUT04の感情のバトン=感情変化)に[[Director Notes]]を作成。実体はGitHub Projects/WAKE_UP/Storyboard/CUT04_Panel01_DirectorNotes.md
 
 ## 次にやること
 
