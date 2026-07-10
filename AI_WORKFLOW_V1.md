@@ -72,9 +72,21 @@ MASTER完了後、4人全員が一言レビューを行う。
 🛡 MASTER「(整合性の一言)」
 ```
 
+## Step 3.5: Panel Storyboard(映画レベル絵コンテ、標準採用)
+
+2026-07-10、WAKE UP CUT01で試作し成功と判断されたため、Studio OS標準フォーマットとして正式採用。📷 CUTのアウトプットには、Step 3の生成Prompt(CUT<番号>.mdへ格納)に加えて、そのCUTをショットサイズ・カメラワーク・構図・BPM同期まで分解した**Panel Storyboard**を必ず作成する。
+
+- 目的: 単一の演出メモ("俯瞰→降下→ミディアム"のような一行)ではなく、実写映画の絵コンテに相当する精度でカット割りを設計し、生成・編集(Palmier)双方の判断材料にする
+- パネル数: そのCUTの尺・演技の転換点に応じて可変(目安: 8秒前後で4〜5パネル。尺が長い、または芝居の転換が多いCUTはパネル数を増やす)
+- 各パネルに含める項目: タイムコード、拍(BPM同期の目安)、ショットサイズ、カメラワーク、簡易フレーム図(テキストのAAで構図を示す)、芝居、補足
+- テンプレート: `Obsidian_Vault/99_Templates/Panel_Storyboard_V1.md`
+- 参考実装: `Projects/WAKE_UP/Storyboard/CUT01_絵コンテ.md`
+- 保存先: `Projects/<作品名>/Storyboard/CUT<番号>_絵コンテ.md`(CUT<番号>.mdと同フォルダ、別ファイル)
+
 ## Step 6: 保存先
 
-`Projects/<作品名>/Storyboard/CUT<番号>.md`
+`Projects/<作品名>/Storyboard/CUT<番号>.md`（生成プロンプト本体）
+`Projects/<作品名>/Storyboard/CUT<番号>_絵コンテ.md`（Panel Storyboard、Step 3.5参照）
 
 既存の標準プロジェクト構成(`FOLDER_STRUCTURE.md`、`scripts/create_project.py`)にある `Storyboard/` フォルダを使う。番号なし。
 
@@ -88,8 +100,11 @@ python3 scripts/vault_manager.py daily-log --done "制作日:YYYY-MM-DD / 作品
 
 ## 出力ファイルのテンプレート
 
-`Obsidian_Vault/99_Templates/CUT_Workflow_V1.md` を参照。
+- 生成プロンプト本体: `Obsidian_Vault/99_Templates/CUT_Workflow_V1.md`
+- Panel Storyboard(Step 3.5): `Obsidian_Vault/99_Templates/Panel_Storyboard_V1.md`
 
 ## 実績
 
 - WAKE UP CUT01 — 試験運用(2026-07-10)、成功と判断され本フローがVersion 1として正式運用開始
+- WAKE UP CUT01 — Panel Storyboard試作(2026-07-10)、成功と判断されStep 3.5として正式採用
+- WAKE UP CUT01〜12 — Story Bible改訂(2026-07-10)に基づき全カット制作完了

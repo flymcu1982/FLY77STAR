@@ -10,6 +10,8 @@ Production Start: 2026-07-10 / 現在フェーズ: Pre Production
 
 全12カット中、Storyboard/Script/Image Prompt/Video Prompt/Reviewが揃ったCUT数: 12/12(新Story Bibleで全カット制作完了。画像/動画生成は未着手)
 
+Panel Storyboard(Step 3.5、映画レベル絵コンテ)進捗: 12/12(CUT01〜12全てで`CUT<番号>_絵コンテ.md`を作成済み。2026-07-10、CUT01での試作を経てFLY77STAR標準フォーマットとして正式採用)
+
 - [x] CUT01 — 渋谷
 - [x] CUT02 — AYA到着
 - [x] CUT03 — 3人集合
