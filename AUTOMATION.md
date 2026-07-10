@@ -60,6 +60,7 @@ Export
 - `scripts/import_assets.py`: `Import/` 内の素材を標準構成へ整理する。
 - `scripts/import_assets.py --assign`: `Unsorted/` 内の素材を指定CUTへ割り当てる。
 - `scripts/watch_import.py`: `config.json` の監視フォルダを見張り、新規素材を `Import/` へコピーして `import_assets.py` を実行する。
+- `scripts/vault_manager.py`: 制作中に決まった内容を `Obsidian_Vault/` の適切なノートへ整理・保存する(他のスクリプトと違い `Projects/` ではなく `Obsidian_Vault/` を操作する)。分類(Character/Costume/MV/Prompt/Discovery)は人間かAIが判断してから渡す。重複チェック・Internal Link自動付与・Daily Note追記・変更履歴記録まで行う。`ingest` サブコマンドは、将来ChatGPTとの会話ログから知識抽出する拡張ポイントとして用意(未実装)。
 
 ## Watch Import
 
