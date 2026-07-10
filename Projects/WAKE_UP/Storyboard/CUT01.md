@@ -1,6 +1,6 @@
 # CUT01 — WAKE UP（SE77NTH.）
 
-Studio OS標準制作ワークフロー Version 1(詳細: GitHub `AI_WORKFLOW_V1.md`)で生成。2026-07-10の試験運用をもとに、Version 1フォーマットへ更新。
+Studio OS標準制作ワークフロー Version 1(詳細: GitHub `AI_WORKFLOW_V1.md`)で生成。2026-07-10、Production Start(Pre Production)。本番CUTとして確定。
 
 ## 生成前チェック
 
