@@ -15,7 +15,8 @@ Panel Storyboard(Step 3.5、映画レベル絵コンテ)進捗: 12/12(CUT01〜12
 Director Notes(Step 3.6、重要Panelのみ、Studio OS v1.2)進捗:
 - [x] CUT01 Panel03(主人公初登場/静止の発見)
 - [x] CUT02 Panel01(主人公初登場、AYA)
-- [ ] CUT03〜12(該当する重要Panelは今後リレー実行時に判断)
+- [x] CUT03 Panel01(主人公初登場、NANA)・Panel04(象徴カット、3人集結)
+- [ ] CUT04〜12(該当する重要Panelは今後リレー実行時に判断)
 
 - [x] CUT01 — 渋谷
 - [x] CUT02 — AYA到着
