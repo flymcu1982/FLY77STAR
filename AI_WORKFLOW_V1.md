@@ -1,8 +1,18 @@
-# Studio OS 標準制作ワークフロー Version 1
+# Studio OS 標準制作ワークフロー Version 1（Studio OS v1.2）
 
 CUT単位の制作(演出設計〜プロンプト生成)を、CINE→SOUL→CUT→MASTERの4段階リレーで行う標準フロー。2026-07-10、WAKE UP CUT01の試験運用が成功と判断されたことを受けて正式運用に昇格。
 
 **適用範囲**: 今後のすべてのMV・ドラマ・映画のCUT単位制作に共通で使用する。
+
+## バージョン履歴
+
+Studio OSの機能追加はマイナーバージョンとして記録する(v2への更新は運用結果を確認した上で判断)。
+
+| Version | 日付 | 内容 |
+|---|---|---|
+| v1.0 | 2026-07-10 | CINE→SOUL→CUT→MASTER 4段階リレーが正式運用開始(WAKE UP CUT01試験運用の成功を受けて) |
+| v1.1 | 2026-07-10 | Panel Storyboard(Step 3.5、映画レベル絵コンテ)を正式採用 |
+| v1.2 | 2026-07-10 | Director Notes(Step 3.6、監督ノート)を正式採用 |
 
 ## 前提: CINE/SOUL/CUT/MASTERの実体は未確定
 
@@ -83,10 +93,30 @@ MASTER完了後、4人全員が一言レビューを行う。
 - 参考実装: `Projects/WAKE_UP/Storyboard/CUT01_絵コンテ.md`
 - 保存先: `Projects/<作品名>/Storyboard/CUT<番号>_絵コンテ.md`(CUT<番号>.mdと同フォルダ、別ファイル)
 
+## Step 3.6: Director Notes(監督ノート、v1.2で正式採用・重要Panelのみ)
+
+2026-07-10、WAKE UP CUT01 Panel03での試験運用が成功と判断されたため、Studio OS標準工程として正式採用(Studio OS v1.2)。Panel Storyboard(Step 3.5)では表現しきれない、監督の演出意図を記録する補完資料。
+
+- **適用範囲(重要)**: 全Panelには適用しない。以下の「重要Panel」に該当する場合のみ作成する
+- **重要Panelの定義**:
+  1. 主人公初登場
+  2. 感情変化
+  3. 世界観説明
+  4. 伏線
+  5. 象徴カット
+  6. ラストカット
+- **位置づけ**: Director NotesはPanel Storyboardを**補完する資料**であり、Panel Storyboard本体(`CUT<番号>_絵コンテ.md`)の内容は変更しない
+- **記載項目**: このパネルで観客に何を感じてほしいか／役者への演技指示／表情／視線／呼吸／間／カメラマンへの補足／照明・色の演出意図／編集時の注意／次パネルへの感情のバトン
+- テンプレート: `Obsidian_Vault/99_Templates/Director_Notes_V1.md`
+- 参考実装: `Projects/WAKE_UP/Storyboard/CUT01_Panel03_DirectorNotes.md`
+- 保存先: `Projects/<作品名>/Storyboard/CUT<番号>_Panel<番号>_DirectorNotes.md`(該当パネルが重要Panelに当たる場合のみ)
+- 判断者: どのPanelが「重要Panel」に当たるかは、Step 1(🎬CINE)・Step 2(🎭SOUL)の演出意図を踏まえてリレー実行時に判断し、生成前チェック同様に理由を1行明記する
+
 ## Step 6: 保存先
 
 `Projects/<作品名>/Storyboard/CUT<番号>.md`（生成プロンプト本体）
 `Projects/<作品名>/Storyboard/CUT<番号>_絵コンテ.md`（Panel Storyboard、Step 3.5参照）
+`Projects/<作品名>/Storyboard/CUT<番号>_Panel<番号>_DirectorNotes.md`（Director Notes、Step 3.6参照。重要Panelのみ）
 
 既存の標準プロジェクト構成(`FOLDER_STRUCTURE.md`、`scripts/create_project.py`)にある `Storyboard/` フォルダを使う。番号なし。
 
@@ -102,9 +132,11 @@ python3 scripts/vault_manager.py daily-log --done "制作日:YYYY-MM-DD / 作品
 
 - 生成プロンプト本体: `Obsidian_Vault/99_Templates/CUT_Workflow_V1.md`
 - Panel Storyboard(Step 3.5): `Obsidian_Vault/99_Templates/Panel_Storyboard_V1.md`
+- Director Notes(Step 3.6、重要Panelのみ): `Obsidian_Vault/99_Templates/Director_Notes_V1.md`
 
 ## 実績
 
-- WAKE UP CUT01 — 試験運用(2026-07-10)、成功と判断され本フローがVersion 1として正式運用開始
-- WAKE UP CUT01 — Panel Storyboard試作(2026-07-10)、成功と判断されStep 3.5として正式採用
+- WAKE UP CUT01 — 試験運用(2026-07-10)、成功と判断され本フローがVersion 1として正式運用開始(Studio OS v1.0)
+- WAKE UP CUT01 — Panel Storyboard試作(2026-07-10)、成功と判断されStep 3.5として正式採用(Studio OS v1.1)
 - WAKE UP CUT01〜12 — Story Bible改訂(2026-07-10)に基づき全カット制作完了
+- WAKE UP CUT01 Panel03 — Director Notes試験運用(2026-07-10)、成功と判断されStep 3.6として正式採用(Studio OS v1.2)

@@ -1,15 +1,23 @@
-# Studio OS標準制作ワークフロー Version 1
+# Studio OS標準制作ワークフロー Version 1(Studio OS v1.2)
 （CINE→SOUL→CUT→MASTERの4段階リレーでCUT単位の制作を行う、全MV/ドラマ/映画共通の標準フロー）
 
 実体はGitHub `AI_WORKFLOW_V1.md`。使い方の正本はGitHub側にあります。2026-07-10、WAKE UP CUT01の試験運用を経て正式運用に昇格しました。
 
+## バージョン履歴
+
+- v1.0: CINE→SOUL→CUT→MASTER 4段階リレー正式運用開始
+- v1.1: Panel Storyboard(映画レベル絵コンテ)を正式採用
+- v1.2: Director Notes(監督ノート、重要Panelのみ)を正式採用
+
 ## 流れ
 
-生成前チェック(Character Bible/Costume Bible/Universe Rule/Production Bible確認) → 🎬CINE → 🎭SOUL → 📷CUT → 🛡MASTER → 4者レビュー → `Projects/<作品名>/Storyboard/CUT<番号>.md`に保存 → Daily Studio Reportへ記録
+生成前チェック(Character Bible/Costume Bible/Universe Rule/Production Bible確認) → 🎬CINE → 🎭SOUL → 📷CUT(+Panel Storyboard、重要Panelのみ+Director Notes) → 🛡MASTER → 4者レビュー → `Projects/<作品名>/Storyboard/`に保存 → Daily Studio Reportへ記録
 
 ## 出力テンプレート
 
-[[99_Templates/CUT_Workflow_V1|CUT_Workflow_V1]]
+- [[99_Templates/CUT_Workflow_V1|CUT_Workflow_V1]](生成プロンプト本体)
+- [[99_Templates/Panel_Storyboard_V1|Panel_Storyboard_V1]](Panel Storyboard)
+- [[99_Templates/Director_Notes_V1|Director_Notes_V1]](Director Notes、重要Panelのみ)
 
 ## 注意
 
