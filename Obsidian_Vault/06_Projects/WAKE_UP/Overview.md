@@ -30,3 +30,7 @@ type: project
 - Characters: [[10_Characters/SE77NTH|SE77NTH.]], [[10_Characters/MIU|MIU]], [[10_Characters/AYA|AYA]], [[10_Characters/NANA|NANA]]
 - Prompt:
 - GitHub(正本): `Projects/WAKE_UP/`
+
+## CUT
+
+- CUT01完成(試験運用): 閉店ー[[FLY77STAR.]] CLOSET。[[MIU]]単独、ノンバーバル。[[CINE]]→[[SOUL]]→CUT→[[MASTER]]のリレーで生成。実体はGitHub Projects/WAKE_UP/Prompt/CUT01.md
