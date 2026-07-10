@@ -19,4 +19,10 @@
 - [[KAI]] — ゲストラッパー（MA-1期/US期の2 era管理）
 - [[RUI]] — 俳優
 - [[RUKA]] — 女優
-- [[HINA]] — Don't Stop主演。⚠️仮称RINとの関係は未決事項リストで未確定のまま(aliasesにRIN追加なし)
+- [[HINA]] — Don't Stop主演。[[RIN]]とは別人物(2026-07-10決定)
+- [[RIN]] — FLY77STAR Universe最初の主人公。Spotlightのドラマ主演
+- [[RINの父]] — RINの父親。元役者
+
+## 世界観の共通設定
+
+- [[FLY77STAR_Universe]] — 全キャラクター共通の「時間を生きる」ルール、Chapter構成

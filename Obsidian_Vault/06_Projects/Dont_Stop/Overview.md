@@ -9,17 +9,13 @@ type: project
 ## 概要
 
 - 楽曲: 3:38.5 / BPM 99.4 / サビ頭 0:48.8
-- 座組: 主演=新女性キャラクター（仮称RIN。→ [[10_Characters/HINA|HINA]]との関係を要確認）+ [[10_Characters/KAI|KAI]]（逆コラボのラップ）
+- 座組: 主演=[[10_Characters/HINA|HINA]](2026-07-10、[[10_Characters/RIN|RIN]]とは別人物と確定) + [[10_Characters/KAI|KAI]]（逆コラボのラップ）
 - 派生CM: 架空菓子ブランド「STICK STAR」30秒（星型チップのチョコスティック/ネイビー箱/コピー「とまらない、が始まる。」）。音楽は無音⇄挿入デザイン
 - 別バージョン: 29カットMV脚本（4つの世界構成・赤信号→青信号の円環）も存在
-
-## 次にやること
-
-- [ ] 新キャラ(HINA=RIN?)の表記確定待ち(詳細: [[03_Company/Decisions/2026-07-09_未決事項リスト|未決事項リスト]] 4番)
 
 ## 関連
 
 - Knowledge:
-- Characters: [[10_Characters/KAI|KAI]], [[10_Characters/HINA|HINA]]（要確認）
+- Characters: [[10_Characters/KAI|KAI]], [[10_Characters/HINA|HINA]]
 - Prompt:
 - GitHub(正本): （要確認）
