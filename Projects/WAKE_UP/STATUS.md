@@ -12,6 +12,11 @@ Production Start: 2026-07-10 / 現在フェーズ: Pre Production
 
 Panel Storyboard(Step 3.5、映画レベル絵コンテ)進捗: 12/12(CUT01〜12全てで`CUT<番号>_絵コンテ.md`を作成済み。2026-07-10、CUT01での試作を経てFLY77STAR標準フォーマットとして正式採用)
 
+Director Notes(Step 3.6、重要Panelのみ、Studio OS v1.2)進捗:
+- [x] CUT01 Panel03(主人公初登場/静止の発見)
+- [x] CUT02 Panel01(主人公初登場、AYA)
+- [ ] CUT03〜12(該当する重要Panelは今後リレー実行時に判断)
+
 - [x] CUT01 — 渋谷
 - [x] CUT02 — AYA到着
 - [x] CUT03 — 3人集合
