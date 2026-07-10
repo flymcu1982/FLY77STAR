@@ -21,3 +21,5 @@ date: YYYY-MM-DD
 ## AI社員から一言(報告があるAIのみ、1行ずつ)
 
 - 役割名: 一言
+
+この下に「## 今日やったこと(自動記録)」「## 完成したこと(自動記録)」「## 次回やること(自動記録)」が [[05_Knowledge/Tool_Notes/Vault_Manager|Vault Manager]] の `daily-log` コマンドで自動的に追加されることがある。手で書く必要はない。

@@ -83,14 +83,15 @@ python3 scripts/watch_import.py --project Distances   # long-running, Ctrl+C to 
 
 # Vault Manager: file a decided-today item into Obsidian_Vault/ (not Projects/)
 python3 scripts/vault_manager.py registry                                            # list known entities
-python3 scripts/vault_manager.py file --category character --target MIU --text "..." # character/costume/mv/prompt/discovery
+python3 scripts/vault_manager.py file --category character --target MIU --text "..." # character/costume/mv/prompt/discovery/decision
+python3 scripts/vault_manager.py daily-log --did "..." --done "..." --next "..."      # Daily Log (今日やったこと/完成したこと/次回やること)
 python3 scripts/vault_manager.py next-action --project WAKE_UP --add "..." --done "..."
 python3 scripts/vault_manager.py changelog --limit 20
 ```
 
 CI (`.github/workflows/validate.yml`) runs `python scripts/validate_structure.py --project Distances` on every push/PR.
 
-`vault_manager.py` is the odd one out in this list: everything else above operates on `Projects/` (the GitHub production folders); `vault_manager.py` operates only on `Obsidian_Vault/` (the Obsidian knowledge base — see `Obsidian_Vault/00_Start_Here/FLY77STAR_Philosophy.md` and `Obsidian_Vault/03_Company/検索システム設計書.md` for that system's design). It routes a single already-classified decision into the right hub note, auto-linking known entity names, checking for literal duplicates, leaving a one-line pointer in that day's Daily Studio Report, and appending to `Obsidian_Vault/00_Start_Here/変更履歴.md`. It does not classify free text into character/costume/mv/prompt/discovery for you — that judgment call is made by whoever calls it (a human, or Claude Code reading the raw text). `vault_manager.py ingest` is a documented-but-unimplemented stub for a future adapter that would extract decisions from an exported ChatGPT conversation.
+`vault_manager.py` is the odd one out in this list: everything else above operates on `Projects/` (the GitHub production folders); `vault_manager.py` operates only on `Obsidian_Vault/` (the Obsidian knowledge base — see `Obsidian_Vault/00_Start_Here/FLY77STAR_Philosophy.md` and `Obsidian_Vault/03_Company/検索システム設計書.md` for that system's design). It routes a single already-classified decision into one of seven areas — Daily Log, Discovery (発見/失敗/改善点/アイデア/次回試したい), Decision Log (採用/却下/採用理由), Character Bible, Costume Bible (採用された正史のみ; rejected options go in Decision Log instead), MV Bible (脚本/絵コンテ/CUT/プロンプト per project), Prompt Library — auto-linking known entity names, checking for literal duplicates, leaving a one-line pointer in that day's Daily Studio Report, and appending to `Obsidian_Vault/00_Start_Here/変更履歴.md`. It does not classify free text for you — that judgment call is made by whoever calls it (a human, or Claude Code reading the raw text). `vault_manager.py ingest` is a documented-but-unimplemented stub for a future adapter that would extract decisions from an exported ChatGPT conversation.
 
 Caution when testing any of the above with `--dry-run`/no-op flags: several still write report files as a side effect even in dry-run mode (`import_assets.py` always rewrites `Edit/import_report.md`, `watch_import.py` rewrites `Edit/watch_import_report.md`). If you run these just to sanity-check behavior, check `git diff` afterward and revert the report file if it clobbered a meaningful prior report.
 
