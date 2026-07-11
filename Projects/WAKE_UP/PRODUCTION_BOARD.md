@@ -12,8 +12,9 @@ Production Policy Version 1.0(`IMAGE_GENERATION_POLICY.md`)準拠。AI社員(Cla
 🟢 CUT01 Panel01 → Location Validation(Go、生成待ち)
 🟢 CUT01 Panel02 → Camera Validation(Go、Panel01に続き実施)
 🟢 CUT01 Panel03 → **Golden Production Image**(基準画像。Production Package完成、社長レビュー待ち)
+🟡 CUT01 Panel04 → 本番制作中(720pテイク承認済み、Director Decision5点反映済み、720P Pilot Generation待ち)
 
-詳細: `Storyboard/CUT01_Panel01_PILOT_PRODUCTION.md`(Director Decision反映済み)、`Storyboard/CUT01_Panel03_PRODUCTION_PACKAGE.md`(Final Production Prompt/Negative Prompt/QC Checklist/Director Approval Checklist/Production Report)、`Prompt/DIRECTOR_APPROVAL_SHEET.md`
+詳細: `Storyboard/CUT01_Panel01_PILOT_PRODUCTION.md`(Director Decision反映済み)、`Storyboard/CUT01_Panel03_PRODUCTION_PACKAGE.md`(Final Production Prompt/Negative Prompt/QC Checklist/Director Approval Checklist/Production Report)、`Storyboard/CUT01_Panel04_PRODUCTION_PACKAGE.md`(Director Decision反映済み)、`Prompt/DIRECTOR_APPROVAL_SHEET.md`
 
 【Character Master(設計/Image Prompt)】
 
@@ -89,17 +90,15 @@ Export
 
 【Today's Mission】
 
-CUT01 Panel03(Golden Production Image)Take 1の本番生成直前レビュー: Final Production Prompt(コピー使用可) / Negative Prompt / Director Shooting Notes / Take 1 Director Goal / Take 1採用基準
+CUT01 Panel04、Director Decision(5点: 実在ブランド名/Story Bible/Panel Storyboard/Costume/File Path)を反映しProduction Packageを修正済み。コミット・push後、720P Pilot Generationへ進行。
 
-詳細: `Storyboard/CUT01_Panel03_Take1.md`。Take 1のみ対象、Take2・Take3は未作成。社長レビュー待ち、コミット・pushは承認後に実施。
+詳細: `Storyboard/CUT01_Panel04_PRODUCTION_PACKAGE.md`。
 
-**AI社員(Claude Code)のPhase5担当範囲(確定)**:
-- Production Promptの最終確認(Character/Costume/Location/Storyboard/Director Notes整合レビュー)
-- Image QC準備(生成画像が提供され次第実施)
-- Director Approval Sheet更新準備
-- Production Report提出
+**AI社員(Claude Code)のPhase5担当範囲(Production Policy Version 1.1、Panel04以降)**:
+- Production Package設計・QC・登録(従来通り)
+- **Panel04以降、厳格運用サイクル(1テーク生成→停止→Director Review→明示的GOで次へ、5項目自己チェック、承認後のみ記録・コミット)のもとで本番生成を実行**
 
-**AI社員は画像生成を行わない。**
+**Panel01〜03は引き続きAI社員が画像生成を行わない範囲。**
 
 ━━━━━━━━━━━━━━━━━━━━━━
 

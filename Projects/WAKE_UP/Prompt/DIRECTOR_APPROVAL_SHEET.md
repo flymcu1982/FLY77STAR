@@ -78,6 +78,19 @@ Production Package完成: `Storyboard/CUT01_Panel03_PRODUCTION_PACKAGE.md`(Final
 | Director Review | 未実施(生成画像提供後に実施) |
 | 判定 | 未定(Director Approved / Take 2要 のいずれかを社長が判断) |
 
+### CUT01 Panel04 — 本番制作(720pテイク承認済み)
+
+Production Package: `Storyboard/CUT01_Panel04_PRODUCTION_PACKAGE.md`。Production Policy Version 1.1により、Panel04以降はAI社員(Claude Code)が厳格運用サイクルのもとで生成実行を担当する。
+
+| 項目 | 状態 |
+|---|---|
+| Theme | 「静止していた時間が、わずかに動き始める。」 |
+| 720p Pilot | Director承認済み(本セッション外、5項目すべて✅) |
+| Director Decision(5点) | **反映済み(2026-07-11)**: 実在ブランド名を一般表現へ差し替え / Story Bible最新版優先(統合は別途) / Panel Storyboard「静止していた時間が動き始める」を正式採用 / 衣装をPanel03と完全同一へ修正 / Cross-Referencesを実在パスへ修正 |
+| Production Package | Director Decision反映済み、コミット・push待ち |
+| 4K Production Generation | 未実施(Director Decision反映・コミット後、720P Pilot Generationへ進行予定) |
+| Director Approval | ⬜ 未承認(4K本番生成前に最終確認) |
+
 ---
 
 ## Character Master

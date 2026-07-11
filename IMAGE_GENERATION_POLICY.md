@@ -1,6 +1,13 @@
-# FLYSTAR77 Image Generation Policy（Production Policy Version 1.0）
+# FLYSTAR77 Image Generation Policy（Production Policy Version 1.1）
 
-制作方針変更(2026-07-11、Production Phase 2修正指示・Production Policy更新指示)に基づく画像生成エンジンおよび制作フローの標準ルール。Studio OS(`AI_WORKFLOW_V1.md`)のバージョン番号(v1.2)は変更せず、本ポリシーのみを更新する。
+制作方針変更(2026-07-11、Production Phase 2修正指示・Production Policy更新指示・Panel04方針変更指示)に基づく画像生成エンジンおよび制作フローの標準ルール。Studio OS(`AI_WORKFLOW_V1.md`)のバージョン番号(v1.2)は変更せず、本ポリシーのみを更新する。
+
+## バージョン履歴
+
+| Version | 日付 | 内容 |
+|---|---|---|
+| v1.0 | 2026-07-11 | AI社員は「生成する担当」ではなく「制作設計を行う担当」と定義。実際の本番画像生成はAI社員が行わない方針を確立 |
+| v1.1 | 2026-07-11 | Panel04以降、AI社員(Claude Code)がHiggsfield/GPT Imageでの本番生成を実行する運用へ変更(WAKE UP)。ただし下記「AI社員による生成実行」の厳格運用サイクルを必須とする |
 
 ## 制作理念(最優先事項)
 
@@ -25,7 +32,26 @@ AI社員が担当する範囲:
 - Production Review
 - Production Report
 
-**実際の本番画像生成は、AI社員(Claude Code)は行わない。**
+**実際の本番画像生成は、原則としてAI社員(Claude Code)は行わない。** ただし2026-07-11(v1.1)、Panel04以降のWAKE UP本番生成に限り、下記「AI社員による生成実行」の厳格運用サイクルのもとでAI社員が生成実行を担当する運用へ変更した。この例外は都度の明示的な社長指示によってのみ拡張・継続する。
+
+## AI社員による生成実行(Version 1.1、Panel04以降)
+
+社長(YU)の明示的な方針変更指示(2026-07-11)により、WAKE UP Panel04以降の本番生成実行をAI社員(Claude Code)が担当する。この権限は以下の厳格運用サイクルを条件として与えられる。
+
+### 厳格運用サイクル(必須)
+
+1. **1テーク(1カット)生成したら、必ずそこで停止し、Director Reviewを待つ。**
+2. **次のカットには、Director(YU)からの明示的な「GO」「次へ」の指示があるまで進まない。** 複数カットの連続生成は行わない
+3. **生成後は毎回**、以下5項目で簡潔な自己チェック結果を報告する:
+   - Character(Character Masterとの一致)
+   - Composition(構図、Panel Storyboard整合)
+   - Lighting(照明、Location Master・Director Notes整合)
+   - Story(Story Bible・Universe Ruleとの整合)
+   - Emotion(Director Notes/Director Shooting Notesが意図する感情の実現度)
+4. **承認された場合のみ**、STATUS.md・Daily Studio Report・Vault側への記録・コミットを実施する。未承認の生成物についてはこれらの記録を行わない
+5. **コミット・pushはDirector承認後に実施する**(既存ルール継続)
+
+この運用サイクルはPanel04以降のすべてのカット・すべてのテークに適用する。
 
 ## 制作フロー(Production Flow)
 
@@ -36,7 +62,8 @@ AI社員が担当する範囲:
    ↓
 ③ 採用決定
    ↓
-④ GPT Imageで本番画像生成
+④ 本番画像生成(通常は社長/GPT Image運用側。WAKE UP Panel04以降はAI社員が
+   厳格運用サイクルのもとで実行 — 上記「AI社員による生成実行」参照)
    ↓
 ⑤ 採用画像のみHiggsfieldへ渡し動画生成
    ↓

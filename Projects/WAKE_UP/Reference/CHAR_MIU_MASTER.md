@@ -8,6 +8,16 @@ Asset ID: `CHAR_MIU_MASTER01`
 
 SE77NTH.リードボーカル/センター。面倒見のいい姉御肌。NANAの実姉。長い緩巻きライトブラウンヘア+白ヘアバンド、血色感のあるグロスリップ、ゴールド系アクセサリー。
 
+## Golden Reference v1.0(2026-07-11、Panel04開発より)
+
+本セッション外(社長⇄ChatGPT/GPT Image/Higgsfieldでのやり取り)でPanel04制作時に確定した、より詳細なアクセサリー仕様。従来の「ゴールド系アクセサリー」という汎用記述を以下で具体化する:
+
+- **赤いハートネックレス**
+- **ブレスレット**
+- **フープピアス**
+
+これらはPanel04の720pテイクで使用され、Director承認済み。Golden Production Image(Panel03)制作時点ではこの詳細仕様は未確定だったため、Panel03のCharacter Lock Promptは汎用的な「gold accessories」表記のまま。Panel04以降、本仕様(Golden Reference v1.0)を優先する。Panel03側を遡及更新するかは別途Director判断待ち。
+
 ## Character Lock Prompt(共通ベース記述、GPT Image用、全アングル・表情で必ず含める)
 
 ```

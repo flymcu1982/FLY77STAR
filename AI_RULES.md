@@ -120,4 +120,4 @@ AIは作品を作らない。
 
 人間のクリエイティブを、AIによって最大限に表現する。
 
-(2026-07-11、Production Policy Version 1.0で明文化。AI社員は「生成する担当」ではなく「最高品質の制作設計を行う担当」。実際の本番画像生成は社長承認後の別工程。詳細: `IMAGE_GENERATION_POLICY.md`)
+(2026-07-11、Production Policy Version 1.0で明文化。AI社員は原則「生成する担当」ではなく「最高品質の制作設計を行う担当」。実際の本番画像生成は原則として社長承認後の別工程。Version 1.1(2026-07-11)により、WAKE UP Panel04以降はAI社員が厳格運用サイクル(1テーク生成→停止→Director Review→明示的GOで次へ、5項目自己チェック、承認後のみ記録・コミット)のもとで生成実行を担当。詳細: `IMAGE_GENERATION_POLICY.md`)

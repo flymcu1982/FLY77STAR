@@ -59,6 +59,27 @@ Production Start: 2026-07-10 / 現在フェーズ: **Production Phase 5(Pilot Pr
 
 **今回はTake 1のみを対象とし、Take 2・Take 3の資料は社長承認があるまで作成しない。コミット・pushはTake 1のDirector Review完了後に実施する方針だったが、2026-07-11、社長の明示的指示によりProduction Package承認状態を先行してコミット・pushする。**
 
+## Panel04 本番制作(2026-07-11)
+
+Panel04の720pテイクは本セッション外(社長⇄ChatGPT/GPT Image/Higgsfield)で承認済み(Character/Composition/Lighting/Story/Emotion全て✅)。Production Policy Version 1.1により、Panel04以降はAI社員(Claude Code)が厳格運用サイクル(1テーク生成→停止→Director Review→明示的GOで次へ、5項目自己チェック、承認後のみ記録・コミット)のもとで本番生成を実行する。
+
+社長より共有されたPanel04.mdの原文には、実在ブランド名(QFRONT/STARBUCKS)・Story Bible構成(ACT2「Night Walk」)・Panel Storyboard(旧「スマホを見る」との不一致)・衣装記述・ファイルパスの5点で既存プロダクション成果物との不整合を確認。生成実行を保留し社長確認を仰いだ結果、**Director Decision(2026-07-11)により全5点が解決**:
+
+1. 実在ブランド名 → 一般表現(Iconic scramble crossing buildings等)へ差し替え
+2. Story Bible → 最新版(Production Bible運用中のもの)を優先。Vault側への全文統合は別途対応
+3. Panel Storyboard → 「静止していた時間が動き始める」を正式採用(`CUT01_絵コンテ.md`更新済み、旧案は「旧案(参考・廃止)」として保持)
+4. Costume → Panel03と完全同一(`casual dark top with simple jeans or skirt, no visible logos or brand marks`)へ修正
+5. File Path → 実在パスへ修正
+
+`Storyboard/CUT01_Panel04_PRODUCTION_PACKAGE.md`をDirector Decision反映版に更新。コミット・push後、720P Pilot Generationへ進行予定。
+
+- [x] Director Decision(5点)反映
+- [x] `CUT01_絵コンテ.md` Panel4更新
+- [x] `CUT01_Panel04_PRODUCTION_PACKAGE.md`修正版作成
+- [ ] 720P Pilot Generation(厳格運用サイクルに従い実施)
+- [ ] Director Review・5項目自己チェック報告
+- [ ] 4K Production Generation(承認後)
+
 ## Phase4のAI社員担当範囲(確定、2026-07-11、Phase5でも継続)
 
 - Image QC(`Prompt/IMAGE_QC_CHECKLIST.md`、生成画像提供後に実施)
