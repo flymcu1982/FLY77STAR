@@ -83,7 +83,14 @@ Export
 
 MIU Character Master(本番生成画像) 完成
 
-AI社員側の設計は完了済み。本番生成(GPT Image)は社長承認後、Claude Code以外(社長 or Higgsfield/GPT Image運用側)が実行する工程。生成が完了し次第、AI社員は`Prompt/IMAGE_QC_CHECKLIST.md`でQCを実施する。
+2026-07-11、社長確認済み: 設計フェーズ完了を確認。Production Phase4は社長レビュー後、GPT Imageによる本番画像生成から開始する。
+
+**AI社員(Claude Code)のPhase4担当範囲(確定)**:
+- Image QC(`Prompt/IMAGE_QC_CHECKLIST.md`使用、生成画像が提供され次第実施)
+- Production Report(節目ごとに提出)
+- Director Approval支援(`Prompt/DIRECTOR_APPROVAL_SHEET.md`でQC結果を整理し、社長の承認判断を支援。承認そのものは社長が行う)
+
+**AI社員は画像生成を行わない。**
 
 ━━━━━━━━━━━━━━━━━━━━━━
 
@@ -116,6 +123,7 @@ Higgsfield
 ## 関連
 
 - Production Report(Phase3): `PRODUCTION_REPORT_PHASE3.md`
+- Director Approval Sheet: `Prompt/DIRECTOR_APPROVAL_SHEET.md`
 - Character Master: `Reference/CHAR_*_MASTER.md`
 - Location Master: `Reference/LOC_*_MASTER.md`
 - Image QC Checklist: `Prompt/IMAGE_QC_CHECKLIST.md`

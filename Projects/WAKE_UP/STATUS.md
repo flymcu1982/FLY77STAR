@@ -1,6 +1,14 @@
 # Status
 
-Production Start: 2026-07-10 / 現在フェーズ: **Production Phase 3(画像生成仕様書完成フェーズ)**(2026-07-11、Production Policy Version 1.0に基づき運用)
+Production Start: 2026-07-10 / 現在フェーズ: **Production Phase 4**(2026-07-11、設計フェーズ完了を社長確認済み。GPT Imageによる本番画像生成開始待ち)
+
+## Phase4のAI社員担当範囲(確定、2026-07-11)
+
+- Image QC(`Prompt/IMAGE_QC_CHECKLIST.md`、生成画像提供後に実施)
+- Production Report(節目ごとに提出)
+- Director Approval支援(`Prompt/DIRECTOR_APPROVAL_SHEET.md`でQC結果を整理。承認自体は社長が行う)
+
+**AI社員は画像生成を行わない。** Studio OS(`AI_WORKFLOW_V1.md`)は引き続き無改修。
 
 ## Story Bible改訂(2026-07-10)
 
