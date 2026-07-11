@@ -17,7 +17,17 @@ Director Notes(Step 3.6、重要Panelのみ、Studio OS v1.2)進捗:
 - [x] CUT02 Panel01(主人公初登場、AYA)
 - [x] CUT03 Panel01(主人公初登場、NANA)・Panel04(象徴カット、3人集結)
 - [x] CUT04 Panel01(感情変化、CUT03→CUT04の感情のバトン)
-- [ ] CUT05〜12(該当する重要Panelは今後リレー実行時に判断)
+- [x] CUT05 Panel01(伏線、違和感の始まり)
+- [x] CUT06 Panel01(世界観説明、ダイナーへの境界)
+- [x] CUT07 Panel02(主人公初登場、KAI=コックとしてのみ登場)
+- [x] CUT08 Panel04(象徴カット、現実ではない空気の完成)
+- [ ] CUT09〜12(該当する重要Panelは今後リレー実行時に判断)
+
+## Scene構成
+
+- **Scene1**(CUT01〜04): 渋谷の夜、3人集合〜歩き出す
+- **Scene2**(CUT05〜08): 「現実からパラレルワールドへの入口」— 制作完了(2026-07-11)。詳細: [[Storyboard/Scene2_Review|Scene2 Review]]
+- **Scene3**(CUT09〜12): パラレルワールドから現実への帰還、HINAとのすれ違い、エンディング(未着手)
 
 - [x] CUT01 — 渋谷
 - [x] CUT02 — AYA到着

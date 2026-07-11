@@ -23,6 +23,7 @@ type: project
 - CUT02に[[Director Notes]](Step 3.6、Studio OS v1.2)を作成。重要Panelの判定: Panel01([[AYA]]登場)を主人公初登場として選定。[[Panel Storyboard]]本体・Story Bibleとの整合を維持。実体はGitHub Projects/WAKE_UP/Storyboard/CUT02_Panel01_DirectorNotes.md
 - CUT03を制作(Studio OS v1.2)。CUT03.md/CUT03_絵コンテ.mdは既存かつStory Bibleと整合済みのため無変更。重要Panelを判定しPanel01([[NANA]]登場=主人公初登場)・Panel04(3人集結=象徴カット)の2件に[[Director Notes]]を作成。実体はGitHub Projects/WAKE_UP/Storyboard/CUT03_Panel01_DirectorNotes.md・CUT03_Panel04_DirectorNotes.md
 - CUT04を制作(Studio OS v1.2)。CUT04.md/CUT04_絵コンテ.mdは既存かつStory Bibleと整合済みのため無変更。並び順([[MIU]]・[[AYA]]・[[NANA]])がCUT03からCUT04で一貫していることを確認。重要Panelを判定しPanel01(CUT03→CUT04の感情のバトン=感情変化)に[[Director Notes]]を作成。実体はGitHub Projects/WAKE_UP/Storyboard/CUT04_Panel01_DirectorNotes.md
+- Scene2(CUT05〜08、『現実からパラレルワールドへの入口』)を制作完了(Studio OS v1.2)。既存のCUT05〜08.md/絵コンテ.mdはScene2のテーマと整合済みのため無変更。重要Panelを判定しCUT05 Panel01(伏線)・CUT06 Panel01(世界観説明)・CUT07 Panel02(主人公初登場、[[KAI]])・CUT08 Panel04(象徴カット)に[[Director Notes]]を作成。Reality Scale(現実→パラレル)の推移を確認しScene2_Review.mdにまとめた。実体はGitHub Projects/WAKE_UP/Storyboard/Scene2_Review.md
 
 ## 次にやること
 
