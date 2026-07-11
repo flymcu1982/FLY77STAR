@@ -51,15 +51,32 @@ Production Policy Version 1.0に基づく、社長(YU)承認支援シート。AI
 
 ### CUT01 Panel03 — Golden Production Image(基準画像)
 
+Production Package完成: `Storyboard/CUT01_Panel03_PRODUCTION_PACKAGE.md`(Final Production Prompt・Negative Prompt・Production QC Checklist・Director Approval Checklist・Production Reportを収録)。
+
 | 項目 | 状態 |
 |---|---|
 | 対象 | CUT01 Panel03(MIU初登場、静止・発見) |
 | Asset ID | `CUT01_P03_IMG01` |
-| Production Prompt | 既存(`Storyboard/CUT01_絵コンテ.md`・`CUT01_Panel03_DirectorNotes.md`参照) |
-| 生成画像 | 未生成 |
-| QC総合判定 | 未実施 |
+| Production Prompt | **最終確認済み**(`Storyboard/CUT01_Panel03_PRODUCTION_PACKAGE.md`①参照。Character/Costume(仮)/Location/Story Bible/Panel Storyboard/Director Notesを統合) |
+| Negative Prompt | 整備済み(同資料②) |
+| 生成画像 | 未生成(社長承認後、GPT Imageで生成予定) |
+| QC総合判定 | 未実施(基準は同資料③) |
+| Director Approval Checklist | 整備済み(同資料④、10項目) |
 | Director Approval | ⬜ 未承認 |
-| 備考 | **今後のProduction QC・Character QC・Costume QC・Director Approvalの基準画像**。Character Master(MIU)・Costume(私服、未登録)・Story Bible・Panel Storyboard整合をすべて検証する初のPanel |
+| 備考 | **今後のProduction QC・Character QC・Costume QC・Director Approvalの基準画像**。Costume(私服)はCostume Bible未登録のため技術的な仮描写を使用——正式デザイン確定後に再生成が必要になる可能性を承認時に許容するか要確認(Director Approval Checklist項目4) |
+
+#### Take 1
+
+生成直前レビュー: `Storyboard/CUT01_Panel03_Take1.md`(Final Production Prompt/Negative Prompt/Director Shooting Notes/Take 1 Director Goal/Take 1採用基準)。
+
+| 項目 | 状態 |
+|---|---|
+| Take | 1(Take2・Take3は社長承認があるまで作成しない) |
+| Production Package | **社長承認済み(2026-07-11)** |
+| 生成画像 | 未生成。GPT Imageでの本番生成は社長/GPT Image運用側が実施(AI社員は画像生成を行わない、Production Policy Version 1.0準拠) |
+| Take 1採用基準 | 整備済み(7項目、`CUT01_Panel03_Take1.md`⑤参照) |
+| Director Review | 未実施(生成画像提供後に実施) |
+| 判定 | 未定(Director Approved / Take 2要 のいずれかを社長が判断) |
 
 ---
 

@@ -27,6 +27,38 @@ Production Start: 2026-07-10 / 現在フェーズ: **Production Phase 5(Pilot Pr
 
 **経緯**: 当初CUT01 Panel01を「Golden Production Image」として提出したが、Panel01・Panel02がいずれも人物不在のカット(MIU初登場はPanel3)であることが判明し、社長確認事項として提出。2026-07-11、社長判断によりPanel01=Location Validation、Panel02=Camera Validation、Panel03=Golden Production Imageへ役割を再定義(Director Decisionとして承認・確定)。
 
+## Panel03(Golden Production Image)Production Package(2026-07-11)
+
+`Storyboard/CUT01_Panel03_PRODUCTION_PACKAGE.md`を作成。Character Master(MIU)・Costume Master(Costume Bible未登録のため技術的仮描写)・Location Master・Story Bible・Panel Storyboard・Director Notesを統合。
+
+- [x] ① Final Production Prompt(統合完成版)
+- [x] ② Negative Prompt
+- [x] ③ Production QC Checklist(Character/Costume/Emotion/Lighting/Composition/Story、本Panel抽出版)
+- [x] ④ Director Approval Checklist(10項目)
+- [x] ⑤ Production Report(注意点・Panel04への引き継ぎ事項)
+- [ ] 社長レビュー・採用決定
+- [ ] GPT Imageでの本番生成(社長承認後)
+
+**最大のリスク**: MIUの私服がCostume Bible未登録のまま。Golden Production Imageとして採用する場合、正式デザイン確定後に再生成が必要になる可能性がある(Director Approval Checklist項目4で明示)。
+
+## Take 1 生成直前レビュー(2026-07-11)
+
+`Storyboard/CUT01_Panel03_Take1.md`を作成。Production Packageを基に、Take 1本番生成直前のチェック用として再整理。2026-07-11、Director方針(超自然的に見えない自然な静止、ポーズを取らない偶然の発見感)を追加反映済み。
+
+- [x] ① Final Production Prompt(コピー使用可の完成版)
+- [x] ② Negative Prompt(避けるべき描写/AI破綻防止/Character Master不一致の3分類)
+- [x] ③ Director Shooting Notes(最重要演出意図3項目)
+- [x] ④ Take 1 Director Goal(必達5項目)
+- [x] ⑤ Take 1採用基準(Director Approved条件、7項目)
+- [x] **Take 1 Production Package: 社長承認済み(2026-07-11)**
+- [ ] GPT ImageでのTake 1本番生成(社長 / GPT Image運用側で実施。AI社員は画像生成を行わない、Production Policy Version 1.0準拠)
+- [ ] ① Take 1生成画像の受領
+- [ ] ② Production QC Report
+- [ ] ③ Director Review Summary
+- [ ] ④ Take 2要否の判定
+
+**今回はTake 1のみを対象とし、Take 2・Take 3の資料は社長承認があるまで作成しない。コミット・pushはTake 1のDirector Review完了後に実施する方針だったが、2026-07-11、社長の明示的指示によりProduction Package承認状態を先行してコミット・pushする。**
+
 ## Phase4のAI社員担当範囲(確定、2026-07-11、Phase5でも継続)
 
 - Image QC(`Prompt/IMAGE_QC_CHECKLIST.md`、生成画像提供後に実施)

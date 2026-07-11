@@ -11,9 +11,9 @@ Production Policy Version 1.0(`IMAGE_GENERATION_POLICY.md`)準拠。AI社員(Cla
 
 🟢 CUT01 Panel01 → Location Validation(Go、生成待ち)
 🟢 CUT01 Panel02 → Camera Validation(Go、Panel01に続き実施)
-🟡 CUT01 Panel03 → **Golden Production Image**(基準画像。今後のProduction QC・Character QC・Costume QC・Director Approvalの基準)
+🟢 CUT01 Panel03 → **Golden Production Image**(基準画像。Production Package完成、社長レビュー待ち)
 
-詳細: `Storyboard/CUT01_Panel01_PILOT_PRODUCTION.md`(Director Decision反映済み)、`Prompt/DIRECTOR_APPROVAL_SHEET.md`
+詳細: `Storyboard/CUT01_Panel01_PILOT_PRODUCTION.md`(Director Decision反映済み)、`Storyboard/CUT01_Panel03_PRODUCTION_PACKAGE.md`(Final Production Prompt/Negative Prompt/QC Checklist/Director Approval Checklist/Production Report)、`Prompt/DIRECTOR_APPROVAL_SHEET.md`
 
 【Character Master(設計/Image Prompt)】
 
@@ -89,9 +89,9 @@ Export
 
 【Today's Mission】
 
-Production Baseline変更(Director Decision)をDIRECTOR_APPROVAL_SHEET / STATUS / PRODUCTION_BOARD / Pilot Production Reportへ反映
+CUT01 Panel03(Golden Production Image)Take 1の本番生成直前レビュー: Final Production Prompt(コピー使用可) / Negative Prompt / Director Shooting Notes / Take 1 Director Goal / Take 1採用基準
 
-2026-07-11、社長承認。CUT01 Panel01=Location Validation、Panel02=Camera Validation、Panel03=Golden Production Imageへ役割を再定義。反映完了後、社長承認済みの内容としてコミット・push。詳細: `Storyboard/CUT01_Panel01_PILOT_PRODUCTION.md`。
+詳細: `Storyboard/CUT01_Panel03_Take1.md`。Take 1のみ対象、Take2・Take3は未作成。社長レビュー待ち、コミット・pushは承認後に実施。
 
 **AI社員(Claude Code)のPhase5担当範囲(確定)**:
 - Production Promptの最終確認(Character/Costume/Location/Storyboard/Director Notes整合レビュー)
