@@ -1,6 +1,6 @@
 # Status
 
-Production Start: 2026-07-10 / 現在フェーズ: **Production Phase 1**(2026-07-11、Pre Productionを完了し移行)
+Production Start: 2026-07-10 / 現在フェーズ: **Production Phase 2**(2026-07-11、Character Master / Location Master仕様策定)
 
 ## Story Bible改訂(2026-07-10)
 
@@ -56,11 +56,32 @@ Director Notes(Step 3.6、重要Panelのみ、Studio OS v1.2)進捗:
 
 **Phase 1完了時点のブロッカー**: Character Master Reference(Soul ID、5キャラクター)・Costume Bible(全キャラクター衣装)・Dialogue音声、いずれも未着手/未登録。Phase 2(実際の画像生成)着手前に要対応。
 
+## Production Phase 2(2026-07-11)
+
+Character Master(Soul ID Reference)仕様策定完了。真正面/左右45°/横顔/全身/表情差分(6種)を全キャラクターで統一フォーマット化。実際の画像生成(Higgsfield/Nano Banana)は別途実施。
+
+- [x] CHAR_MIU_MASTER01 — `Reference/CHAR_MIU_MASTER.md`
+- [x] CHAR_AYA_MASTER01 — `Reference/CHAR_AYA_MASTER.md`
+- [x] CHAR_NANA_MASTER01 — `Reference/CHAR_NANA_MASTER.md`
+- [x] CHAR_KAI_MASTER01 — `Reference/CHAR_KAI_MASTER.md`(MA-1期、"East Asian Japanese"必須明記)
+- [x] CHAR_HINA_MASTER01 — `Reference/CHAR_HINA_MASTER.md`
+
+Location Master(ロケーション基準)仕様策定完了。
+
+- [x] LOC_CROSSING01(渋谷スクランブル交差点) — `Reference/LOC_CROSSING_MASTER.md`
+- [x] LOC_STREET01(大通り〜路地) — `Reference/LOC_STREET_MASTER.md`
+- [x] LOC_DINER_EXT01(POP DINER外観) — `Reference/LOC_DINER_EXT_MASTER.md`
+- [x] LOC_DINER_INT01(POP DINER内装、CUT08崩壊VFXバリエーション含む) — `Reference/LOC_DINER_INT_MASTER.md`
+- [x] LOC_SIDEWALK01(帰り道、CUT09空き区画〜CUT12夜景まで) — `Reference/LOC_SIDEWALK_MASTER.md`
+
+**衣装は全キャラクターCostume Bible未登録のため、生成の一貫性維持のみを目的とした中立的な仮描写を採用(創作上の衣装デザイン決定ではない)。正式デザイン確定後、各Character Masterファイルの更新とCostume Bible登録が必要。**
+
 ## 後工程
 
 - [x] Image Asset List / Asset ID / 撮影優先順位 / EDIT_PLAN作成(Production Phase 1)
-- [ ] Character Master Reference(Soul ID)生成
-- [ ] CUT素材配置(画像/動画生成、Phase 2)
+- [x] Character Master / Location Master仕様策定(Production Phase 2)
+- [ ] Character Master / Location Masterの実画像生成(Higgsfield/Nano Banana)
+- [ ] CUT素材配置(画像/動画生成)
 - [ ] Palmier編集
 - [ ] QC
 - [ ] Export

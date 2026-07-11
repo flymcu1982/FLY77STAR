@@ -15,25 +15,29 @@ CUT<番号2桁>_P<パネル番号2桁>_<種別><連番2桁>
 
 ## 前提: Character Master Reference(Soul ID)
 
-全Panelの生成に先立ち、以下5キャラクターのSoul ID固定リファレンスが必要。現時点で**未生成**(Character Bibleにビジュアル記述はあるが、実際の参照画像は未作成)。Costume Bible未登録の私服/衣装ともあわせて、Phase 1最大のブロッカー。
+全Panelの生成に先立ち、以下5キャラクターのSoul ID固定リファレンスが必要。**仕様策定完了(2026-07-11、Production Phase 2)**。真正面/左右45°/横顔/全身/表情差分6種を各ファイルに整理済み。実際の画像生成(Higgsfield/Nano Banana)は次工程。
 
-| キャラクター | Asset ID | 内容 | 備考 |
+| キャラクター | Asset ID | 内容 | 仕様書 |
 |---|---|---|---|
-| MIU | `CHAR_MIU_MASTER01` | ロング緩巻きライトブラウン+白ヘアバンド | 私服未登録(Costume Bible) |
-| AYA | `CHAR_AYA_MASTER01` | センターパートストレートダークブラウン | 私服未登録 |
-| NANA | `CHAR_NANA_MASTER01` | 顎ラインの内巻き黒ボブ+ピーチピンクインナー、左目下ほくろ固定 | 私服未登録 |
-| KAI | `CHAR_KAI_MASTER01` | MA-1期意匠(銀の「7」ペンダント含む) | コック衣装(MA-1+エプロン)は仮設定、未登録。"East Asian Japanese"明記必須 |
-| HINA | `CHAR_HINA_MASTER01` | NANAより短い黒ボブ、インナーカラーなし | WAKE UP用の白い服は新規デザイン、未登録 |
+| MIU | `CHAR_MIU_MASTER01` | ロング緩巻きライトブラウン+白ヘアバンド | `Reference/CHAR_MIU_MASTER.md` |
+| AYA | `CHAR_AYA_MASTER01` | センターパートストレートダークブラウン | `Reference/CHAR_AYA_MASTER.md` |
+| NANA | `CHAR_NANA_MASTER01` | 顎ラインの内巻き黒ボブ+ピーチピンクインナー、左目下ほくろ固定 | `Reference/CHAR_NANA_MASTER.md` |
+| KAI | `CHAR_KAI_MASTER01` | MA-1期意匠(銀の「7」ペンダント含む) | `Reference/CHAR_KAI_MASTER.md`("East Asian Japanese"明記必須) |
+| HINA | `CHAR_HINA_MASTER01` | NANAより短い黒ボブ、インナーカラーなし | `Reference/CHAR_HINA_MASTER.md` |
+
+私服/衣装は全キャラクターCostume Bible未登録のため、各仕様書内で中立的な仮描写を採用(創作上の決定ではない、生成一貫性のための技術的仮置き)。
 
 ## 前提: Location Master
 
-| ロケーション | Asset ID | 使用CUT | 備考 |
+**仕様策定完了(2026-07-11、Production Phase 2)**。
+
+| ロケーション | Asset ID | 使用CUT | 仕様書 |
 |---|---|---|---|
-| 渋谷スクランブル交差点(夜) | `LOC_CROSSING01` | CUT01 | 俯瞰・降下・路上レベルで角度違い複数パターン必要 |
-| 渋谷大通り〜路地(夜) | `LOC_STREET01` | CUT04 | 大通り→路地で光量変化 |
-| POP DINER外観(架空店舗) | `LOC_DINER_EXT01` | CUT05 | 看板テキストは生成時に文字崩れ注意(既知の課題) |
-| POP DINER内装(架空店舗) | `LOC_DINER_INT01` | CUT06〜08 | CUT08で明滅・崩壊VFXバリエーションが必要 |
-| 渋谷帰り道の雑踏(夜) | `LOC_SIDEWALK01` | CUT09〜12 | CUT09は空き区画バリエーションが必要 |
+| 渋谷スクランブル交差点(夜) | `LOC_CROSSING01` | CUT01〜03 | `Reference/LOC_CROSSING_MASTER.md` |
+| 渋谷大通り〜路地(夜) | `LOC_STREET01` | CUT04 | `Reference/LOC_STREET_MASTER.md` |
+| POP DINER外観(架空店舗) | `LOC_DINER_EXT01` | CUT05 | `Reference/LOC_DINER_EXT_MASTER.md` |
+| POP DINER内装(架空店舗) | `LOC_DINER_INT01` | CUT06〜08 | `Reference/LOC_DINER_INT_MASTER.md`(CUT08崩壊VFXバリエーション含む) |
+| 渋谷帰り道の雑踏(夜) | `LOC_SIDEWALK01` | CUT09〜12 | `Reference/LOC_SIDEWALK_MASTER.md`(CUT09空き区画〜CUT12夜景まで) |
 
 ---
 
