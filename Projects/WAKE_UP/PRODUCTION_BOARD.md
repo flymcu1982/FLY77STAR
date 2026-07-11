@@ -2,10 +2,18 @@
 🎬 FLY77STAR Studio
 Production Board β
 Project：WAKE UP
-Status：Production Phase 4
+Status：Production Phase 5(Pilot Production)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Production Policy Version 1.0(`IMAGE_GENERATION_POLICY.md`)準拠。AI社員(Claude Code)の担当は設計・QCまで。実際のGPT Image / Higgsfield生成はAI社員が実行しない。
+
+【Pilot Production対象 / Production Baseline(Director Decision、2026-07-11承認済み)】
+
+🟢 CUT01 Panel01 → Location Validation(Go、生成待ち)
+🟢 CUT01 Panel02 → Camera Validation(Go、Panel01に続き実施)
+🟡 CUT01 Panel03 → **Golden Production Image**(基準画像。今後のProduction QC・Character QC・Costume QC・Director Approvalの基準)
+
+詳細: `Storyboard/CUT01_Panel01_PILOT_PRODUCTION.md`(Director Decision反映済み)、`Prompt/DIRECTOR_APPROVAL_SHEET.md`
 
 【Character Master(設計/Image Prompt)】
 
@@ -81,14 +89,15 @@ Export
 
 【Today's Mission】
 
-MIU Character Master(本番生成画像) 完成
+Production Baseline変更(Director Decision)をDIRECTOR_APPROVAL_SHEET / STATUS / PRODUCTION_BOARD / Pilot Production Reportへ反映
 
-2026-07-11、社長確認済み: 設計フェーズ完了を確認。Production Phase4は社長レビュー後、GPT Imageによる本番画像生成から開始する。
+2026-07-11、社長承認。CUT01 Panel01=Location Validation、Panel02=Camera Validation、Panel03=Golden Production Imageへ役割を再定義。反映完了後、社長承認済みの内容としてコミット・push。詳細: `Storyboard/CUT01_Panel01_PILOT_PRODUCTION.md`。
 
-**AI社員(Claude Code)のPhase4担当範囲(確定)**:
-- Image QC(`Prompt/IMAGE_QC_CHECKLIST.md`使用、生成画像が提供され次第実施)
-- Production Report(節目ごとに提出)
-- Director Approval支援(`Prompt/DIRECTOR_APPROVAL_SHEET.md`でQC結果を整理し、社長の承認判断を支援。承認そのものは社長が行う)
+**AI社員(Claude Code)のPhase5担当範囲(確定)**:
+- Production Promptの最終確認(Character/Costume/Location/Storyboard/Director Notes整合レビュー)
+- Image QC準備(生成画像が提供され次第実施)
+- Director Approval Sheet更新準備
+- Production Report提出
 
 **AI社員は画像生成を行わない。**
 

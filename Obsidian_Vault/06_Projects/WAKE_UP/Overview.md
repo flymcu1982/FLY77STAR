@@ -30,6 +30,7 @@ type: project
 - Production Policy Version 1.0を正式採用し、WAKE UP Production Phase3を『画像生成仕様書完成フェーズ』として運用。Character Master最終確認完了、Image QC Checklist新規作成、Production Report(社長レビュー用)を作成し提出。実際の本番画像生成はまだ実行していない(社長承認待ち)。実体はGitHub Projects/WAKE_UP/PRODUCTION_REPORT_PHASE3.md、Projects/WAKE_UP/Prompt/IMAGE_QC_CHECKLIST.md
 - Production Board(β)を新規導入・トラッキング開始。Production Phase4。Character Master(設計)は5/5完了済み、Character Master(本番生成画像)は0/5(未生成)。今日のミッション: [[MIU]] Character Masterの本番生成画像完成——ただしAI社員([[Claude Code]])の担当は設計・QCまでであり、実際のGPT Image生成はAI社員が実行しない(Production Policy v1.0準拠)。実体はGitHub Projects/WAKE_UP/PRODUCTION_BOARD.md
 - 社長確認済み: 設計フェーズ完了。Production Phase4はGPT Imageによる本番画像生成から開始し、AI社員([[Claude Code]])の担当範囲をImage QC・Production Report・Director Approval支援に確定。AI社員は画像生成を行わない。Director Approval Sheet(Character Master5点/Location Master5点/重要Panel12件のQC・承認状況を一覧化するテンプレート)を新規作成。実体はGitHub Projects/WAKE_UP/Prompt/DIRECTOR_APPROVAL_SHEET.md
+- Production Phase5(Pilot Production)開始。CUT01 Panel01のみを対象とし、WAKE UP全体のGolden Production Imageとして選定。Production Prompt最終確認・QC準備・Director Approval Sheet更新・Production Reportを実施。重要な発見: Panel01・Panel02はいずれも人物不在のカット([[MIU]]初登場はPanel3)のため、Character/Costume整合の検証はPanel01では行えない。Panel02への機械的進行はHold、Panel03優先の可否を社長確認事項として提出。実体はGitHub Projects/WAKE_UP/Storyboard/CUT01_Panel01_PILOT_PRODUCTION.md
 
 ## 次にやること
 

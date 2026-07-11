@@ -1,14 +1,39 @@
 # Status
 
-Production Start: 2026-07-10 / 現在フェーズ: **Production Phase 4**(2026-07-11、設計フェーズ完了を社長確認済み。GPT Imageによる本番画像生成開始待ち)
+Production Start: 2026-07-10 / 現在フェーズ: **Production Phase 5(Pilot Production)**(2026-07-11、Production Baseline確定・社長承認済み)
 
-## Phase4のAI社員担当範囲(確定、2026-07-11)
+## Phase5: Pilot Production(2026-07-11)
+
+対象: Scene01 / CUT01(Panel01〜03)。一括制作ではなく段階的に進める。
+
+**Director Decision(2026-07-11、社長承認・Production Baseline確定)**:
+
+| Panel | 役割 | 状態 |
+|---|---|---|
+| CUT01 Panel01 | Location Validation | Go(社長承認済み、生成待ち) |
+| CUT01 Panel02 | Camera Validation | Go(Panel01に続き実施) |
+| CUT01 Panel03 | **Golden Production Image**(基準画像) | 今後のProduction QC・Character QC・Costume QC・Director Approvalの基準として扱う |
+
+詳細: `Storyboard/CUT01_Panel01_PILOT_PRODUCTION.md`(Director Decision反映済み)、`Prompt/DIRECTOR_APPROVAL_SHEET.md`。
+
+- [x] Production Prompt最終確認(Character/Costume/Location/Storyboard/Director Notes整合レビュー、Panel01)
+- [x] Production QC Checklist準備(Character/Costume/Location/Lighting/Composition/Emotion、Panel01)
+- [x] Director Review Point整理(5項目、Director Approval Sheet更新)
+- [x] Panel02進行のGo/Hold判定 → 社長承認によりPanel01→02→03と段階的に進行(Baseline確定)
+- [x] 社長レビュー・採用決定(Baseline変更を含め承認済み)
+- [ ] GPT Imageでの本番生成(Panel01: Location Validationから着手)
+- [ ] Image QC実施(生成後)
+- [ ] Director Approval
+
+**経緯**: 当初CUT01 Panel01を「Golden Production Image」として提出したが、Panel01・Panel02がいずれも人物不在のカット(MIU初登場はPanel3)であることが判明し、社長確認事項として提出。2026-07-11、社長判断によりPanel01=Location Validation、Panel02=Camera Validation、Panel03=Golden Production Imageへ役割を再定義(Director Decisionとして承認・確定)。
+
+## Phase4のAI社員担当範囲(確定、2026-07-11、Phase5でも継続)
 
 - Image QC(`Prompt/IMAGE_QC_CHECKLIST.md`、生成画像提供後に実施)
 - Production Report(節目ごとに提出)
 - Director Approval支援(`Prompt/DIRECTOR_APPROVAL_SHEET.md`でQC結果を整理。承認自体は社長が行う)
 
-**AI社員は画像生成を行わない。** Studio OS(`AI_WORKFLOW_V1.md`)は引き続き無改修。
+**AI社員は画像生成を行わない。** Studio OS(`AI_WORKFLOW_V1.md`)は引き続き無改修。既存成果物(CUT01.md/CUT01_絵コンテ.md/Location Master等)は変更せず、補助資料(`CUT01_Panel01_PILOT_PRODUCTION.md`)として追加した。
 
 ## Story Bible改訂(2026-07-10)
 

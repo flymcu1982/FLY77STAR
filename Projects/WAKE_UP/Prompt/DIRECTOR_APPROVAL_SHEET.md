@@ -11,6 +11,58 @@ Production Policy Version 1.0に基づく、社長(YU)承認支援シート。AI
 
 ---
 
+## Pilot Production Baseline(Director Decision、2026-07-11)
+
+社長承認済み。Production Baselineを以下の通り確定:
+
+| Panel | 役割 | 状態 |
+|---|---|---|
+| CUT01 Panel01 | Location Validation | Go(社長承認済み、生成待ち) |
+| CUT01 Panel02 | Camera Validation | Go(Panel01に続き実施) |
+| CUT01 Panel03 | **Golden Production Image**(基準画像) | 今後のProduction QC・Character QC・Costume QC・Director Approvalの基準として扱う |
+
+### CUT01 Panel01 — Location Validation
+
+詳細: `Storyboard/CUT01_Panel01_PILOT_PRODUCTION.md`。
+
+| 項目 | 状態 |
+|---|---|
+| 対象 | CUT01 Panel01(渋谷、俯瞰、被写体なし) |
+| Asset ID | `CUT01_P01_IMG01` |
+| Production Prompt | 最終確認済み(`CUT01_Panel01_PILOT_PRODUCTION.md`参照) |
+| 生成画像 | 未生成(社長承認後、GPT Imageで生成予定) |
+| QC総合判定 | 未実施 |
+| Go/Hold | Go(社長承認済み) |
+| Director Approval | ⬜ 未承認(画像生成・QC後に判断) |
+| 備考 | Location Validation。人物不在のためCharacter/Costume整合は対象外。Location/Lighting/Composition/Emotionのみが判定対象 |
+
+### CUT01 Panel02 — Camera Validation
+
+| 項目 | 状態 |
+|---|---|
+| 対象 | CUT01 Panel02(降下クレーン、被写体なし) |
+| Asset ID | `CUT01_P02_IMG01` |
+| Production Prompt | 未作成(Panel01に続き必要時に整備) |
+| 生成画像 | 未生成 |
+| QC総合判定 | 未実施 |
+| Go/Hold | Go(Director Decision) |
+| Director Approval | ⬜ 未承認 |
+| 備考 | Camera Validation。カメラワーク(俯瞰→降下)の検証が主目的。人物不在のためCharacter/Costume整合は対象外 |
+
+### CUT01 Panel03 — Golden Production Image(基準画像)
+
+| 項目 | 状態 |
+|---|---|
+| 対象 | CUT01 Panel03(MIU初登場、静止・発見) |
+| Asset ID | `CUT01_P03_IMG01` |
+| Production Prompt | 既存(`Storyboard/CUT01_絵コンテ.md`・`CUT01_Panel03_DirectorNotes.md`参照) |
+| 生成画像 | 未生成 |
+| QC総合判定 | 未実施 |
+| Director Approval | ⬜ 未承認 |
+| 備考 | **今後のProduction QC・Character QC・Costume QC・Director Approvalの基準画像**。Character Master(MIU)・Costume(私服、未登録)・Story Bible・Panel Storyboard整合をすべて検証する初のPanel |
+
+---
+
 ## Character Master
 
 ### MIU — `CHAR_MIU_MASTER01`
@@ -79,11 +131,11 @@ Production Policy Version 1.0に基づく、社長(YU)承認支援シート。AI
 
 ## Production Images(重要Panel、優先QC対象)
 
-Character Master / Location Master承認後、`Prompt/IMAGE_ASSET_LIST.md`の撮影優先順位に従い、まず重要Panel12件を優先してQC・承認を行う。
+Character Master / Location Master承認後、`Prompt/IMAGE_ASSET_LIST.md`の撮影優先順位に従い、まず重要Panel12件を優先してQC・承認を行う。CUT01 P03は上記「Pilot Production Baseline」でGolden Production Image(基準画像)に指定済み(詳細はそちらを参照)。
 
 | CUT | Panel | Asset ID(IMG) | 生成画像 | QC総合判定 | Director Approval |
 |---|---|---|---|---|---|
-| CUT01 | P03 | `CUT01_P03_IMG01` | 未生成 | 未実施 | ⬜ 未承認 |
+| CUT01 | P03 | `CUT01_P03_IMG01` | 未生成 | 未実施 | ⬜ 未承認(Golden Production Image、上記参照) |
 | CUT02 | P01 | `CUT02_P01_IMG01` | 未生成 | 未実施 | ⬜ 未承認 |
 | CUT03 | P01 | `CUT03_P01_IMG01` | 未生成 | 未実施 | ⬜ 未承認 |
 | CUT03 | P04 | `CUT03_P04_IMG01` | 未生成 | 未実施 | ⬜ 未承認 |
