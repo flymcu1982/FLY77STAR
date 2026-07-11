@@ -28,6 +28,7 @@ type: project
 - Pre Productionを完了しProduction Phase 1へ移行(Studio OS v1.2)。Image Asset List(全12CUT・51Panel、Character Master 5点・Location Master 5点)・Asset ID(命名規則 CUT<番号>_P<パネル>_<種別><連番>)・撮影優先順位(画像/動画生成順)・EDIT_PLAN(Timeline/BGM/SE/Transition/Camera Motion/Dialogue Sync/Color Plan)を作成。実体はGitHub Projects/WAKE_UP/Prompt/IMAGE_ASSET_LIST.md、Projects/WAKE_UP/Edit/[[EDIT_PLAN.md]]。Character Master Reference([[Soul ID]])・[[Costume Bible]]・Dialogue音声が未着手のためPhase2着手前のブロッカーとして明記。
 - Production Phase 2開始。Character Master([[Soul ID]] Reference)5点の仕様策定完了(真正面/左右45°/横顔/全身/表情差分6種を統一フォーマットで整理)。[[KAI]]は『East Asian Japanese』明記必須・MA-1期意匠を明記。続けてLocation Master5点の仕様策定も完了。実際の画像生成(Higgsfield/Nano Banana)は次工程。私服/衣装は[[Costume Bible]]未登録のため中立的な仮描写を採用(創作上の決定ではない)。実体はGitHub Projects/WAKE_UP/Reference/CHAR_*_[[MASTER]].md、LOC_*_MASTER.md
 - Production Policy Version 1.0を正式採用し、WAKE UP Production Phase3を『画像生成仕様書完成フェーズ』として運用。Character Master最終確認完了、Image QC Checklist新規作成、Production Report(社長レビュー用)を作成し提出。実際の本番画像生成はまだ実行していない(社長承認待ち)。実体はGitHub Projects/WAKE_UP/PRODUCTION_REPORT_PHASE3.md、Projects/WAKE_UP/Prompt/IMAGE_QC_CHECKLIST.md
+- Production Board(β)を新規導入・トラッキング開始。Production Phase4。Character Master(設計)は5/5完了済み、Character Master(本番生成画像)は0/5(未生成)。今日のミッション: [[MIU]] Character Masterの本番生成画像完成——ただしAI社員([[Claude Code]])の担当は設計・QCまでであり、実際のGPT Image生成はAI社員が実行しない(Production Policy v1.0準拠)。実体はGitHub Projects/WAKE_UP/PRODUCTION_BOARD.md
 
 ## 次にやること
 
