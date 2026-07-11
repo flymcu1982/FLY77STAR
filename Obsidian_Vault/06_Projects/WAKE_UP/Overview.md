@@ -27,6 +27,7 @@ type: project
 - Scene3(CUT09〜12、『夢から現実へ』)を制作完了(Studio OS v1.2)。既存のCUT09〜12.md/絵コンテ.mdはScene3の4つの重要事項([[KAI]]との現実でのすれ違い/[[HINA]]初登場/[[MIU]]の違和感/次回への余韻)と整合済みのため無変更。重要Panelを判定しCUT09 Panel01(象徴カット)・CUT10 Panel02(伏線)・CUT11 Panel01(主人公初登場)・CUT12 Panel04(ラストカット)に[[Director Notes]]を作成。MIUの違和感インデックスを新設しReality Scaleと併用して推移を確認。全12カットのStoryboard工程が完了。実体はGitHub Projects/WAKE_UP/Storyboard/Scene3_Review.md
 - Pre Productionを完了しProduction Phase 1へ移行(Studio OS v1.2)。Image Asset List(全12CUT・51Panel、Character Master 5点・Location Master 5点)・Asset ID(命名規則 CUT<番号>_P<パネル>_<種別><連番>)・撮影優先順位(画像/動画生成順)・EDIT_PLAN(Timeline/BGM/SE/Transition/Camera Motion/Dialogue Sync/Color Plan)を作成。実体はGitHub Projects/WAKE_UP/Prompt/IMAGE_ASSET_LIST.md、Projects/WAKE_UP/Edit/[[EDIT_PLAN.md]]。Character Master Reference([[Soul ID]])・[[Costume Bible]]・Dialogue音声が未着手のためPhase2着手前のブロッカーとして明記。
 - Production Phase 2開始。Character Master([[Soul ID]] Reference)5点の仕様策定完了(真正面/左右45°/横顔/全身/表情差分6種を統一フォーマットで整理)。[[KAI]]は『East Asian Japanese』明記必須・MA-1期意匠を明記。続けてLocation Master5点の仕様策定も完了。実際の画像生成(Higgsfield/Nano Banana)は次工程。私服/衣装は[[Costume Bible]]未登録のため中立的な仮描写を採用(創作上の決定ではない)。実体はGitHub Projects/WAKE_UP/Reference/CHAR_*_[[MASTER]].md、LOC_*_MASTER.md
+- Production Policy Version 1.0を正式採用し、WAKE UP Production Phase3を『画像生成仕様書完成フェーズ』として運用。Character Master最終確認完了、Image QC Checklist新規作成、Production Report(社長レビュー用)を作成し提出。実際の本番画像生成はまだ実行していない(社長承認待ち)。実体はGitHub Projects/WAKE_UP/PRODUCTION_REPORT_PHASE3.md、Projects/WAKE_UP/Prompt/IMAGE_QC_CHECKLIST.md
 
 ## 次にやること
 

@@ -1,6 +1,59 @@
-# FLYSTAR77 Image Generation Policy
+# FLYSTAR77 Image Generation Policy（Production Policy Version 1.0）
 
-制作方針変更(2026-07-11、Production Phase 2修正指示)に基づく画像生成エンジンの標準ルール。Studio OS(`AI_WORKFLOW_V1.md`)のバージョン番号(v1.2)は変更せず、本ポリシーのみを更新する。
+制作方針変更(2026-07-11、Production Phase 2修正指示・Production Policy更新指示)に基づく画像生成エンジンおよび制作フローの標準ルール。Studio OS(`AI_WORKFLOW_V1.md`)のバージョン番号(v1.2)は変更せず、本ポリシーのみを更新する。
+
+## 制作理念(最優先事項)
+
+> FLY77STARの価値は、AIが作品を作ることではない。
+> 人間のクリエイティブを、AIによって最大限に表現することである。
+
+この理念を、以下すべての制作フロー・役割定義の最優先事項として扱う。
+
+## AI社員の役割
+
+AI社員(Claude Code含む)は **「生成する担当」ではなく、「最高品質の制作設計を行う担当」** である。
+
+AI社員が担当する範囲:
+
+- Story Bible
+- Character Master
+- Location Master
+- Panel Storyboard
+- Director Notes
+- Image Prompt
+- QC
+- Production Review
+- Production Report
+
+**実際の本番画像生成は、AI社員(Claude Code)は行わない。**
+
+## 制作フロー(Production Flow)
+
+```
+① AI社員が設計(Story Bible〜Image Prompt〜QC基準)
+   ↓
+② 社長(YU)レビュー
+   ↓
+③ 採用決定
+   ↓
+④ GPT Imageで本番画像生成
+   ↓
+⑤ 採用画像のみHiggsfieldへ渡し動画生成
+   ↓
+⑥ Palmier編集
+   ↓
+⑦ QC
+   ↓
+⑧ Export
+```
+
+**画像生成実行(④)は社長承認後の別工程とする。** Production Phaseにおける「画像生成仕様書完成フェーズ」(設計)と、承認後の「画像生成実行フェーズ」は明確に分離する。
+
+## Higgsfieldクレジットの使用方針
+
+Higgsfieldクレジットは「設計」ではなく、**「採用が決定した素材」にのみ使用する。**
+
+生成回数ではなく、**採用率を最優先する。** 試行錯誤による大量生成ではなく、設計段階(AI社員によるStory Bible〜QC基準の作り込み)の精度で採用率を最大化することを目指す。
 
 ## エンジン変更
 

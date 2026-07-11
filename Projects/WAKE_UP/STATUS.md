@@ -1,6 +1,6 @@
 # Status
 
-Production Start: 2026-07-10 / 現在フェーズ: **Production Phase 2**(2026-07-11、Character Master / Location Master仕様策定 → 画像生成エンジン方針修正)
+Production Start: 2026-07-10 / 現在フェーズ: **Production Phase 3(画像生成仕様書完成フェーズ)**(2026-07-11、Production Policy Version 1.0に基づき運用)
 
 ## Story Bible改訂(2026-07-10)
 
@@ -84,12 +84,40 @@ Location Master(ロケーション基準)仕様策定完了。
 
 **衣装は全キャラクターCostume Bible未登録のため、生成の一貫性維持のみを目的とした中立的な仮描写を採用(創作上の衣装デザイン決定ではない)。正式デザイン確定後、各Character Masterファイルの更新とCostume Bible登録が必要。**
 
+## Production Policy Version 1.0(2026-07-11)
+
+制作方針を正式運用へ移行。AI社員(Claude Code含む)は「生成する担当」ではなく「最高品質の制作設計を行う担当」と再定義。詳細: GitHub `IMAGE_GENERATION_POLICY.md`、Decision Log: Obsidian Vault `03_Company/Decisions/2026-07-11_Production_Policy_v1.0.md`。
+
+制作フロー: ①AI社員が設計 → ②社長レビュー → ③採用決定 → ④GPT Imageで本番画像生成 → ⑤採用画像のみHiggsfieldへ渡し動画生成 → ⑥Palmier編集 → ⑦QC → ⑧Export
+
+Higgsfieldクレジットは「採用が決定した素材」にのみ使用。生成回数ではなく採用率を最優先する。
+
+**Studio OS(`AI_WORKFLOW_V1.md`)のバージョン番号(v1.2)は変更していない。**
+
+## Production Phase 3: 画像生成仕様書完成フェーズ(2026-07-11)
+
+Phase3は「画像生成」ではなく「画像生成仕様書完成フェーズ」として運用。実際の画像生成実行は社長承認後の別工程。
+
+- [x] ① Character Master最終確認 — 5ファイル(MIU/AYA/NANA/KAI/HINA)を通しでレビュー。構造・一貫性アンカー・GPT Image前提の記述・キャラクター間の混同なしを確認、設計完了と判定
+- [x] Location Master(Phase2で仕様策定済み、5点)
+- [x] Image Asset List / Asset ID / 撮影優先順位(Phase1で作成済み)
+- [x] Image QC Checklist作成 — `Prompt/IMAGE_QC_CHECKLIST.md`(Character Masterとの一致/表情/衣装/背景/Story Bibleとの整合/Panel Storyboardとの一致の6項目)
+- [ ] ② 社長レビュー(YU) — 本Phase3完了パッケージの承認待ち
+- [ ] ③ 採用決定
+- [ ] ④ GPT Imageで本番画像生成(社長承認後、Claude Codeは実行しない)
+- [ ] ⑤ 採用画像のみHiggsfieldへ渡し動画生成
+- [ ] ⑥ Palmier編集
+- [ ] ⑦ QC(`Prompt/IMAGE_QC_CHECKLIST.md`使用)
+- [ ] ⑧ Export
+
 ## 後工程
 
 - [x] Image Asset List / Asset ID / 撮影優先順位 / EDIT_PLAN作成(Production Phase 1)
 - [x] Character Master / Location Master仕様策定(Production Phase 2)
-- [ ] Character Master / Location Masterの実画像生成(Higgsfield + GPT Image)
-- [ ] CUT素材配置(画像/動画生成)
+- [x] Character Master最終確認 / Image QC Checklist作成(Production Phase 3)
+- [ ] 社長レビュー・採用決定
+- [ ] 本番画像生成(承認後、Higgsfield + GPT Image)
+- [ ] 動画生成(採用画像のみ、Higgsfield)
 - [ ] Palmier編集
 - [ ] QC
 - [ ] Export
