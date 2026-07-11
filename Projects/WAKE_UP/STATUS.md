@@ -1,6 +1,6 @@
 # Status
 
-Production Start: 2026-07-10 / 現在フェーズ: Pre Production
+Production Start: 2026-07-10 / 現在フェーズ: **Production Phase 1**(2026-07-11、Pre Productionを完了し移行)
 
 ## Story Bible改訂(2026-07-10)
 
@@ -47,10 +47,20 @@ Director Notes(Step 3.6、重要Panelのみ、Studio OS v1.2)進捗:
 - [x] CUT11 — HINA登場
 - [x] CUT12 — エンディング
 
+## Production Phase 1(2026-07-11)
+
+- [x] Image Asset List作成(全12CUT・51Panel、Character Master 5点・Location Master 5点を含む)。実体: `Prompt/IMAGE_ASSET_LIST.md`
+- [x] Asset ID付与(命名規則: `CUT<番号>_P<パネル>_<種別><連番>`)
+- [x] 撮影優先順位整理(画像生成順・動画生成順)。実体: `Prompt/IMAGE_ASSET_LIST.md`内
+- [x] EDIT_PLAN作成(Timeline/BGM/SE/Transition/Camera Motion/Dialogue Sync/Color Plan)。実体: `Edit/EDIT_PLAN.md`
+
+**Phase 1完了時点のブロッカー**: Character Master Reference(Soul ID、5キャラクター)・Costume Bible(全キャラクター衣装)・Dialogue音声、いずれも未着手/未登録。Phase 2(実際の画像生成)着手前に要対応。
+
 ## 後工程
 
-- [ ] CUT素材配置
-- [ ] EDIT_PLAN作成
+- [x] Image Asset List / Asset ID / 撮影優先順位 / EDIT_PLAN作成(Production Phase 1)
+- [ ] Character Master Reference(Soul ID)生成
+- [ ] CUT素材配置(画像/動画生成、Phase 2)
 - [ ] Palmier編集
 - [ ] QC
 - [ ] Export
