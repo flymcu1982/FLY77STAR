@@ -1,6 +1,6 @@
 # Status
 
-Production Start: 2026-07-10 / 現在フェーズ: **Production Phase 2**(2026-07-11、Character Master / Location Master仕様策定)
+Production Start: 2026-07-10 / 現在フェーズ: **Production Phase 2**(2026-07-11、Character Master / Location Master仕様策定 → 画像生成エンジン方針修正)
 
 ## Story Bible改訂(2026-07-10)
 
@@ -54,11 +54,19 @@ Director Notes(Step 3.6、重要Panelのみ、Studio OS v1.2)進捗:
 - [x] 撮影優先順位整理(画像生成順・動画生成順)。実体: `Prompt/IMAGE_ASSET_LIST.md`内
 - [x] EDIT_PLAN作成(Timeline/BGM/SE/Transition/Camera Motion/Dialogue Sync/Color Plan)。実体: `Edit/EDIT_PLAN.md`
 
-**Phase 1完了時点のブロッカー**: Character Master Reference(Soul ID、5キャラクター)・Costume Bible(全キャラクター衣装)・Dialogue音声、いずれも未着手/未登録。Phase 2(実際の画像生成)着手前に要対応。
+**Phase 1完了時点のブロッカー**: Character Master Reference(5キャラクター)・Costume Bible(全キャラクター衣装)・Dialogue音声、いずれも未着手/未登録。Phase 2(実際の画像生成)着手前に要対応。
 
 ## Production Phase 2(2026-07-11)
 
-Character Master(Soul ID Reference)仕様策定完了。真正面/左右45°/横顔/全身/表情差分(6種)を全キャラクターで統一フォーマット化。実際の画像生成(Higgsfield/Nano Banana)は別途実施。
+Character Master Reference仕様策定完了。真正面/左右45°/横顔/全身/表情差分(6種)を全キャラクターで統一フォーマット化。
+
+### 制作方針修正(2026-07-11)
+
+画像生成エンジンを **Higgsfield / Nano Banana → Higgsfield / GPT Image** へ変更。Nano BananaはProductionフローから除外。Soul 2(Higgsfield Soul 2.0)はProduction標準では使用せず、Character Masterにも使用しない(アーティスト写真・ファッションカット・SNSビジュアル・雰囲気重視の一枚絵・コンセプトアートに限定使用)。詳細: `IMAGE_GENERATION_POLICY.md`(リポジトリルート、新設)。Decision Log記録: Obsidian Vault `03_Company/Decisions/2026-07-11_画像生成エンジン方針変更.md`。
+
+5点のCharacter Masterファイル(`Reference/CHAR_*_MASTER.md`)は本方針に合わせて更新済み(タイトル・Lock Prompt・一貫性アンカーの各セクションからSoul ID/Soul 2表記を除去し、GPT Image前提の記述に統一)。Studio OS(`AI_WORKFLOW_V1.md`)のバージョン番号(v1.2)は変更していない。
+
+**既知の残課題**: `Storyboard/CUT<番号>.md`・`CUT<番号>_絵コンテ.md`・Director Notes・`Edit/EDIT_PLAN.md`内に残る"Soul ID locked for consistency"等の表記は、本方針変更時点では遡及的に修正していない(Discovery Log記録済み)。
 
 - [x] CHAR_MIU_MASTER01 — `Reference/CHAR_MIU_MASTER.md`
 - [x] CHAR_AYA_MASTER01 — `Reference/CHAR_AYA_MASTER.md`
@@ -80,7 +88,7 @@ Location Master(ロケーション基準)仕様策定完了。
 
 - [x] Image Asset List / Asset ID / 撮影優先順位 / EDIT_PLAN作成(Production Phase 1)
 - [x] Character Master / Location Master仕様策定(Production Phase 2)
-- [ ] Character Master / Location Masterの実画像生成(Higgsfield/Nano Banana)
+- [ ] Character Master / Location Masterの実画像生成(Higgsfield + GPT Image)
 - [ ] CUT素材配置(画像/動画生成)
 - [ ] Palmier編集
 - [ ] QC

@@ -108,11 +108,12 @@ FLYSTAR77 STUDIO OSは、以下の5レイヤーで運用する。
 - 自動化スクリプト管理
 - Palmierとの連携
 
-### Higgsfield / Nano Banana
+### Higgsfield / GPT Image
 
 役割:
 
 - キャラクター・ビジュアル生成
+- 2026-07-11の制作方針変更により標準エンジンをHiggsfield / Nano BananaからHiggsfield / GPT Imageへ変更。Nano BananaはProductionフローから除外。Soul 2(Higgsfield Soul 2.0)はCharacter Masterに使用せず、アーティスト写真・ファッションカット・SNSビジュアル・雰囲気重視の一枚絵・コンセプトアートに限定(詳細: `IMAGE_GENERATION_POLICY.md`)
 
 ### Seedance / Gemini Omni Flash
 
@@ -395,7 +396,7 @@ ChatGPT / Claude
 ↓
 Claude Code
 ↓
-Higgsfield / Nano Banana
+Higgsfield / GPT Image
 ↓
 Seedance / Gemini Omni Flash
 ↓

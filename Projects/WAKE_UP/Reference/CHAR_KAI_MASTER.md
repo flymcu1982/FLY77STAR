@@ -1,8 +1,8 @@
-# CHAR_KAI_MASTER — Soul ID Reference（WAKE UP）
+# CHAR_KAI_MASTER — Character Master Reference（WAKE UP）
 
 Character Bible参照: KAI（Obsidian Vault `10_Characters/KAI.md`）
 Asset ID: `CHAR_KAI_MASTER01`
-目的: 今後すべての画像・動画生成で同一人物(KAI)を維持するための固定リファレンス。実際の生成はHiggsfield/Nano Banana側の作業。本ファイルはその仕様書。
+目的: 今後すべての画像・動画生成で同一人物(KAI)を維持するための固定リファレンス。実際の生成はHiggsfield + GPT Image側の作業(2026-07-11制作方針変更、`IMAGE_GENERATION_POLICY.md`準拠。Nano Banana不使用、Character MasterにSoul 2は使用しない)。本ファイルはその仕様書。
 
 ## 基本情報
 
@@ -12,14 +12,15 @@ Asset ID: `CHAR_KAI_MASTER01`
 
 **プロンプトに"East Asian Japanese"を必ず明示すること。** 明示しないと人種ドリフトが起きることがCharacter Bibleで既に警告済み。全アングル・全表情プロンプトに含める。
 
-## Soul ID Lock Prompt(共通ベース記述、全アングル・表情で必ず含める)
+## Character Lock Prompt(共通ベース記述、GPT Image用、全アングル・表情で必ず含める)
 
 ```
 East Asian Japanese young man (KAI), MA-1 era design, navy short hair
 with a fade, silver hoop earring in left ear, olive MA-1 jacket over a
 white T-shirt, silver "7" pendant necklace clearly visible, calm
 enigmatic expression base, consistent facial structure across all
-angles and expressions, Soul ID locked for consistency
+angles and expressions, exact facial consistency maintained via this
+fixed reference description (GPT Image, Soul 2 not used)
 ```
 
 ## アングル
@@ -76,7 +77,7 @@ styling, no branded text on apron
 5. **溶解表情(VFX用)** — `calm smile maintained as silhouette edges dissolve into light particles` (CUT08専用、輪郭崩壊VFXのベース表情)
 6. **代表表情(MA-1期の基準)** — `understated cool confidence, subtle half-smile, silver "7" pendant catching light`
 
-## 一貫性アンカー(Soul ID崩れ防止の重要ポイント)
+## 一貫性アンカー(キャラクター崩れ防止の重要ポイント)
 
 - **"East Asian Japanese"を全プロンプトで省略しない**(最重要、人種ドリフト防止)
 - 銀の「7」ペンダントは小物のため生成時に消えやすい。全アングルで「clearly visible」等の強調指定を入れる(Image Asset List既知の課題と一致)

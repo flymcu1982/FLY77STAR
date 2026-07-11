@@ -1,21 +1,22 @@
-# CHAR_NANA_MASTER — Soul ID Reference（WAKE UP）
+# CHAR_NANA_MASTER — Character Master Reference（WAKE UP）
 
 Character Bible参照: NANA（Obsidian Vault `10_Characters/NANA.md`）
 Asset ID: `CHAR_NANA_MASTER01`
-目的: 今後すべての画像・動画生成で同一人物(NANA)を維持するための固定リファレンス。実際の生成はHiggsfield/Nano Banana側の作業。本ファイルはその仕様書。
+目的: 今後すべての画像・動画生成で同一人物(NANA)を維持するための固定リファレンス。実際の生成はHiggsfield + GPT Image側の作業(2026-07-11制作方針変更、`IMAGE_GENERATION_POLICY.md`準拠。Nano Banana不使用、Character MasterにSoul 2は使用しない)。本ファイルはその仕様書。
 
 ## 基本情報
 
-SE77NTH.ボーカル。MIUの実妹、末っ子。感情表現豊かで人懐っこい。顎ラインの内巻き黒ボブ+重めのぱっつん前髪、ピーチピンクのインナーカラー、左目の下の泣きぼくろ(Soul ID同一性維持アンカー)、血色チーク。
+SE77NTH.ボーカル。MIUの実妹、末っ子。感情表現豊かで人懐っこい。顎ラインの内巻き黒ボブ+重めのぱっつん前髪、ピーチピンクのインナーカラー、左目の下の泣きぼくろ(キャラクター同一性維持アンカー)、血色チーク。
 
-## Soul ID Lock Prompt(共通ベース記述、全アングル・表情で必ず含める)
+## Character Lock Prompt(共通ベース記述、GPT Image用、全アングル・表情で必ず含める)
 
 ```
 East Asian Japanese young woman (NANA), chin-length inward-curled black
 bob with heavy blunt bangs, peach-pink inner hair color, a small mole
 fixed under her left eye, rosy cheeks, expressive lively expression
 base, consistent facial structure across all angles and expressions,
-Soul ID locked for consistency
+exact facial consistency maintained via this fixed reference
+description (GPT Image, Soul 2 not used)
 ```
 
 ## アングル
@@ -66,9 +67,9 @@ references
 5. **真剣な表情** — `focused curious expression, head slightly tilted`
 6. **代表表情(人懐っこさ)** — `beaming high-energy smile, eyes crinkled, mole under left eye prominent, embodies her playful younger-sister energy`
 
-## 一貫性アンカー(Soul ID崩れ防止の重要ポイント)
+## 一貫性アンカー(キャラクター崩れ防止の重要ポイント)
 
-- **左目の下の泣きぼくろは全生成で位置固定**(NANAのSoul ID同一性を保証する最重要アンカー、Character Bible既定)
+- **左目の下の泣きぼくろは全生成で位置固定**(NANAの同一性を保証する最重要アンカー、Character Bible既定)
 - ピーチピンクのインナーカラーを必ず描写(姉妹・ユニットのアクセントカラーとして統一)
 - 重めのぱっつん前髪を崩さない(MIU・AYAの前髪スタイルと明確に区別する)
 - 血色チークを毎回描写(表情の生き生きした印象の核)

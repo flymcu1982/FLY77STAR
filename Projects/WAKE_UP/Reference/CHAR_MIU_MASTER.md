@@ -1,20 +1,21 @@
-# CHAR_MIU_MASTER — Soul ID Reference（WAKE UP）
+# CHAR_MIU_MASTER — Character Master Reference（WAKE UP）
 
 Character Bible参照: MIU（Obsidian Vault `10_Characters/MIU.md`）
 Asset ID: `CHAR_MIU_MASTER01`
-目的: 今後すべての画像・動画生成で同一人物(MIU)を維持するための固定リファレンス。実際の生成はHiggsfield/Nano Banana側の作業。本ファイルはその仕様書。
+目的: 今後すべての画像・動画生成で同一人物(MIU)を維持するための固定リファレンス。実際の生成はHiggsfield + GPT Image側の作業(2026-07-11制作方針変更、`IMAGE_GENERATION_POLICY.md`準拠。Nano Banana不使用、Character MasterにSoul 2は使用しない)。本ファイルはその仕様書。
 
 ## 基本情報
 
 SE77NTH.リードボーカル/センター。面倒見のいい姉御肌。NANAの実姉。長い緩巻きライトブラウンヘア+白ヘアバンド、血色感のあるグロスリップ、ゴールド系アクセサリー。
 
-## Soul ID Lock Prompt(共通ベース記述、全アングル・表情で必ず含める)
+## Character Lock Prompt(共通ベース記述、GPT Image用、全アングル・表情で必ず含める)
 
 ```
 East Asian Japanese young woman (MIU), long light brown loose wavy hair
 with a white hairband, warm-toned glossy lips, gold accessories, warm
 and caring expression base, consistent facial structure across all
-angles and expressions, Soul ID locked for consistency
+angles and expressions, exact facial consistency maintained via this
+fixed reference description (GPT Image, Soul 2 not used)
 ```
 
 ## アングル
@@ -63,7 +64,7 @@ proportions with portrait references
 5. **真剣な表情** — `focused searching expression, eyes slightly narrowed, contemplative` (CUT10・CUT11の既視感シーンで使用)
 6. **代表表情(面倒見の良さ)** — `warm reassuring smile, slightly tilted head, older-sister warmth` (グループ内での立ち位置を象徴する表情)
 
-## 一貫性アンカー(Soul ID崩れ防止の重要ポイント)
+## 一貫性アンカー(キャラクター崩れ防止の重要ポイント)
 
 - 白ヘアバンドは全カットで欠かさず描写する(識別性の核)
 - 髪の緩巻きウェーブの質感・長さを毎回統一(直毛化・極端な巻き髪化を避ける)

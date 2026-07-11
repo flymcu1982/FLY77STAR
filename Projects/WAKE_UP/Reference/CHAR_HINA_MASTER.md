@@ -1,8 +1,8 @@
-# CHAR_HINA_MASTER — Soul ID Reference（WAKE UP）
+# CHAR_HINA_MASTER — Character Master Reference（WAKE UP）
 
 Character Bible参照: HINA（Obsidian Vault `10_Characters/HINA.md`）
 Asset ID: `CHAR_HINA_MASTER01`
-目的: 今後すべての画像・動画生成で同一人物(HINA)を維持するための固定リファレンス。実際の生成はHiggsfield/Nano Banana側の作業。本ファイルはその仕様書。
+目的: 今後すべての画像・動画生成で同一人物(HINA)を維持するための固定リファレンス。実際の生成はHiggsfield + GPT Image側の作業(2026-07-11制作方針変更、`IMAGE_GENERATION_POLICY.md`準拠。Nano Banana不使用、Character MasterにSoul 2は使用しない)。本ファイルはその仕様書。
 
 **注記**: HINAとRINは別人物(2026-07-10決定、詳細: Obsidian Vault `03_Company/Decisions/2026-07-10_HINAとRINの分離.md`)。本ファイルはHINA単独のリファレンスであり、RINのビジュアルとは無関係。
 
@@ -10,7 +10,7 @@ Asset ID: `CHAR_HINA_MASTER01`
 
 19歳、身長152cm、細身。Don't Stop主演。素直で明るく、実は努力家。黒髪のみ・インナーカラーなし(NANAとの差別化)、肩より5〜8cm短いショートボブ、Kawaii Labsキュート系の顔立ち、大きく丸い下がり目、そばかす最小限(1〜2個)。WAKE UPでは白い服でカメオ出演(Don't Stopの衣装とは別デザイン)。
 
-## Soul ID Lock Prompt(共通ベース記述、全アングル・表情で必ず含める)
+## Character Lock Prompt(共通ベース記述、GPT Image用、全アングル・表情で必ず含める)
 
 ```
 East Asian Japanese young woman (HINA), 19 years old, small and
@@ -19,7 +19,8 @@ minus 5-8cm, soft voluminous bangs lighter than typical, Kawaii Labs
 style cute face, large round downturned eyes, small upturned nose,
 full pink-toned lips, one or two faint freckles only, pure innocent
 expression base, consistent facial structure across all angles and
-expressions, Soul ID locked for consistency
+expressions, exact facial consistency maintained via this fixed
+reference description (GPT Image, Soul 2 not used)
 ```
 
 ## アングル
@@ -69,7 +70,7 @@ references
 5. **無表情/通り過ぎる横顔** — `neutral unremarkable expression, looking straight ahead, not acknowledging surroundings` (CUT11のすれ違いシーン専用、MIU以外には特別視されない演出のため意図的に無表情寄りに)
 6. **代表表情(努力家の芯の強さ)** — `quiet determined expression beneath a soft smile, subtle contrast between cute surface and inner resolve`
 
-## 一貫性アンカー(Soul ID崩れ防止の重要ポイント)
+## 一貫性アンカー(キャラクター崩れ防止の重要ポイント)
 
 - **インナーカラーを入れない**(NANAとの最重要差別化ポイント。誤ってピンク等のインナーカラーを入れないこと)
 - そばかすは1〜2個のみ、最小限に抑える(過剰なそばかす描写を避ける)

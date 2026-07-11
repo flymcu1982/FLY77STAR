@@ -19,14 +19,14 @@ Every rule doc restates the same priority list; treat it as authoritative for an
 5. `PALMIER_RULES.md` — inputs/outputs contract for handing a cut project to Palmier for editing.
 6. `AI_WORKFLOW_V1.md` — the standard CINE→SOUL→CUT→MASTER relay for generating a single CUT's storyboard/prompt brief (`Projects/<title>/Storyboard/CUT<NN>.md`), used across all MV/drama/movie productions. The four role names aren't yet defined in `AI_RULES.md` (see `Obsidian_Vault/03_Company/Decisions/2026-07-09_未決事項リスト.md` item 1) — until that's resolved, whichever AI is asked performs all four passes itself to reproduce the relay shape.
 
-Also load `PROMPT_GUIDE.md` (generation-prompt structure), `QUALITY_CONTROL.md` (pre-export checklist), and `GITHUB_OPERATIONS.md` (branching/CI/large-file policy) when the task touches those areas.
+Also load `PROMPT_GUIDE.md` (generation-prompt structure), `IMAGE_GENERATION_POLICY.md` (image generation engine standard: Higgsfield + GPT Image; Nano Banana excluded from production; Soul 2 restricted to non-production creative work), `QUALITY_CONTROL.md` (pre-export checklist), and `GITHUB_OPERATIONS.md` (branching/CI/large-file policy) when the task touches those areas.
 
 ## Org chart and this agent's role (Claude Code = CTO)
 
 - **YU — CEO**: final decision-maker. All decisions are confirmed by YU.
 - **ChatGPT / Claude (chat)**: planning, strategy, world-building, screenplay, prompt design, owns the Production Bible. **Not this agent** — if a task is actually planning/direction/story work rather than repo/file/automation work, that's this role's job, not Claude Code's.
 - **Claude Code (CTO, this agent)**: GitHub operations, web publishing (Netlify), folder/file organization, generating edit hand-off artifacts (`EDIT_PLAN.md`, `edit_project.json`), automation scripts, CI/structure validation.
-- **Higgsfield / Nano Banana**: character/visual generation (external tools).
+- **Higgsfield / GPT Image**: character/visual generation (external tools). Standard production engine as of 2026-07-11 (`IMAGE_GENERATION_POLICY.md`); Nano Banana is excluded from the production flow, and Higgsfield Soul 2.0 ("Soul 2") is restricted to non-production creative work (artist photos, fashion cuts, SNS visuals, mood pieces, concept art) — never used for Character Master.
 - **Seedance / Gemini Omni Flash**: MV/video generation, lip-sync, character performance (external tools).
 - **Palmier**: rough cut, timeline generation, dialogue/BGM sync, fades, final export (external tool). Claude Code prepares its inputs; Claude Code never does Palmier's job itself.
 - **ElevenLabs**: narration/voice generation.

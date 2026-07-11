@@ -1,20 +1,21 @@
-# CHAR_AYA_MASTER — Soul ID Reference（WAKE UP）
+# CHAR_AYA_MASTER — Character Master Reference（WAKE UP）
 
 Character Bible参照: AYA（Obsidian Vault `10_Characters/AYA.md`）
 Asset ID: `CHAR_AYA_MASTER01`
-目的: 今後すべての画像・動画生成で同一人物(AYA)を維持するための固定リファレンス。実際の生成はHiggsfield/Nano Banana側の作業。本ファイルはその仕様書。
+目的: 今後すべての画像・動画生成で同一人物(AYA)を維持するための固定リファレンス。実際の生成はHiggsfield + GPT Image側の作業(2026-07-11制作方針変更、`IMAGE_GENERATION_POLICY.md`準拠。Nano Banana不使用、Character MasterにSoul 2は使用しない)。本ファイルはその仕様書。
 
 ## 基本情報
 
 SE77NTH.ボーカル/ラップ。グループ随一の歌唱力・ダンススキル、クールなお姉さん。センターパートのストレートダークブラウンヘア、ヌードリップ、シルバー系アクセサリー。
 
-## Soul ID Lock Prompt(共通ベース記述、全アングル・表情で必ず含める)
+## Character Lock Prompt(共通ベース記述、GPT Image用、全アングル・表情で必ず含める)
 
 ```
 East Asian Japanese young woman (AYA), center-parted straight dark
 brown hair, nude-toned lips, silver accessories, cool composed
 expression base, consistent facial structure across all angles and
-expressions, Soul ID locked for consistency
+expressions, exact facial consistency maintained via this fixed
+reference description (GPT Image, Soul 2 not used)
 ```
 
 ## アングル
@@ -61,7 +62,7 @@ references
 5. **真剣な表情** — `focused intense gaze, slight furrow, sharp concentration`
 6. **代表表情(クールな余裕)** — `confident half-smile, one eyebrow slightly raised, effortless cool` (グループ内の実力No.1を象徴する表情)
 
-## 一貫性アンカー(Soul ID崩れ防止の重要ポイント)
+## 一貫性アンカー(キャラクター崩れ防止の重要ポイント)
 
 - センターパートを崩さない(サイドパートや前髪ありへの変化を避ける)
 - 髪は直毛のストレートで統一(ウェーブ化を避け、MIUと明確に区別する)

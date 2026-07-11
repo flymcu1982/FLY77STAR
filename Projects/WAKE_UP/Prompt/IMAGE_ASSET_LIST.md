@@ -13,9 +13,9 @@ CUT<番号2桁>_P<パネル番号2桁>_<種別><連番2桁>
 - `<キャラクター名>`(MIU/AYA/NANA/KAI/HINA): そのPanelでキャラクターの表情・ポーズを個別に指定する必要がある場合の人物アセット
 - `PROP`: 画面上で識別性が必要な小物(スマホ、看板、ペンダント、皿など)
 
-## 前提: Character Master Reference(Soul ID)
+## 前提: Character Master Reference
 
-全Panelの生成に先立ち、以下5キャラクターのSoul ID固定リファレンスが必要。**仕様策定完了(2026-07-11、Production Phase 2)**。真正面/左右45°/横顔/全身/表情差分6種を各ファイルに整理済み。実際の画像生成(Higgsfield/Nano Banana)は次工程。
+全Panelの生成に先立ち、以下5キャラクターの固定リファレンスが必要。**仕様策定完了(2026-07-11、Production Phase 2)**。真正面/左右45°/横顔/全身/表情差分6種を各ファイルに整理済み。実際の画像生成(Higgsfield + GPT Image。2026-07-11制作方針変更によりNano Banana不使用、Character MasterにSoul 2不使用。詳細: `IMAGE_GENERATION_POLICY.md`)は次工程。
 
 | キャラクター | Asset ID | 内容 | 仕様書 |
 |---|---|---|---|
@@ -81,7 +81,7 @@ CUT<番号2桁>_P<パネル番号2桁>_<種別><連番2桁>
 | P01 | `CUT03_P01_IMG01` | 画像 | NANA登場、セリフ「お待たせー！」 | |
 | P02 | `CUT03_P02_MIU01` `CUT03_P02_AYA01` `CUT03_P02_NANA01` | キャラクター | 3人の手元(ハイタッチ) | |
 | P02 | `CUT03_P02_IMG01` | 画像 | ハイタッチ | BG: `CUT03_P01_BG01`流用 |
-| P03 | `CUT03_P03_MIU01` `CUT03_P03_AYA01` `CUT03_P03_NANA01` | キャラクター | 3人それぞれの笑顔(切り返し用) | ほくろ位置(NANA)等Soul ID一貫性に注意 |
+| P03 | `CUT03_P03_MIU01` `CUT03_P03_AYA01` `CUT03_P03_NANA01` | キャラクター | 3人それぞれの笑顔(切り返し用) | ほくろ位置(NANA)等キャラクター一貫性に注意 |
 | P03 | `CUT03_P03_IMG01`〜`IMG03` | 画像 | 3人分の顔クローズアップ(3カット) | |
 | P04 | `CUT03_P04_MIU01` `CUT03_P04_AYA01` `CUT03_P04_NANA01` | キャラクター | 横並び静止 | 重要Panel(象徴カット) |
 | P04 | `CUT03_P04_IMG01` | 画像 | 3ショットへ引く | BG: `CUT03_P01_BG01`流用 |
@@ -223,7 +223,7 @@ CUT<番号2桁>_P<パネル番号2桁>_<種別><連番2桁>
 
 ### 画像生成順
 
-1. **(最優先/ブロッカー) Character Master Reference確立** — MIU・AYA・NANA・KAI(MA-1期)・HINAのSoul ID固定リファレンス5点。ここが未着手のため、パネル単位の生成は本質的にまだ開始できない
+1. **(最優先/ブロッカー) Character Master Reference確立** — MIU・AYA・NANA・KAI(MA-1期)・HINAの固定リファレンス5点(Higgsfield + GPT Image、`IMAGE_GENERATION_POLICY.md`準拠)。ここが未着手のため、パネル単位の生成は本質的にまだ開始できない
 2. **Location Master確立** — 渋谷スクランブル交差点・POP DINER外観/内装・帰り道の雑踏。複数CUTで再利用するため先行生成が効率的
 3. **重要Panel(Director Notes該当、全12件)を優先生成** — CUT01 P03 / CUT02 P01 / CUT03 P01・P04 / CUT04 P01 / CUT05 P01 / CUT06 P01 / CUT07 P02 / CUT08 P04 / CUT09 P01 / CUT10 P02 / CUT11 P01 / CUT12 P04。Scene全体の感情アーク・Reality Scale・MIUの違和感インデックスの見え方を最小セットで早期検証できる
 4. **残りのPanelをCUT01→12の順で生成**
