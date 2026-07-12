@@ -5,14 +5,14 @@ Project：WAKE UP
 Status：Production Phase 5(Pilot Production)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Production Policy Version 1.0(`IMAGE_GENERATION_POLICY.md`)準拠。AI社員(Claude Code)の担当は設計・QCまで。実際のGPT Image / Higgsfield生成はAI社員が実行しない。
+Production Policy Version 1.3(`IMAGE_GENERATION_POLICY.md`)準拠。AI社員(Claude Code)の担当は設計・QCまで。実際のGPT Image / Higgsfield生成はAI社員が実行しない(2026-07-11、v1.1〜v1.2のPanel04限定生成実行例外は技術検証タスクの結果を受け撤回)。
 
 【Pilot Production対象 / Production Baseline(Director Decision、2026-07-11承認済み)】
 
 🟢 CUT01 Panel01 → Location Validation(Go、生成待ち)
 🟢 CUT01 Panel02 → Camera Validation(Go、Panel01に続き実施)
 🟢 CUT01 Panel03 → **Golden Production Image**(基準画像。Production Package完成、社長レビュー待ち)
-🟡 CUT01 Panel04 → 本番制作中(720pテイク承認済み、Director Decision5点反映済み、720P Pilot Generation待ち)
+🟡 CUT01 Panel04 → 本番制作中(720pテイク承認済み。Production Package再作成はDirectorの5点再判断待ちで保留中 — 本セッション内で一度解決済み・コミット済みの内容と矛盾があるため確認依頼中)
 
 詳細: `Storyboard/CUT01_Panel01_PILOT_PRODUCTION.md`(Director Decision反映済み)、`Storyboard/CUT01_Panel03_PRODUCTION_PACKAGE.md`(Final Production Prompt/Negative Prompt/QC Checklist/Director Approval Checklist/Production Report)、`Storyboard/CUT01_Panel04_PRODUCTION_PACKAGE.md`(Director Decision反映済み)、`Prompt/DIRECTOR_APPROVAL_SHEET.md`
 
@@ -90,15 +90,13 @@ Export
 
 【Today's Mission】
 
-CUT01 Panel04、Director Decision(5点: 実在ブランド名/Story Bible/Panel Storyboard/Costume/File Path)を反映しProduction Packageを修正済み。コミット・push後、720P Pilot Generationへ進行。
+技術検証タスクの結果、Higgsfield MCP経由の生成系ツール(`generate_video`含む)がこの環境では実行不可能と確定。Production Policy v1.3により、AI社員による生成実行の例外(Panel04限定)を撤回し、生成実行はDirector/GPT Image運用側へ復帰。
 
-詳細: `Storyboard/CUT01_Panel04_PRODUCTION_PACKAGE.md`。
+Panel04のProduction Package再作成は、Directorより「絵コンテ側の未解決5点についてDirector判断後に指示する」との指示があり保留中。ただしこの5点は本セッション内で同日中に一度Director Decisionとして解決・コミット済み(`b72ea77`)であり、矛盾があるためDirectorへ確認依頼中。
 
-**AI社員(Claude Code)のPhase5担当範囲(Production Policy Version 1.1、Panel04以降)**:
-- Production Package設計・QC・登録(従来通り)
-- **Panel04以降、厳格運用サイクル(1テーク生成→停止→Director Review→明示的GOで次へ、5項目自己チェック、承認後のみ記録・コミット)のもとで本番生成を実行**
-
-**Panel01〜03は引き続きAI社員が画像生成を行わない範囲。**
+**AI社員(Claude Code)のPhase5担当範囲(Production Policy Version 1.3)**:
+- Production Package設計・QC・登録・記録・Git管理
+- **本番画像・動画生成は実行しない(v1.1〜v1.2のPanel04限定例外は撤回済み)**
 
 ━━━━━━━━━━━━━━━━━━━━━━
 

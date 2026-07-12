@@ -80,16 +80,18 @@ Production Package完成: `Storyboard/CUT01_Panel03_PRODUCTION_PACKAGE.md`(Final
 
 ### CUT01 Panel04 — 本番制作(720pテイク承認済み)
 
-Production Package: `Storyboard/CUT01_Panel04_PRODUCTION_PACKAGE.md`。Production Policy Version 1.1により、Panel04以降はAI社員(Claude Code)が厳格運用サイクルのもとで生成実行を担当する。
+Production Package: `Storyboard/CUT01_Panel04_PRODUCTION_PACKAGE.md`。**Production Policy Version 1.3(2026-07-11)により、Panel04限定の生成実行例外(v1.1〜v1.2)は撤回。生成実行はDirector/GPT Image運用側が担当。**
 
 | 項目 | 状態 |
 |---|---|
 | Theme | 「静止していた時間が、わずかに動き始める。」 |
 | 720p Pilot | Director承認済み(本セッション外、5項目すべて✅) |
-| Director Decision(5点) | **反映済み(2026-07-11)**: 実在ブランド名を一般表現へ差し替え / Story Bible最新版優先(統合は別途) / Panel Storyboard「静止していた時間が動き始める」を正式採用 / 衣装をPanel03と完全同一へ修正 / Cross-Referencesを実在パスへ修正 |
-| Production Package | Director Decision反映済み、コミット・push待ち |
-| 4K Production Generation | 未実施(Director Decision反映・コミット後、720P Pilot Generationへ進行予定) |
-| Director Approval | ⬜ 未承認(4K本番生成前に最終確認) |
+| Director Decision(5点) | 2026-07-11、一度「反映済み」として解決・コミット済み(`b72ea77`)。**その後Directorより「未解決のまま」との指示があり矛盾を確認依頼中(下記参照)** |
+| Production Package | 再作成はDirectorの5点再判断待ちで保留中 |
+| 生成実行 | Director/GPT Image運用側が担当(v1.3。AI社員は実行しない) |
+| Director Approval | ⬜ 未承認 |
+
+**⚠️ 未解決の矛盾**: 実在ブランド名/Story Bible/Panel Storyboard/Costume/File Pathの5点は、本セッション内で2026-07-11にDirector Decisionとして一度解決・コミット済み(`Storyboard/CUT01_Panel04_PRODUCTION_PACKAGE.md`修正版、`CUT01_絵コンテ.md`更新)。その後、Directorより改めて「未解決のまま、Director判断後にPackage再作成を指示する」との指示があり、両者の間に矛盾がある。Directorへ確認依頼中、回答待ちで待機。
 
 ---
 

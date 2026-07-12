@@ -76,8 +76,10 @@ Panel04の720pテイクは本セッション外(社長⇄ChatGPT/GPT Image/Higgs
 - [x] Director Decision(5点)反映
 - [x] `CUT01_絵コンテ.md` Panel4更新
 - [x] `CUT01_Panel04_PRODUCTION_PACKAGE.md`修正版作成
-- [ ] 720P Pilot Generation(厳格運用サイクルに従い実施)
-- [ ] Director Review・5項目自己チェック報告
+- [x] 技術検証タスク: `generate_video`含むHiggsfield MCP生成系ツールがこの環境では実行不可能と確定
+- [x] **Production Policy Version 1.3: AI社員による生成実行の例外(v1.1〜v1.2)を撤回。生成実行はDirector/GPT Image運用側へ復帰**
+- [ ] **保留中**: DirectorよりPanel04の5点(実在ブランド名/Story Bible/Panel Storyboard/Costume/File Path)について「未解決のまま」との指示があったが、上記の通り本セッション内で既にDirector Decisionとして解決・コミット済み(`b72ea77`)。矛盾があるためDirectorへ確認依頼中。回答を待ってからProduction Package再作成に着手
+- [ ] 720P Pilot Generation(Director/GPT Image運用側が実施)
 - [ ] 4K Production Generation(承認後)
 
 ## Phase4のAI社員担当範囲(確定、2026-07-11、Phase5でも継続)
