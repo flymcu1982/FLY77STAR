@@ -12,9 +12,10 @@ Production Policy Version 1.3(`IMAGE_GENERATION_POLICY.md`)準拠。AI社員(Cla
 🟢 CUT01 Panel01 → Location Validation(Go、生成待ち)
 🟢 CUT01 Panel02 → Camera Validation(Go、Panel01に続き実施)
 🟢 CUT01 Panel03 → **Golden Production Image**(基準画像。Production Package完成、社長レビュー待ち)
-🟡 CUT01 Panel04 → 本番制作中(720pテイク承認済み。Production Package再作成はDirectorの5点再判断待ちで保留中 — 本セッション内で一度解決済み・コミット済みの内容と矛盾があるため確認依頼中)
+🟡 CUT01 Panel04 → 本番制作中(720pテイク承認済み。Production Package再作成はDirectorの5点再判断待ちで保留中 — 本セッション内で一度解決済み・コミット済みの内容と矛盾があるため確認依頼中。**2026-07-12: CUT05→CUT06の決定とは別件、Panel04の矛盾は未解決のまま**)
+🟢 CUT05→CUT06(POP DINERへの接近シーン) → Director Decision(2026-07-12)反映済み。歩行テイク過剰の是正、CUT06 Panel1をAYAのドア開けシーンへ視点固定
 
-詳細: `Storyboard/CUT01_Panel01_PILOT_PRODUCTION.md`(Director Decision反映済み)、`Storyboard/CUT01_Panel03_PRODUCTION_PACKAGE.md`(Final Production Prompt/Negative Prompt/QC Checklist/Director Approval Checklist/Production Report)、`Storyboard/CUT01_Panel04_PRODUCTION_PACKAGE.md`(Director Decision反映済み)、`Prompt/DIRECTOR_APPROVAL_SHEET.md`
+詳細: `Storyboard/CUT01_Panel01_PILOT_PRODUCTION.md`(Director Decision反映済み)、`Storyboard/CUT01_Panel03_PRODUCTION_PACKAGE.md`(Final Production Prompt/Negative Prompt/QC Checklist/Director Approval Checklist/Production Report)、`Storyboard/CUT01_Panel04_PRODUCTION_PACKAGE.md`(Director Decision反映済み)、`Storyboard/CUT05_絵コンテ.md`・`Storyboard/CUT06_絵コンテ.md`(2026-07-12 Director Decision反映済み)、`Prompt/DIRECTOR_APPROVAL_SHEET.md`
 
 【Character Master(設計/Image Prompt)】
 

@@ -82,6 +82,18 @@ Panel04の720pテイクは本セッション外(社長⇄ChatGPT/GPT Image/Higgs
 - [ ] 720P Pilot Generation(Director/GPT Image運用側が実施)
 - [ ] 4K Production Generation(承認後)
 
+**2026-07-12追記**: 別件のCUT05→CUT06 Director Decision(下記参照)は、このPanel04の5点を解決するものではない。Panel04の矛盾は本追記時点でも未解決のまま。
+
+## CUT05→CUT06(POP DINERへの接近シーン)Director Decision(2026-07-12)
+
+POP DINERへ向かう追加の歩行テイクは削除。入口を通り過ぎてから戻るように見える動線は不採用(歩行シーンが過剰になるため、該当テイクは本編に使用しない)。次の正式な展開は、CUT06 Panel1(AYAがPOP DINERのドアを開けるシーン、旧「誰の視点かは限定しない」から視点をAYAへ固定)から開始する。前後の接続は編集(Palmier)で補完する。
+
+- [x] `Storyboard/CUT05_絵コンテ.md`: Panel3→4以降に歩行・接近の追加テイクを挟まない旨を追記
+- [x] `Storyboard/CUT06_絵コンテ.md`: Panel1のパネル構成表・本文をAYA視点固定へ更新(旧案は「旧案(参考・廃止)」として保持)
+- [x] `Storyboard/CUT06_Panel01_DirectorNotes.md`: 役者への演技指示をAYA視点固定へ更新
+- [x] Decision Log・Discovery Log記録
+- [x] `Obsidian_Vault/08_Studio_OS/Rules/テイク修正上限ルール.md`(同一テイク修正上限2回)を適用ルールとして明記
+
 ## Phase4のAI社員担当範囲(確定、2026-07-11、Phase5でも継続)
 
 - Image QC(`Prompt/IMAGE_QC_CHECKLIST.md`、生成画像提供後に実施)
