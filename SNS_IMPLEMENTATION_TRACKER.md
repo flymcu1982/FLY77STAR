@@ -15,6 +15,7 @@
 | YouTube migration | Not started | Pending |  |  |  |
 | TikTok official account | Not started | Pending |  |  |  |
 | Instagram official account | Not started | Pending |  |  |  |
+| X official account | Not started | Pending |  |  | Initial priority: `@FLY77STAR_JP`; `@FLY77STAR_LAB` may be reserve-only |
 
 ## Handle Availability Record
 
@@ -23,6 +24,19 @@
 | YouTube | Not checked | Not checked | Not checked |  |  |  | Existing channel migration |
 | TikTok | Not checked | Not checked | Not checked |  |  |  |  |
 | Instagram | Not checked | Not checked | Not checked |  |  |  |  |
+
+## X Handle Availability Record
+
+| Platform | `@FLY77STAR_JP` | `@FLY77STAR_LAB` | Selected Handle | Checked Date | Checked By | YU最終承認 | Memo |
+|---|---|---|---|---|---|---|---|
+| X | Not checked | Not checked |  |  | YU | Pending | `@FLY77STAR_STUDIO` cannot be used because of the 15-character limit; start with `@FLY77STAR_JP` |
+
+## X Two-Track Policy Record
+
+| Track | Candidate Handle | Role | Initial Priority | Launch Mode | Notes |
+|---|---|---|---|---|---|
+| Official | `@FLY77STAR_JP` | 公式告知、作品公開、YouTube / TikTok / note / ブランド発表への導線 | Primary | Active first | 日本発の公式発信向け |
+| Lab | `@FLY77STAR_LAB` | AI制作ログ、失敗生成、プロンプト検証、AI社員運用、CANON管理、制作過程の裏側 | Secondary | Reserve or launch later | 実験・制作過程の発信用 |
 
 ## Gmail New Account Check
 
@@ -71,6 +85,25 @@ Record
 - AI Employee:
 - Memo:
 
+## X New Account Check
+
+- [ ] Official Gmail assigned
+- [ ] X two-track concept documented
+- [ ] `@FLY77STAR_JP` positioned as the initial priority account
+- [ ] `@FLY77STAR_LAB` positioned as reserve-only or later-launch candidate
+- [ ] Actual availability checked by YU on the official X screen
+- [ ] Display name draft prepared
+- [ ] Bio draft prepared
+- [ ] Profile image plan prepared
+- [ ] Launch timing proposal prepared
+- [ ] YU最終承認 received before production change
+
+Record
+
+- Implementation Date:
+- AI Employee:
+- Memo:
+
 ## YU Final Approval Log
 
 | Area | Approval Status | Approval Date | Approved By | Notes |
@@ -79,6 +112,7 @@ Record
 | YouTube brand migration | Pending |  | YU |  |
 | TikTok account launch | Pending |  | YU |  |
 | Instagram account launch | Pending |  | YU |  |
+| X account launch | Pending |  | YU | Initial priority is `@FLY77STAR_JP` |
 | Handle finalization | Pending |  | YU |  |
 | Production profile changes | Pending |  | YU |  |
 

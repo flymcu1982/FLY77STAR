@@ -1,6 +1,6 @@
 # SNS OPERATIONS - FLY77STAR Social Media Strategy
 
-**Version:** 1.1  
+**Version:** 1.2  
 **Status:** YU最終承認待ち  
 **Last Updated:** 2026-07-16
 
@@ -8,12 +8,13 @@
 
 ## Overview
 
-This document defines the SNS implementation and operation rules for FLY77STAR. across YouTube, TikTok, and Instagram.
+This document defines the SNS implementation and operation rules for FLY77STAR. across YouTube, TikTok, Instagram, and X.
 
 **Core Principle:** Keep the brand unified across platforms, but treat YouTube differently from TikTok and Instagram.
 
 - YouTube: do not create a new official channel; renew the existing `@yuyama6664` channel as the FLY77STAR. official channel.
 - TikTok / Instagram: new official accounts may be created.
+- X: manage with a separate handle policy because `@FLY77STAR_STUDIO` exceeds the 15-character limit.
 - Official Gmail: may be newly created for platform operations.
 
 ---
@@ -32,13 +33,43 @@ The following actions must be executed only after `YU最終承認`.
 
 ## Handle Priority
 
-Use the following handle priority across platforms.
+Use the following handle priority across YouTube, TikTok, and Instagram.
 
 1. `@FLY77STAR_STUDIO`
 2. `@FLY77STAR_OFFICIAL`
 3. `@FLY77STAR`
 
 If the first choice is unavailable, move to the next option in order. Final selection requires `YU最終承認`.
+
+### X Handle Exception
+
+X uses a separate handle priority because of the 15-character handle limit.
+
+1. `@FLY77STAR_JP`
+2. `@FLY77STAR_LAB`
+
+Positioning:
+
+- `@FLY77STAR_JP`: official announcements and outbound communication from Japan
+- `@FLY77STAR_LAB`: AI production, experiments, prompt verification, CANON operations, and behind-the-scenes process updates
+
+Availability must be checked by YU on the official X UI, and final selection requires `YU最終承認`.
+
+### X Two-Track Strategy
+
+X is not the primary battlefield for FLY77STAR. It is treated as a supporting route into YouTube, TikTok, and note.
+
+**Track 1: `@FLY77STAR_JP`**
+
+- Primary use: official announcements
+- Purpose: drive traffic to work releases, YouTube, TikTok, note, and brand announcements
+- Initial operation priority: highest
+
+**Track 2: `@FLY77STAR_LAB`**
+
+- Primary use: production experiments
+- Purpose: share AI production logs, failed generations, prompt verification, AI employee operations, CANON management, and behind-the-scenes process notes
+- Launch policy: handle reservation only or later activation is acceptable
 
 ---
 
@@ -91,6 +122,17 @@ If the first choice is unavailable, move to the next option in order. Final sele
 - A new official account may be created with the official Gmail.
 - Apply the handle priority in this document.
 - Display name, bio, profile image, link settings, and launch timing require `YU最終承認`.
+
+### X
+
+**Scope:** official announcements, AI production notes, experiments, and process communication.
+
+- A new official account may be created with the official Gmail.
+- Use the X-specific handle exception in this document.
+- Actual handle availability must be checked by YU on the official X screen.
+- Initial priority is `@FLY77STAR_JP`.
+- `@FLY77STAR_LAB` may be reserved first and activated later.
+- Final handle choice, display name, bio, profile image, and launch timing require `YU最終承認`.
 
 ---
 
@@ -196,6 +238,15 @@ If the first choice is unavailable, move to the next option in order. Final sele
 - [ ] Confirm launch schedule
 - [ ] Publish only after `YU最終承認`
 
+**X**
+
+- [ ] Prepare two-track account concept for `@FLY77STAR_JP` and `@FLY77STAR_LAB`
+- [ ] Ask YU to verify actual availability on the official X screen
+- [ ] Prioritize initial operation of `@FLY77STAR_JP`
+- [ ] Decide whether `@FLY77STAR_LAB` is reservation-only or active at launch
+- [ ] Draft display name / bio / profile image
+- [ ] Publish only after `YU最終承認`
+
 ---
 
 ## Reporting Template
@@ -229,6 +280,16 @@ YU最終承認:
 YU最終承認:
 備考:
 
+【X】
+使用予定ハンドル:
+YUによるX画面確認:
+2アカウント方針:
+初期優先運用:
+LAB運用方針:
+セットアップ状況:
+YU最終承認:
+備考:
+
 【Next Steps】
 1.
 2.
@@ -240,7 +301,7 @@ YU最終承認:
 ## Responsibility
 
 1. `Claude Code (CTO)`: maintain the documentation, checklists, and implementation order.
-2. `YU (CEO)`: provide final decisions on handles, brand changes, visibility changes, and launch timing.
+2. `YU (CEO)`: provide final decisions on handles, brand changes, visibility changes, launch timing, and X availability verification.
 3. `Designated operator`: execute approved setup and report progress.
 
 ---
