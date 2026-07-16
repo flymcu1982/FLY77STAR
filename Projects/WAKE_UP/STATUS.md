@@ -2,6 +2,8 @@
 
 Production Start: 2026-07-10 / 現在フェーズ: **Production Phase 5(Pilot Production)**(2026-07-11、Production Baseline確定・社長承認済み)
 
+**⚠️ Legacy notice(2026-07-16)**: 本ファイル以下のCUT01〜12構成は、2026-07-16受領のFLY77STAR CANON(`/CANON_FLY77STAR_20260716_final.md`)とは異なる物語構成(旧12カット、渋谷スクランブル交差点開始)。Director判断確定までLegacy扱い。詳細: `HANDOFF.md`、`Storyboard/00_LEGACY_STRUCTURE_NOTICE.md`。
+
 ## Phase5: Pilot Production(2026-07-11)
 
 対象: Scene01 / CUT01(Panel01〜03)。一括制作ではなく段階的に進める。
@@ -71,11 +73,11 @@ Panel04の720pテイクは本セッション外(社長⇄ChatGPT/GPT Image/Higgs
 4. Costume → Panel03と完全同一(`casual dark top with simple jeans or skirt, no visible logos or brand marks`)へ修正
 5. File Path → 実在パスへ修正
 
-`Storyboard/CUT01_Panel04_PRODUCTION_PACKAGE.md`をDirector Decision反映版に更新。コミット・push後、720P Pilot Generationへ進行予定。
+`Storyboard/WAKE_UP_CUT01_PANEL04_静止時間動き出し_PRODUCTION_PACKAGE.md`をDirector Decision反映版に更新。コミット・push後、720P Pilot Generationへ進行予定。
 
 - [x] Director Decision(5点)反映
 - [x] `CUT01_絵コンテ.md` Panel4更新
-- [x] `CUT01_Panel04_PRODUCTION_PACKAGE.md`修正版作成
+- [x] `WAKE_UP_CUT01_PANEL04_静止時間動き出し_PRODUCTION_PACKAGE.md`修正版作成
 - [x] 技術検証タスク: `generate_video`含むHiggsfield MCP生成系ツールがこの環境では実行不可能と確定
 - [x] **Production Policy Version 1.3: AI社員による生成実行の例外(v1.1〜v1.2)を撤回。生成実行はDirector/GPT Image運用側へ復帰**
 - [ ] **保留中**: DirectorよりPanel04の5点(実在ブランド名/Story Bible/Panel Storyboard/Costume/File Path)について「未解決のまま」との指示があったが、上記の通り本セッション内で既にDirector Decisionとして解決・コミット済み(`b72ea77`)。矛盾があるためDirectorへ確認依頼中。回答を待ってからProduction Package再作成に着手

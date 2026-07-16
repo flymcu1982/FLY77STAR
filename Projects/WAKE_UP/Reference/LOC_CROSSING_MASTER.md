@@ -40,5 +40,6 @@ still figure to stand out amid moving crowd
 
 ## 関連
 
+- **CANON関連メモ(2026-07-16)**: GitHub `/CANON_FLY77STAR_20260716_final.md` §6のWAKE UP新構成は「クラブ出口」から始まり、渋谷スクランブル交差点への言及がない。本ファイルはLegacy構造(旧12カット、`Storyboard/00_LEGACY_STRUCTURE_NOTICE.md`参照)固有のロケーションである可能性が高く、LOC_DINER系と異なり無条件の「採用済み素材」とは扱わない。Director判断待ち
 - 使用Panel: `Storyboard/CUT01_絵コンテ.md` Panel1-5、`CUT02_絵コンテ.md` 全Panel、`CUT03_絵コンテ.md` 全Panel
 - Image Asset List: `Prompt/IMAGE_ASSET_LIST.md`

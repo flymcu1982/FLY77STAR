@@ -40,6 +40,7 @@ vintage bulb decoration legible, warm inviting entrance, door visible
 
 ## 関連
 
+- **CANON(採用済み素材、2026-07-16)**: GitHub `/CANON_FLY77STAR_20260716_final.md` §6のWAKE UP新構成でも「ダイナーで繋がる別の世界」としてPOP DINERが登場するため、本ファイルは物語構成(Legacy/CANON)の判断によらず有効な可能性が高い(確定はDirector判断待ち)
 - 使用Panel: `Storyboard/CUT05_絵コンテ.md` 全Panel
 - 接続先: `LOC_DINER_INT_MASTER.md`(CUT06〜08へ繋がる)
 - Image Asset List: `Prompt/IMAGE_ASSET_LIST.md`

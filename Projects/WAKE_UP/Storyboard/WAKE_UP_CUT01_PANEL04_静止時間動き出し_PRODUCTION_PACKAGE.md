@@ -1,5 +1,9 @@
 # CUT01 Panel04 — Production Package
 
+**New Canon ID**: `WAKE_UP_CUT01_PANEL04_静止時間動き出し` **Legacy ID(旧ファイル名)**: `CUT01_Panel04_PRODUCTION_PACKAGE`(2026-07-16、Panel04命名規則リネームにより改名。対応表: `Obsidian_Vault/08_Studio_OS/Rules/Panel04_命名規則_旧新ID対応表.md`)
+
+**⚠️ CANON名前衝突に関する注記(2026-07-16)**: 本ファイルは旧12カット構成のCUT01 Panel04(渋谷スクランブル交差点、MIU単独、「静止していた時間が動き始める」)を指す。2026-07-16受領のFLY77STAR CANON(`CANON_FLY77STAR_20260716_final.md`)には別構成(4パネル、クラブ出口→ダイナー)の「Panel4」(AYAがドアを開ける)が存在し、同じ「Panel04」という呼称が2つの異なる内容を指していたことが混乱の原因だった。新旧いずれの構成を正とするかはDirector判断待ち(詳細: `HANDOFF.md`)。
+
 **Status**: 720p Pilot Approved(本セッション外) / Director Decision反映済み(2026-07-11) / **4K Production Package準備完了 — Director Reviewを経て720P Pilot Generationへ進行**
 
 ---

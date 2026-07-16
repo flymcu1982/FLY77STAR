@@ -1,5 +1,7 @@
 # CUT08 Panel04 — Director Notes
 
+**New Canon ID**: `WAKE_UP_CUT08_PANEL04_ホワイトアウト` **Legacy ID(旧ファイル名)**: `CUT08_Panel04_DirectorNotes`(2026-07-16、Panel04命名規則リネームにより改名。対応表: `Obsidian_Vault/08_Studio_OS/Rules/Panel04_命名規則_旧新ID対応表.md`)
+
 **位置づけ**: Panel Storyboard(`Storyboard/CUT08_絵コンテ.md`)を補完する資料。絵コンテでは表現しきれない監督の演出意図を記録するもの。Panel Storyboard本体の内容は変更していない。
 
 **Scene2制作テーマ**: 「現実からパラレルワールドへの入口」。CUT08の役割は「現実ではない空気を完成させる」——Scene2の到達点。

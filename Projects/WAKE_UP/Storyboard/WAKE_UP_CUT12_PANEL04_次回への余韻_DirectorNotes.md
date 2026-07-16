@@ -1,5 +1,7 @@
 # CUT12 Panel04 — Director Notes
 
+**New Canon ID**: `WAKE_UP_CUT12_PANEL04_次回への余韻` **Legacy ID(旧ファイル名)**: `CUT12_Panel04_DirectorNotes`(2026-07-16、Panel04命名規則リネームにより改名。対応表: `Obsidian_Vault/08_Studio_OS/Rules/Panel04_命名規則_旧新ID対応表.md`)
+
 **位置づけ**: Panel Storyboard(`Storyboard/CUT12_絵コンテ.md`)を補完する資料。絵コンテでは表現しきれない監督の演出意図を記録するもの。Panel Storyboard本体の内容は変更していない。
 
 **Scene3制作テーマ**: 「夢から現実へ」。CUT12はScene3の重要事項「④次回への余韻」を直接担うCUT、かつ全12カットの最終パネル。

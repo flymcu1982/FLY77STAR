@@ -87,5 +87,6 @@ Costume Bible未登録(既知の残課題)。正式デザイン決定までの**
 
 ## 関連
 
+- **CANON(採用済み素材、2026-07-16)**: GitHub `/CANON_FLY77STAR_20260716_final.md` §5「キャラクター & アーティスト」のMIU記述。物語構成(Legacy/CANON)の判断によらず有効
 - Character Bible: Obsidian Vault `10_Characters/MIU.md`
 - Image Asset List: `Prompt/IMAGE_ASSET_LIST.md`

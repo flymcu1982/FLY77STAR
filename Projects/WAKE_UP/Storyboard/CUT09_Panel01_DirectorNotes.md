@@ -73,5 +73,5 @@
 
 - Panel Storyboard本体: [[Storyboard/CUT09_絵コンテ|CUT09 絵コンテ]]
 - 生成プロンプト本体: [[Storyboard/CUT09|CUT09]]
-- CUT08からの引き継ぎ: [[Storyboard/CUT08_Panel04_DirectorNotes|CUT08 Panel04 Director Notes]]
+- CUT08からの引き継ぎ: [[Storyboard/WAKE_UP_CUT08_PANEL04_ホワイトアウト_DirectorNotes|CUT08 Panel04 Director Notes]]
 - Story Bible: Obsidian Vault `06_Projects/WAKE_UP/Overview.md`

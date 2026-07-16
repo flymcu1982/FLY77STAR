@@ -5,6 +5,8 @@ Project：WAKE UP
 Status：Production Phase 5(Pilot Production)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
+⚠️ Legacy notice(2026-07-16): 下記CUT01〜12構成はFLY77STAR CANON(`/CANON_FLY77STAR_20260716_final.md`)とは異なる旧物語構成。Director判断確定までLegacy扱い(詳細: `HANDOFF.md`、`Storyboard/00_LEGACY_STRUCTURE_NOTICE.md`)。
+
 Production Policy Version 1.3(`IMAGE_GENERATION_POLICY.md`)準拠。AI社員(Claude Code)の担当は設計・QCまで。実際のGPT Image / Higgsfield生成はAI社員が実行しない(2026-07-11、v1.1〜v1.2のPanel04限定生成実行例外は技術検証タスクの結果を受け撤回)。
 
 【Pilot Production対象 / Production Baseline(Director Decision、2026-07-11承認済み)】
@@ -15,7 +17,7 @@ Production Policy Version 1.3(`IMAGE_GENERATION_POLICY.md`)準拠。AI社員(Cla
 🟡 CUT01 Panel04 → 本番制作中(720pテイク承認済み。Production Package再作成はDirectorの5点再判断待ちで保留中 — 本セッション内で一度解決済み・コミット済みの内容と矛盾があるため確認依頼中。**2026-07-12: CUT05→CUT06の決定とは別件、Panel04の矛盾は未解決のまま**)
 🟢 CUT05→CUT06(POP DINERへの接近シーン) → Director Decision(2026-07-12)反映済み。歩行テイク過剰の是正、CUT06 Panel1をAYAのドア開けシーンへ視点固定
 
-詳細: `Storyboard/CUT01_Panel01_PILOT_PRODUCTION.md`(Director Decision反映済み)、`Storyboard/CUT01_Panel03_PRODUCTION_PACKAGE.md`(Final Production Prompt/Negative Prompt/QC Checklist/Director Approval Checklist/Production Report)、`Storyboard/CUT01_Panel04_PRODUCTION_PACKAGE.md`(Director Decision反映済み)、`Storyboard/CUT05_絵コンテ.md`・`Storyboard/CUT06_絵コンテ.md`(2026-07-12 Director Decision反映済み)、`Prompt/DIRECTOR_APPROVAL_SHEET.md`
+詳細: `Storyboard/CUT01_Panel01_PILOT_PRODUCTION.md`(Director Decision反映済み)、`Storyboard/CUT01_Panel03_PRODUCTION_PACKAGE.md`(Final Production Prompt/Negative Prompt/QC Checklist/Director Approval Checklist/Production Report)、`Storyboard/WAKE_UP_CUT01_PANEL04_静止時間動き出し_PRODUCTION_PACKAGE.md`(Director Decision反映済み)、`Storyboard/CUT05_絵コンテ.md`・`Storyboard/CUT06_絵コンテ.md`(2026-07-12 Director Decision反映済み)、`Prompt/DIRECTOR_APPROVAL_SHEET.md`
 
 【Character Master(設計/Image Prompt)】
 

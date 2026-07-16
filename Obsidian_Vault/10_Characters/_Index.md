@@ -22,6 +22,7 @@
 - [[HINA]] — Don't Stop主演。[[RIN]]とは別人物(2026-07-10決定)
 - [[RIN]] — FLY77STAR Universe最初の主人公。Spotlightのドラマ主演
 - [[RINの父]] — RINの父親。元役者
+- [[LIEN]] — DJ / フロアコマンダー。2026-07-16、FLY77STAR CANONで新規確定
 
 ## 世界観の共通設定
 

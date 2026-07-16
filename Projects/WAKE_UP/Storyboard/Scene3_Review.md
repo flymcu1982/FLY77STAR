@@ -85,6 +85,6 @@ CUT08(ホワイトアウトのピーク)→CUT09(現実への切り返し)→CUT
 - CUT09: [[Storyboard/CUT09|CUT09]] / [[Storyboard/CUT09_絵コンテ|CUT09 絵コンテ]] / [[Storyboard/CUT09_Panel01_DirectorNotes|CUT09 Panel01 Director Notes]]
 - CUT10: [[Storyboard/CUT10|CUT10]] / [[Storyboard/CUT10_絵コンテ|CUT10 絵コンテ]] / [[Storyboard/CUT10_Panel02_DirectorNotes|CUT10 Panel02 Director Notes]]
 - CUT11: [[Storyboard/CUT11|CUT11]] / [[Storyboard/CUT11_絵コンテ|CUT11 絵コンテ]] / [[Storyboard/CUT11_Panel01_DirectorNotes|CUT11 Panel01 Director Notes]]
-- CUT12: [[Storyboard/CUT12|CUT12]] / [[Storyboard/CUT12_絵コンテ|CUT12 絵コンテ]] / [[Storyboard/CUT12_Panel04_DirectorNotes|CUT12 Panel04 Director Notes]]
+- CUT12: [[Storyboard/CUT12|CUT12]] / [[Storyboard/CUT12_絵コンテ|CUT12 絵コンテ]] / [[Storyboard/WAKE_UP_CUT12_PANEL04_次回への余韻_DirectorNotes|CUT12 Panel04 Director Notes]]
 - Scene2 Review: [[Storyboard/Scene2_Review|Scene2 Review]]
 - Story Bible: Obsidian Vault `06_Projects/WAKE_UP/Overview.md`

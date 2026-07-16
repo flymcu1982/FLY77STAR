@@ -83,6 +83,7 @@ WAKE UP用の「白い服」はDon't Stop用の衣装とは別デザインで、
 
 ## 関連
 
+- **CANON(採用済み素材、2026-07-16)**: GitHub `/CANON_FLY77STAR_20260716_final.md` §5「キャラクター & アーティスト」のHINA記述(19歳、白をテーマにしたソロアイドル、SE77NTH.非メンバー)。物語構成(Legacy/CANON)の判断によらず有効。ただしCANONのWAKE UP新構成(4パネル、クラブ出口→ダイナー)にHINAの登場記載はなく、「帰り道の白服カメオ」はLegacy構造(旧12カット)固有の設定である点に留意
 - Character Bible: Obsidian Vault `10_Characters/HINA.md`
 - Decision Log(HINAとRINの分離): Obsidian Vault `03_Company/Decisions/2026-07-10_HINAとRINの分離.md`
 - Image Asset List: `Prompt/IMAGE_ASSET_LIST.md`

@@ -2,7 +2,7 @@
 
 Story Bible(2026-07-10改訂)確定を受けて作成。[[../../../Obsidian_Vault/06_Projects/WAKE_UP/Overview.md|Story Bible]]の内容を基準に、CUT01(0:00〜0:08、渋谷)を実写映画のカット割りとして再構成したもの。生成プロンプト本体は `Storyboard/CUT01.md` を参照。本ファイルはその画コンテ／ショットデザイン部分を詳細化する補助ドキュメント。
 
-**2026-07-11追記(Director Decision)**: Panel4の内容を「スマホを見る」から「静止していた時間が動き始める」へ正式変更。詳細は`CUT01_Panel04_PRODUCTION_PACKAGE.md`を参照(Production Package側を正とする)。旧案はPanel4セクション内に「旧案(参考・廃止)」として残す。
+**2026-07-11追記(Director Decision)**: Panel4の内容を「スマホを見る」から「静止していた時間が動き始める」へ正式変更。詳細は`WAKE_UP_CUT01_PANEL04_静止時間動き出し_PRODUCTION_PACKAGE.md`を参照(Production Package側を正とする)。旧案はPanel4セクション内に「旧案(参考・廃止)」として残す。
 
 ## 基準情報
 
@@ -70,7 +70,7 @@ Story Bible(2026-07-10改訂)確定を受けて作成。[[../../../Obsidian_Vaul
 
 ## Panel 4 — 静止していた時間が動き始める
 
-**Theme**: 「静止していた時間が、わずかに動き始める。」Panel03で確立した「偶然見つけた少女」の直後、MIUの内側で何かが動き始める予兆を、観客に「気づかせないまま気づかせる」演出。詳細・Generation Promptは`CUT01_Panel04_PRODUCTION_PACKAGE.md`を参照(Production Package側を正とする)。
+**Theme**: 「静止していた時間が、わずかに動き始める。」Panel03で確立した「偶然見つけた少女」の直後、MIUの内側で何かが動き始める予兆を、観客に「気づかせないまま気づかせる」演出。詳細・Generation Promptは`WAKE_UP_CUT01_PANEL04_静止時間動き出し_PRODUCTION_PACKAGE.md`を参照(Production Package側を正とする)。
 
 - ショットサイズ／レンズ: MS、標準〜やや接近(50mm感)
 - カメラワーク: ゆっくりとした押し(ドリーイン)、アイレベル。微細なハンドヘルド感を伴うが手ブレは最小限
@@ -135,4 +135,4 @@ Story Bible(2026-07-10改訂)確定を受けて作成。[[../../../Obsidian_Vaul
 
 - 生成プロンプト本体: [[Storyboard/CUT01|CUT01]]（Studio OS標準ワークフロー出力）
 - Story Bible: Obsidian Vault `06_Projects/WAKE_UP/Overview.md`
-- Panel04 Production Package: `Storyboard/CUT01_Panel04_PRODUCTION_PACKAGE.md`
+- Panel04 Production Package: `Storyboard/WAKE_UP_CUT01_PANEL04_静止時間動き出し_PRODUCTION_PACKAGE.md`

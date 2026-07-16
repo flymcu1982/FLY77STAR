@@ -80,7 +80,7 @@ Production Package完成: `Storyboard/CUT01_Panel03_PRODUCTION_PACKAGE.md`(Final
 
 ### CUT01 Panel04 — 本番制作(720pテイク承認済み)
 
-Production Package: `Storyboard/CUT01_Panel04_PRODUCTION_PACKAGE.md`。**Production Policy Version 1.3(2026-07-11)により、Panel04限定の生成実行例外(v1.1〜v1.2)は撤回。生成実行はDirector/GPT Image運用側が担当。**
+Production Package: `Storyboard/WAKE_UP_CUT01_PANEL04_静止時間動き出し_PRODUCTION_PACKAGE.md`。**Production Policy Version 1.3(2026-07-11)により、Panel04限定の生成実行例外(v1.1〜v1.2)は撤回。生成実行はDirector/GPT Image運用側が担当。**
 
 | 項目 | 状態 |
 |---|---|
@@ -91,7 +91,7 @@ Production Package: `Storyboard/CUT01_Panel04_PRODUCTION_PACKAGE.md`。**Product
 | 生成実行 | Director/GPT Image運用側が担当(v1.3。AI社員は実行しない) |
 | Director Approval | ⬜ 未承認 |
 
-**⚠️ 未解決の矛盾**: 実在ブランド名/Story Bible/Panel Storyboard/Costume/File Pathの5点は、本セッション内で2026-07-11にDirector Decisionとして一度解決・コミット済み(`Storyboard/CUT01_Panel04_PRODUCTION_PACKAGE.md`修正版、`CUT01_絵コンテ.md`更新)。その後、Directorより改めて「未解決のまま、Director判断後にPackage再作成を指示する」との指示があり、両者の間に矛盾がある。Directorへ確認依頼中、回答待ちで待機。
+**⚠️ 未解決の矛盾**: 実在ブランド名/Story Bible/Panel Storyboard/Costume/File Pathの5点は、本セッション内で2026-07-11にDirector Decisionとして一度解決・コミット済み(`Storyboard/WAKE_UP_CUT01_PANEL04_静止時間動き出し_PRODUCTION_PACKAGE.md`修正版、`CUT01_絵コンテ.md`更新)。その後、Directorより改めて「未解決のまま、Director判断後にPackage再作成を指示する」との指示があり、両者の間に矛盾がある。Directorへ確認依頼中、回答待ちで待機。
 
 ---
 

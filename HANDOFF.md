@@ -15,7 +15,7 @@ WAKE UP(`Projects/WAKE_UP/`)
 **CANONと既存リポジトリ資料の主な差分(Director確認待ち、勝手に上書きしない)**:
 
 1. **WAKE UPの物語構成が大きく変更されている**: CANONでは「青い時刻4:30AM、クラブ出口の3人、MIU『始発まであそこで待とう！』、AYAがダイナーのドアを開ける」という4パネル構成+ラストコーラス(満員ライブ、KAIステージ・LIEN DJ)+エンディング(NANA「楽しかったね」)。既存リポジトリの12カット構成Story Bible(渋谷スクランブル交差点開始、KAI=謎のコック、HINA白服カメオ)とは別物。既存CUT01〜12のStoryboard資産の扱い(旧案化するか)はDirector判断待ち
-2. **「Panel04」の指し先が2つ存在**: CANONの新4パネル構成のPanel4=「AYAがダイナーのドアを開ける」。従来リポジトリのCUT01 Panel04=「交差点でMIUの時間が動き始める」。近日のDirector指示の「Panel04」「未解決5点」の混乱はこの名前衝突が原因である可能性が高い
+2. **「Panel04」の指し先が2つ存在**: CANONの新4パネル構成のPanel4=「AYAがダイナーのドアを開ける」。従来リポジトリのCUT01 Panel04=「交差点でMIUの時間が動き始める」。近日のDirector指示の「Panel04」「未解決5点」の混乱はこの名前衝突が原因である可能性が高い。**2026-07-16、この衝突を含むリポジトリ内の全「Panel04」ファイル(4件: CUT01/CUT03/CUT08/CUT12)を`PROJECT_CUT##_PANEL##_内容名`形式へリネーム済み(対応表: `Obsidian_Vault/08_Studio_OS/Rules/Panel04_命名規則_旧新ID対応表.md`)。ただしファイル名の衝突が解消されただけで、CANONとの物語構成そのものの統合(上記1点目)はまだDirector判断待ち**
 3. **新キャラクター**: LIEN(DJ/フロアコマンダー、確定)はVault未登録。RIN/RINの父(AKIHIKO)/RUI/RUKAはハブノート既存。LIENのCharacter Bible登録が必要
 4. **カラーコード不一致**: CANON本体(§1: Navy #0F0F1A/Silver #C0C0C7/Star Blue #1E5BA8)と発注書(Navy #0A0F1A/Silver #C0C3C7/Star Blue #1E9BFF)で3色とも値が異なる。Web/バナー実装前に要確認
 5. **CANON §6の書式崩れ**: RUKA『TOMORROW』セクションの直後にWAKE UPのステータス行が見出しなしで続いており、WAKE UP見出しが欠落している模様(原文のまま保存済み)
@@ -29,7 +29,7 @@ Production Phase 5。CUT01のPanel単位パイロット制作中。Production Po
 
 **技術検証タスクの結論(2026-07-11)**: `generate_video`(get_cost:trueの無課金見積りプリフライトを含む)も含め、Higgsfield MCP経由の生成系ツールはこの環境(managed remote execution environment)では承認待ちにより実行不可能と確定。Director判断により、**v1.1で導入した「AI社員による生成実行」の例外はv1.3で撤回**。生成実行はDirector/GPT Image運用側へ戻った。AI社員はProduction Package作成・QC・記録・Git管理を担当する原則に復帰。
 
-**現在の状態(2026-07-11、CUT01 Panel04)**: Directorより「CUT01 Panel04のProduction Package再作成は、絵コンテ側の未解決5点(実在ブランド名/Story Bible版/Panel Storyboard整合/衣装記述矛盾/ファイルパス不一致)についてDirectorが判断した後に指示する」との指示があり、待機中。**⚠️留意(未解決のまま)**: この5点は、本セッション内で同日(2026-07-11)に一度「Director Decision」として解決済み・コミット済み(commit `b72ea77`、`Storyboard/CUT01_Panel04_PRODUCTION_PACKAGE.md`修正版・`CUT01_絵コンテ.md`更新・Decision Log記録)。最新のDirector指示はこれを「未解決のまま」としており、両者に矛盾があるためClaude Codeより確認依頼中(次に対応するAIは、Directorへこの矛盾を確認してから作業すること)。**2026-07-12追記**: 別件として「CUT05→CUT06(POP DINERへの接近シーン)」についてDirector Decisionがあり反映済み(下記参照)だが、これは**CUT01 Panel04の5点とは無関係の決定**であり、Panel04の矛盾は本追記時点でも未解決のまま。
+**現在の状態(2026-07-11、CUT01 Panel04)**: Directorより「CUT01 Panel04のProduction Package再作成は、絵コンテ側の未解決5点(実在ブランド名/Story Bible版/Panel Storyboard整合/衣装記述矛盾/ファイルパス不一致)についてDirectorが判断した後に指示する」との指示があり、待機中。**⚠️留意(未解決のまま)**: この5点は、本セッション内で同日(2026-07-11)に一度「Director Decision」として解決済み・コミット済み(commit `b72ea77`、`Storyboard/WAKE_UP_CUT01_PANEL04_静止時間動き出し_PRODUCTION_PACKAGE.md`修正版・`CUT01_絵コンテ.md`更新・Decision Log記録)。最新のDirector指示はこれを「未解決のまま」としており、両者に矛盾があるためClaude Codeより確認依頼中(次に対応するAIは、Directorへこの矛盾を確認してから作業すること)。**2026-07-12追記**: 別件として「CUT05→CUT06(POP DINERへの接近シーン)」についてDirector Decisionがあり反映済み(下記参照)だが、これは**CUT01 Panel04の5点とは無関係の決定**であり、Panel04の矛盾は本追記時点でも未解決のまま。
 
 **2026-07-12、CUT05→CUT06(POP DINERへの接近シーン)Director Decision反映**: POP DINERへ向かう追加の歩行テイクは削除、入口を通り過ぎてから戻る動線は不採用(歩行シーンの過剰化を避ける)。次の正式な展開はCUT06 Panel1(AYAがPOP DINERのドアを開けるシーン、旧「誰の視点かは限定しない」から変更)から開始。前後の接続は編集(Palmier)で補完。`CUT05_絵コンテ.md`/`CUT06_絵コンテ.md`/`CUT06_Panel01_DirectorNotes.md`へ反映済み、Decision Log・Discovery Log記録済み。テイク修正上限ルール(`Obsidian_Vault/08_Studio_OS/Rules/テイク修正上限ルール.md`)を適用。**この決定はCUT01 Panel04の未解決5点を解決するものではない。**
 
@@ -49,8 +49,11 @@ Production Phase 5。CUT01のPanel単位パイロット制作中。Production Po
 - CUT01 Panel01 Pilot Production(Location Validation)、Panel03 Production Package + Take1レビュー(Golden Production Image)
 - MIU Diner Ver.・AYA Diner Ver.・NANA Diner Ver.・KAI Cook Ver.(衛生仕様修正版) — 衣装、Costume Bible未登録
 - Panel04: 720pテイクが本セッション外(社長⇄ChatGPT/GPT Image/Higgsfield)で承認済み(Character/Composition/Lighting/Story/Emotionすべて問題なしと判断)
-- Panel04.md原文と既存プロダクション成果物の不整合5点(実在ブランド名/Story Bible/Panel Storyboard/Costume/File Path)を検出し生成保留、Director Decision(2026-07-11)で全点解決。`Storyboard/CUT01_Panel04_PRODUCTION_PACKAGE.md`を修正版として更新、`CUT01_絵コンテ.md` Panel4も更新済み(その後、Directorより「未解決のまま」との指示があり矛盾を確認依頼中、上記「現在の工程」参照)
+- Panel04.md原文と既存プロダクション成果物の不整合5点(実在ブランド名/Story Bible/Panel Storyboard/Costume/File Path)を検出し生成保留、Director Decision(2026-07-11)で全点解決。`Storyboard/WAKE_UP_CUT01_PANEL04_静止時間動き出し_PRODUCTION_PACKAGE.md`を修正版として更新、`CUT01_絵コンテ.md` Panel4も更新済み(その後、Directorより「未解決のまま」との指示があり矛盾を確認依頼中、上記「現在の工程」参照)
 - CUT05→CUT06(POP DINERへの接近シーン)Director Decision(2026-07-12)反映: 歩行テイク過剰の是正、CUT06 Panel1をAYAのドア開けシーンへ視点固定
+- **2026-07-16、Panel04命名規則リネーム**: CUT01/CUT03/CUT08/CUT12の「Panel04」4ファイルを`PROJECT_CUT##_PANEL##_内容名`形式へリネーム(git mv、既存ファイルは削除せず、旧ファイル名はLegacy IDとして各ファイル冒頭に保持)。本文内参照(パス・wikilink)も更新。対応表: `Obsidian_Vault/08_Studio_OS/Rules/Panel04_命名規則_旧新ID対応表.md`。**Panel01〜03を含む全17件の一括リネームは、CANONとStoryboardの整合性が安定してから別フェーズで検討(Director判断、2026-07-16)**
+- **2026-07-16、既存12カット資産のLegacy化**: Story Bible(Vault `06_Projects/WAKE_UP/Overview.md`)、STATUS.md、PRODUCTION_BOARD.md、`Storyboard/`フォルダにLegacy noticeを追記(新規: `Storyboard/00_LEGACY_STRUCTURE_NOTICE.md`)。ファイルは削除・移動せず、そのまま保持。採用済み素材(Character Master5点、POP DINER関連Location Master2点)にCANON参照リンクを追記。渋谷交差点・帰り道関連のLocation Master3点(CROSSING/STREET/SIDEWALK)は「Legacy構造固有の可能性が高い」と注記(CANONの新構成に該当描写がないため)、KAI/HINAのCharacter MasterにはLegacy構造固有の設定(KAI=謎のコック、HINA=帰り道カメオ)である旨を注記
+- **2026-07-16、LIEN Character Bible登録**: `Obsidian_Vault/10_Characters/LIEN.md`をCANON §5・§7を基に新規作成。`10_Characters/_Index.md`・`00_Start_Here/索引.md`へ登録
 
 ## 重要決定
 
@@ -69,9 +72,8 @@ Production Phase 5。CUT01のPanel単位パイロット制作中。Production Po
 
 ## 次の作業
 
-- **最優先**: CANONと既存リポジトリ資料の差分6点(上記「CANON受領」参照)についてDirectorの判断を仰ぐ。特に(1)既存12カットStory Bible/Storyboard資産を旧案化するか、(2)「Panel04」の名前衝突の解消
+- **最優先**: CANONと既存リポジトリ資料の差分6点(上記「CANON受領」参照)についてDirectorの判断を仰ぐ。Panel04ファイル名の衝突は解消済み、既存12カット資産はLegacy notice(削除・移動なし)を追記済みだが、(1)Legacy構造とCANONのどちらを最終的に正式採用とするか(または統合するか)自体はまだ未確定
 - Directorへ「Panel04絵コンテ5点は本セッション内で一度解決済み・コミット済み(commit `b72ea77`)」という矛盾を確認する(CANON受領により、この混乱は新旧Panel04の名前衝突が原因の可能性が高いと判明)
-- LIENのCharacter Bibleハブノート登録(`Obsidian_Vault/10_Characters/LIEN.md`、CANON §7の内容を基に)
 - HINAをソロアーティストとしてCharacter Bibleへ正式反映する
 - Decision Logへ決定を記録する
 - Discovery Logの「HINA: SE77NTH. VOCAL」矛盾を解決済みに更新する

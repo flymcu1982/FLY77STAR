@@ -86,5 +86,5 @@ CUT05 Panel2〜4、CUT06 Panel2〜5、CUT07 Panel1・3〜5、CUT08 Panel1〜3は
 - CUT05: [[Storyboard/CUT05|CUT05]] / [[Storyboard/CUT05_絵コンテ|CUT05 絵コンテ]] / [[Storyboard/CUT05_Panel01_DirectorNotes|CUT05 Panel01 Director Notes]]
 - CUT06: [[Storyboard/CUT06|CUT06]] / [[Storyboard/CUT06_絵コンテ|CUT06 絵コンテ]] / [[Storyboard/CUT06_Panel01_DirectorNotes|CUT06 Panel01 Director Notes]]
 - CUT07: [[Storyboard/CUT07|CUT07]] / [[Storyboard/CUT07_絵コンテ|CUT07 絵コンテ]] / [[Storyboard/CUT07_Panel02_DirectorNotes|CUT07 Panel02 Director Notes]]
-- CUT08: [[Storyboard/CUT08|CUT08]] / [[Storyboard/CUT08_絵コンテ|CUT08 絵コンテ]] / [[Storyboard/CUT08_Panel04_DirectorNotes|CUT08 Panel04 Director Notes]]
+- CUT08: [[Storyboard/CUT08|CUT08]] / [[Storyboard/CUT08_絵コンテ|CUT08 絵コンテ]] / [[Storyboard/WAKE_UP_CUT08_PANEL04_ホワイトアウト_DirectorNotes|CUT08 Panel04 Director Notes]]
 - Story Bible: Obsidian Vault `06_Projects/WAKE_UP/Overview.md`

@@ -67,5 +67,5 @@ Panel2(横からの並走、じゃれ合い)へは、「静けさの残る歩き
 
 - Panel Storyboard本体: [[Storyboard/CUT04_絵コンテ|CUT04 絵コンテ]]
 - 生成プロンプト本体: [[Storyboard/CUT04|CUT04]]
-- CUT03からの引き継ぎ: [[Storyboard/CUT03_Panel04_DirectorNotes|CUT03 Panel04 Director Notes]]
+- CUT03からの引き継ぎ: [[Storyboard/WAKE_UP_CUT03_PANEL04_3人集結_DirectorNotes|CUT03 Panel04 Director Notes]]
 - Story Bible: Obsidian Vault `06_Projects/WAKE_UP/Overview.md`

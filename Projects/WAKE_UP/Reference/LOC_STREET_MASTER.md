@@ -40,6 +40,7 @@ LOC_DINER_EXT01 continuity)
 
 ## 関連
 
+- **CANON関連メモ(2026-07-16)**: GitHub `/CANON_FLY77STAR_20260716_final.md` §6のWAKE UP新構成は「クラブ出口」から始まる。本ファイルはLegacy構造(旧12カット、`Storyboard/00_LEGACY_STRUCTURE_NOTICE.md`参照)固有のロケーションである可能性が高く、無条件の「採用済み素材」とは扱わない。Director判断待ち
 - 使用Panel: `Storyboard/CUT04_絵コンテ.md` 全Panel
 - 接続先: `LOC_DINER_EXT_MASTER.md`(CUT05へ繋がる)
 - Image Asset List: `Prompt/IMAGE_ASSET_LIST.md`
