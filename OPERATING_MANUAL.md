@@ -159,6 +159,17 @@ FLYSTAR77 STUDIO OSは、以下の5レイヤーで運用する。
 
 - 公式サイト公開
 
+## Supporting Operations Documents
+
+The following documents provide detailed operational procedures for specific layers:
+
+- **`SNS_OPERATIONS.md`** (Layer 3 - 広報): SNS account strategy, handle reservation, content management, and reporting for YouTube, TikTok, and Instagram
+- **`GITHUB_OPERATIONS.md`** (Layer 5 - 自動化): GitHub branching, CI/CD, and large-file policies
+- **`IMAGE_GENERATION_POLICY.md`**: Image generation engine standards and production policy
+- **`PROMPT_GUIDE.md`**: Prompt structure and generation guidelines
+
+These documents are authoritative for their respective domains and should be consulted during implementation.
+
 ## Standard Folder Structure
 
 ```text
