@@ -90,7 +90,7 @@ styling, no branded text on apron
 
 ## 関連
 
-- **CANON(採用済み素材、2026-07-16)**: GitHub `/CANON_FLY77STAR_20260716_final.md` §5「キャラクター & アーティスト」のKAI記述。物語構成(Legacy/CANON)の判断によらず有効。ただしCANONではKAIはラッパー/ソロアーティストとして描写されており、「コックとしてのみ登場」という下記Director Notesの演出方針はLegacy構造(旧12カット)固有の設定である点に留意
+- **CANON(採用済み素材、2026-07-16)**: GitHub `/CANON_FLY77STAR_20260716_final.md` §5「キャラクター & アーティスト」のKAI記述。Character Referenceとして確定。ただしCANONではKAIはラッパー/ソロアーティストとして描写されており、「コックとしてのみ登場」という本ファイルの演出方針はLegacy構造(旧12カット)固有の設定である点に留意
 - Character Bible: Obsidian Vault `10_Characters/KAI.md`
 - Director Notes(コックとしてのみ登場の演出方針、Legacy構造): `Storyboard/CUT07_Panel02_DirectorNotes.md`
 - Image Asset List: `Prompt/IMAGE_ASSET_LIST.md`

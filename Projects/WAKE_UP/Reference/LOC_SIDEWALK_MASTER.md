@@ -53,6 +53,6 @@ reserved for end-card text overlay
 
 ## 関連
 
-- **CANON関連メモ(2026-07-16)**: GitHub `/CANON_FLY77STAR_20260716_final.md` §6のWAKE UP新構成には「帰り道」に相当する描写がなく(エンディングは「現実の渋谷へ帰還」とのみ記載)、本ファイルはLegacy構造(旧12カット、`Storyboard/00_LEGACY_STRUCTURE_NOTICE.md`参照)固有のロケーションである可能性が高い。無条件の「採用済み素材」とは扱わない。Director判断待ち
+- **CANON(採用済み素材、2026-07-16)**: GitHub `/CANON_FLY77STAR_20260716_final.md` §6のWAKE UP新構成において、SIDEWALK (EPILOGUE SHIBUYA_RETURN、帰り道)として円環構造の終点として位置づけられた。本ファイルはLegacy構造(旧12カット)との物語統合とは別に、Location Referenceとして有効
 - 使用Panel: `Storyboard/CUT09_絵コンテ.md`〜`CUT12_絵コンテ.md` 全Panel
 - Image Asset List: `Prompt/IMAGE_ASSET_LIST.md`

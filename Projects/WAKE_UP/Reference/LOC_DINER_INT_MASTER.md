@@ -48,7 +48,7 @@ overexposure
 
 ## 関連
 
-- **CANON(採用済み素材、2026-07-16)**: GitHub `/CANON_FLY77STAR_20260716_final.md` §6のWAKE UP新構成でも「ダイナーで繋がる別の世界」「満員ライブ(ダイナー奥の小ステージ)」としてPOP DINER店内が登場するため、本ファイルは物語構成(Legacy/CANON)の判断によらず有効な可能性が高い(確定はDirector判断待ち)
+- **CANON(採用済み素材、2026-07-16)**: GitHub `/CANON_FLY77STAR_20260716_final.md` §6のWAKE UP新構成でも「ダイナーで繋がる別の世界」「満員ライブ(ダイナー奥の小ステージ)」としてPOP DINER店内が登場するため、本ファイルは物語構成(Legacy/CANON)の判断によらず有効。Location Referenceとして確定
 - 使用Panel: `Storyboard/CUT06_絵コンテ.md`・`CUT07_絵コンテ.md`・`CUT08_絵コンテ.md` 全Panel
 - 接続元: `LOC_DINER_EXT_MASTER.md`
 - Image Asset List: `Prompt/IMAGE_ASSET_LIST.md`

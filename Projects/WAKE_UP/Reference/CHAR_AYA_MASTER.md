@@ -75,6 +75,6 @@ Costume Bible未登録(既知の残課題)。正式デザイン決定までの**
 
 ## 関連
 
-- **CANON(採用済み素材、2026-07-16)**: GitHub `/CANON_FLY77STAR_20260716_final.md` §5「キャラクター & アーティスト」のAYA記述。物語構成(Legacy/CANON)の判断によらず有効
+- **CANON(採用済み素材、2026-07-16)**: GitHub `/CANON_FLY77STAR_20260716_final.md` §5「キャラクター & アーティスト」のSE77NTH. (AYA記述)。Character Referenceとして確定
 - Character Bible: Obsidian Vault `10_Characters/AYA.md`
 - Image Asset List: `Prompt/IMAGE_ASSET_LIST.md`
