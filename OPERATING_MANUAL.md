@@ -7,11 +7,12 @@ Claude Code（CTO）はこのファイルを参照して作業する。
 このリポジトリでは、以下のファイルを最優先ルールとして扱う。
 
 1. `OPERATING_MANUAL.md`
-2. `PRODUCTION_BIBLE.md`
-3. `AI_RULES.md`
-4. `CODEX_RULES.md`
-5. `PALMIER_RULES.md`
-6. `ProductionBible/RULE.md`
+2. `SNS_OPERATIONS.md`
+3. `PRODUCTION_BIBLE.md`
+4. `AI_RULES.md`
+5. `CODEX_RULES.md`
+6. `PALMIER_RULES.md`
+7. `ProductionBible/RULE.md`
 
 以後の作業は、このルールに従って進める。
 
@@ -21,7 +22,7 @@ Claude Code（CTO）はこのファイルを参照して作業する。
 
 ## Organization
 
-- **FLY77STAR U. — CEO**: 最終判断者。すべての意思決定はFLY77STAR U.の承認をもって確定する。
+- **YU — CEO**: 最終判断者。すべての意思決定はYUの承認をもって確定する。
 - それ以外のAI/ツールは全員「AI社員」として、担当領域内では自律的に判断・提案する。詳細な役割分担、得意な仕事、禁止事項、作業開始前に読むべきファイルは `AI_RULES.md` を参照する。
 
 ## Vision
@@ -78,7 +79,7 @@ FLYSTAR77 STUDIO OSは、以下の5レイヤーで運用する。
 
 ## AI Team
 
-### FLY77STAR U.（CEO）
+### YU（CEO）
 
 役割:
 
@@ -297,9 +298,15 @@ AIにセリフを読ませるのではない。
 
 ## Release Rules
 
+SNS実装・運用の詳細ルールは `SNS_OPERATIONS.md` を参照する。
+
 ### YouTube
 
 - 4K
+- 公式Gmailは新規作成してよい。
+- 公式YouTubeは新規開設しない。既存チャンネル `@yuyama6664` を FLY77STAR. 公式チャンネルへブランド移行する。
+- 既存動画は削除禁止。公開継続、限定公開、非公開、再編集活用のいずれかに分類して扱う。
+- ハンドル確定、本番変更、公開、削除、既存動画の公開設定変更は、必ずYU最終承認後に行う。
 
 ### TikTok
 
@@ -315,7 +322,7 @@ AIにセリフを読ませるのではない。
 
 - Suno等のAI音楽生成ツールは、原則として「デモ制作・アイデア出し・仮歌・方向性確認」の用途として扱う。
 - クライアントワークでは、人間の創作的寄与を明確にする。
-- 作詞、構成、メロディ方向性、演出意図、最終判断はFLY77STAR U.が行う。
+- 作詞、構成、メロディ方向性、演出意図、最終判断はYUが行う。
 - AIが自律生成しただけの作品を、そのまま権利管理・商用納品しない。
 - 広告・CM案件では、AI使用箇所を記録する。
 - 必要に応じて、人間による再編曲、再録音、ミックス、マスタリングを行う。
@@ -401,7 +408,7 @@ v2.0
 ## Long Term Vision
 
 ```text
-FLY77STAR U.（CEO）
+YU（CEO）
 ↓
 ChatGPT / Claude
 ↓
