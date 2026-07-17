@@ -77,9 +77,9 @@ X is not the primary battlefield for FLY77STAR. It is treated as a supporting ro
 
 ### Gmail
 
-- A new official Gmail account may be created.
-- The Gmail account should be used as the official contact and recovery email for YouTube, TikTok, and Instagram.
-- Address naming, recovery settings, and final activation require `YU最終承認`.
+- **Official Gmail Address:** `fly77star.official@gmail.com`
+- Used as the official contact and recovery email for YouTube, TikTok, Instagram, and X accounts.
+- Recovery settings and multi-account management require `YU最終承認`.
 
 ### YouTube
 
