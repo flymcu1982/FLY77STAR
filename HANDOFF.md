@@ -40,6 +40,23 @@ FLY77STAR. 公式SNS・Webサイト一覧は [`OFFICIAL_INFO.md`](OFFICIAL_INFO.
 
 **現在**: 運用方針の記録を完了。チャンネル移行の本番作業は YU最終承認待ち。
 
+## 進行中の企画・プロジェクト
+
+### 制作中
+- WAKE UP(`Projects/WAKE_UP/`) — Production Phase 5、CUT01パイロット制作中
+
+### 企画・検討中（2026-07-18 新規追記）
+**CM タイアップMV 制作予定**: [`CM_PROJECTS.md`](CM_PROJECTS.md) 参照
+
+**HINA（アイドル）関連**:
+- 「Don't Stop」— ポッキー CM タイアップ版、MV同時アップ予定
+- 「SPOT LiGHT」（2番）— KAI、バスケットボール男子ワールドカップ CM イメージ版
+- 「水かい」— CM タイアップ版（バスケットボール関連）
+
+**グループ / 他アーティスト**:
+- 「WAKE UP」(SE77NTH.) — アパレルブランド CM タイアップ版
+- 「スウェイカップセブンス」（3人）— アパレル CM タイアップ版
+
 ## 現在のプロジェクト
 
 WAKE UP(`Projects/WAKE_UP/`)
