@@ -2,11 +2,56 @@
 
 現在の作業状態の引き継ぎ記録。Claude Code / Codex どちらが作業する場合も、着手前に本ファイルを確認すること。作業終了時は必ず本ファイルを更新してから次の担当に渡す。
 
-最終更新: 2026-07-16(Claude Code)
+最終更新: 2026-07-17(Codex)
 
 ## 現在のプロジェクト
 
 WAKE UP(`Projects/WAKE_UP/`)
+
+## Web / Netlify 引き継ぎ(2026-07-17)
+
+FLY77STAR 公式Webサイトまわりで、以下を確認・反映済み。
+
+1. **公開URL切替確認**
+   - 新URL: `https://fly77star-studio.netlify.app/`
+   - 旧URL: `https://flystar77-studio.netlify.app/`
+   - 2026-07-17時点で、新URLは `HTTP 200`、旧URLは `HTTP 404` を確認済み
+
+2. **正式管理対象**
+   - Git上の管理先: `Web/netlify_site/`
+   - ただし作業中に `Web/netlify_site 2/` と `Web/netlify_site 2.zip` が生成されている
+   - 追跡・commit対象は `Web/netlify_site/` を優先すること
+   - `Web/netlify_site 2/` は未追跡の作業残骸として残っているため、削除や整理はYU確認後に行う
+
+3. **動画公開ポリシー更新**
+   - 残す動画:
+     - `Distance` ショート2本のみ
+     - `assets/distance_short_intro.mp4`
+     - `assets/distance_short_sabi.mp4`
+   - 停止済み:
+     - `Distance` フル動画
+     - `Distance` teaser
+     - `TOMORROW` 動画
+     - `STEP by STEP / ENERGY-D CM` 動画
+     - `FANG CM 15s / 30s` 動画
+   - 上記停止動画は、サイト上ではポスター画像 + 公開停止中メッセージへ置換済み
+
+4. **URL表示テキスト**
+   - サイト内のWEB表示は `FLY77STAR-studio.netlify.app` に変更済み
+   - これは表示テキストのみであり、実URL変更はNetlify側で行う
+
+5. **写真・ポスター復旧**
+   - `assets/` 欠落により写真・ポスターが404になっていたため復旧済み
+   - `rui_snap_*` / `ruka_snap_*` / `talent_*` / 各poster画像 / teaser動画は表示確認済み
+
+6. **関連コミット**
+   - `841bb1d` `web: refine hero title treatment`
+   - `52939da` `web: remove Distance, TOMORROW, and CM videos`
+
+7. **次回AI社員向け注意**
+   - `netlify.app` の実URL変更はHTML修正ではなくNetlify設定作業
+   - Web更新後は、公開URLの `HTTP 200/404` を新旧両方で確認すること
+   - 動画を戻す場合でも、YU最終承認なしで `Distance` フル / `TOMORROW` / CM動画を再公開しないこと
 
 ## CANON受領(2026-07-16、最重要)
 

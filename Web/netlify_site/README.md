@@ -1,13 +1,13 @@
 # FLY77STAR Web / Netlify Site
 
-このフォルダは、現行 Netlify 公開サイト `flystar77-studio.netlify.app` の Git 管理受け皿です。
+このフォルダは、現行 Netlify 公開サイト `fly77star-studio.netlify.app` の Git 管理受け皿です。
 
 ## Current Status
 
 - Source origin:
   - `/Users/yamamotohiroshi/Documents/Codex/2026-07-06/p/work/netlify_site`
 - Public host:
-  - `flystar77-studio.netlify.app`
+  - `fly77star-studio.netlify.app`
 - Netlify production operations:
   - Not performed from this repository
 
@@ -40,6 +40,13 @@
   - `opening_full.mp4`
   - FANG CM 本編動画
   - 大容量の短尺 mp4
+
+## Current Web Policy
+
+- `Distance` は 2026年8月のYouTube配信開始まで、ショート2本のみ掲載する
+- `Distance` フル / teaser、`TOMORROW`、ENERGY-D CM、FANG CM動画は掲載停止
+- 停止対象は `video` ではなく、ポスター画像と案内文で表示する
+- URL表示テキストは `FLY77STAR-studio.netlify.app` に統一する
 
 除外対象の詳細は `VIDEO_ASSET_MANIFEST.md` を参照してください。
 

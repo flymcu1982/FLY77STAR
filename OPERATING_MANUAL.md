@@ -41,6 +41,19 @@ AIと人の創造力を組み合わせ、映画品質の映像作品を効率的
 - 一つの作品ごとに制作フローを進化させる。
 - AIは代役ではなくチームメンバー。
 
+## Web Operations Note
+
+- 公式Webサイトの公開URL確認は、編集作業と分けて扱う
+- サイト内の表示テキスト変更と、Netlify側の実URL変更は別作業
+- `netlify.app` サブドメイン変更はNetlify管理画面側で行い、HTML修正だけでは変更されない
+- 2026-07-17時点の公開確認:
+  - 正: `https://fly77star-studio.netlify.app/`
+  - 旧: `https://flystar77-studio.netlify.app/` は無効
+- Web動画運用:
+  - `Distance` ショート2本のみ公開継続
+  - `Distance` フル / teaser、`TOMORROW`、ENERGY-D CM、FANG CM 動画は停止
+  - 停止動画はポスター表示へ置換する
+
 ## Production Pipeline
 
 ```text
