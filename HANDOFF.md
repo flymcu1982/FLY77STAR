@@ -2,7 +2,27 @@
 
 現在の作業状態の引き継ぎ記録。Claude Code / Codex どちらが作業する場合も、着手前に本ファイルを確認すること。作業終了時は必ず本ファイルを更新してから次の担当に渡す。
 
-最終更新: 2026-07-17(Codex)
+最終更新: 2026-07-18(FLY77STAR U., Codex)
+
+## 公式情報・SNS登録(2026-07-18)
+
+FLY77STAR. 公式SNS・Webサイト一覧は [`OFFICIAL_INFO.md`](OFFICIAL_INFO.md) にまとめている。
+
+**登録完了アカウント**（2026-07-18 FLY77STAR U.による）:
+- TikTok: @fly77star
+- Instagram: @fly77star
+- X公式: @FLY77STAR_JP
+- X LAB: @FLY77STAR_LAB
+- 公式サイト: https://flystar77-studio.netlify.app/
+
+**公開作品・準備状況**:
+- 『Distance』(RUI) — ショート2本公開中、YouTube 2026年8月配信予定
+- 『WAKE UP』(SE77NTH.) — 公開準備中
+
+**YouTube解像度方針**:
+- 4K と 1K の2系統で運用する
+
+**情報発信チャネル**: SNS全体でMV・Shorts・noteの公開情報を発信。
 
 ## 現在のプロジェクト
 
@@ -35,6 +55,7 @@ FLY77STAR 公式Webサイトまわりで、以下を確認・反映済み。
      - `STEP by STEP / ENERGY-D CM` 動画
      - `FANG CM 15s / 30s` 動画
    - 上記停止動画は、サイト上ではポスター画像 + 公開停止中メッセージへ置換済み
+   - YouTube解像度方針は `4K と 1K`
 
 4. **URL表示テキスト**
    - サイト内のWEB表示は `FLY77STAR-studio.netlify.app` に変更済み

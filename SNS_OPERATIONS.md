@@ -85,6 +85,10 @@ X is not the primary battlefield for FLY77STAR. It is treated as a supporting ro
 
 **Scope:** Long-form MVs, documentaries, behind-the-scenes footage, archive curation, and flagship releases.
 
+**Resolution Policy**
+
+- YouTube deliverables are managed in two resolutions: `4K` and `1K`.
+
 **Current State**
 
 - Existing channel: `@yuyama6664`
