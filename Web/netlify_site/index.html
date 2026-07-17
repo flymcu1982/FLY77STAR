@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>FLY77STAR. STUDIO — Leave Light Behind.</title>
+<meta name="description" content="FLY77STAR. は、音楽・映像・物語・AIクリエイティブをつなぐ未来型スタジオです。公式サイトとSNS導線をまとめたブランドサイト。" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Shippori+Mincho:wght@500;600&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #0A0A0F;
+    --navy: #182336;
+    --blue: #305873;
+    --star: #7FA8C9;
+    --silver: #C7CCD8;
+    --silver-dim: #7C8296;
+    --line: #1A2233;
+    --white: #FFFFFF;
+    --en: 'Cinzel', serif;
+    --jp-serif: 'Shippori Mincho', serif;
+    --jp-sans: 'Zen Kaku Gothic New', sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--silver);
+    font-family: var(--jp-sans);
+    overflow-x: hidden;
+  }
+  ::selection { background: var(--blue); color: var(--white); }
+
+  /* ---------- Reveal ---------- */
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 1.4s ease, transform 1.4s ease; }
+  .reveal.show { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; transition: none; }
+    html { scroll-behavior: auto; }
+  }
+
+  .label {
+    font-family: var(--en);
+    font-size: 10px;
+    letter-spacing: 0.5em;
+    color: var(--star);
+  }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    position: relative;
+    height: 100vh;
+    height: 100svh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(ellipse at 50% 120%, var(--navy) 0%, var(--bg) 62%);
+  }
+  .hero video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 2.4s ease;
+  }
+  .hero video.fade-out { opacity: 0; }
+  .hero canvas { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; transition: opacity 2.4s ease; }
+  .hero canvas.show { opacity: 1; }
+  .hero-inner {
+    position: relative;
+    text-align: center;
+    padding: 0 24px;
+    opacity: 0;
+    transition: opacity 2.6s ease;
+  }
+  .hero-inner.show { opacity: 1; }
+  .hero-logo-wrap {
+    width: min(420px, 78vw);
+    margin: 0 auto 28px;
+    aspect-ratio: 1.68 / 1;
+    overflow: hidden;
+  }
+  .hero-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    filter: drop-shadow(0 0 28px rgba(127, 168, 201, 0.22));
+  }
+  .hero h1 {
+    font-family: var(--en);
+    font-size: clamp(26px, 5vw, 44px);
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    color: var(--silver);
+    text-shadow: 0 0 44px rgba(127, 168, 201, 0.45);
+  }
+  .hero h1 span {
+    display: block;
+    font-size: 0.34em;
+    letter-spacing: 0.5em;
+    margin-top: 12px;
+    color: var(--star);
+  }
+  .hero .tagline-en {
+    font-family: var(--en);
+    font-size: clamp(11px, 2.2vw, 15px);
+    letter-spacing: 0.3em;
+    color: var(--silver-dim);
+    margin-top: 46px;
+  }
+  .hero .tagline-jp {
+    font-family: var(--jp-serif);
+    font-size: 12px;
+    letter-spacing: 0.35em;
+    color: var(--silver-dim);
+    margin-top: 16px;
+    opacity: 0.85;
+  }
+  .scroll-cue {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--en);
+    font-size: 9px;
+    letter-spacing: 0.4em;
+    color: var(--silver-dim);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 2s ease 0.8s;
+  }
+  .scroll-cue.show { opacity: 0.6; }
+  .scroll-cue::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 38px;
+    margin: 10px auto 0;
+    background: linear-gradient(var(--star), transparent);
+  }
+  .skip-btn, .replay-btn {
+    position: absolute;
+    bottom: 28px;
+    right: 28px;
+    z-index: 5;
+    background: rgba(10, 10, 15, 0.5);
+    border: 1px solid var(--blue);
+    color: var(--star);
+    font-family: var(--en);
+    font-size: 9px;
+    letter-spacing: 0.3em;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: opacity 1s ease, border-color .4s ease;
+  }
+  .skip-btn:hover, .replay-btn:hover { border-color: var(--star); }
+  .hidden { opacity: 0; pointer-events: none; }
+
+  /* ---------- Sections ---------- */
+  section { position: relative; }
+  .sec-head { text-align: center; margin-bottom: 60px; }
+  .sec-head h2 {
+    font-family: var(--jp-serif);
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--silver);
+    margin-top: 16px;
+  }
+
+  /* Vision */
+  .vision { padding: 150px 24px; max-width: 780px; margin: 0 auto; text-align: center; }
+  .vision h2 {
+    font-family: var(--en);
+    font-size: clamp(24px, 4.8vw, 40px);
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    line-height: 1.7;
+    color: var(--silver);
+  }
+  .vision .jp-lead {
+    font-family: var(--jp-serif);
+    font-size: 14px;
+    letter-spacing: 0.3em;
+    color: var(--star);
+    margin-top: 34px;
+  }
+  .vision p.body {
+    font-size: 13px;
+    line-height: 2.4;
+    color: var(--silver-dim);
+    margin-top: 46px;
+  }
+  .brand-intro {
+    margin-top: 56px;
+    padding: 28px 30px;
+    border: 1px solid var(--line);
+    background: linear-gradient(180deg, rgba(24, 35, 54, 0.22), rgba(10, 10, 15, 0.7));
+    text-align: left;
+  }
+  .brand-intro h3 {
+    font-family: var(--en);
+    font-size: 13px;
+    letter-spacing: 0.34em;
+    color: var(--star);
+    margin-bottom: 18px;
+  }
+  .brand-intro p {
+    font-size: 13px;
+    line-height: 2.2;
+    color: var(--silver);
+  }
+  .brand-intro p + p {
+    margin-top: 16px;
+    color: var(--silver-dim);
+  }
+
+  /* Philosophy */
+  .philosophy { padding: 40px 24px 140px; max-width: 900px; margin: 0 auto; }
+  .phil-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+  .phil-cell { background: var(--bg); padding: 54px 34px; text-align: center; }
+  .phil-cell .mark { color: var(--star); font-size: 20px; }
+  .phil-cell h3 { font-family: var(--en); font-size: 17px; letter-spacing: 0.4em; color: var(--silver); margin: 20px 0 24px; }
+  .phil-cell p { font-family: var(--jp-serif); font-size: 13px; line-height: 2.2; color: var(--silver-dim); }
+  .official-links { padding: 20px 24px 140px; max-width: 920px; margin: 0 auto; }
+  .links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1px;
+    border: 1px solid var(--line);
+    background: var(--line);
+  }
+  .link-card {
+    display: block;
+    background: var(--bg);
+    padding: 28px 24px;
+    text-decoration: none;
+    transition: background .4s ease;
+  }
+  .link-card:hover { background: rgba(24, 35, 54, 0.45); }
+  .link-card .k {
+    font-family: var(--en);
+    font-size: 10px;
+    letter-spacing: 0.35em;
+    color: var(--star);
+  }
+  .link-card .v {
+    display: block;
+    margin-top: 14px;
+    font-family: var(--en);
+    font-size: 16px;
+    letter-spacing: 0.12em;
+    color: var(--silver);
+    word-break: break-word;
+  }
+  .link-card .n {
+    display: block;
+    margin-top: 12px;
+    font-size: 12px;
+    line-height: 1.9;
+    color: var(--silver-dim);
+  }
+
+  /* Talent */
+  .talent { padding: 40px 24px 140px; max-width: 820px; margin: 0 auto; }
+  .talent-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 32px; }
+  .talent-card { cursor: pointer; text-align: center; }
+  .talent-photo { position: relative; aspect-ratio: 2/3; overflow: hidden; border: 1px solid var(--line); transition: border-color .5s ease; }
+  .talent-card:hover .talent-photo { border-color: var(--blue); }
+  .talent-photo img { width: 100%; height: 100%; object-fit: cover; display: block; filter: saturate(.82) brightness(.94); transition: transform 1.4s ease, filter .8s ease; }
+  .talent-card:hover .talent-photo img { transform: scale(1.045); filter: saturate(1) brightness(1); }
+  .talent-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(transparent 58%, rgba(10,10,15,0.72)); pointer-events: none; }
+  .talent-photo .t-name {
+    position: absolute; left: 0; right: 0; bottom: 20px; z-index: 1;
+    font-family: var(--en); font-size: 26px; font-weight: 500; letter-spacing: 0.35em;
+    color: var(--silver); text-shadow: 0 0 26px rgba(127,168,201,.5);
+  }
+  .talent-photo .t-name span { display: block; font-family: var(--jp-sans); font-size: 9px; letter-spacing: 0.5em; color: var(--star); margin-top: 8px; }
+  .talent-info { padding: 22px 8px 0; }
+  .talent-info .t-exp { font-size: 10.5px; letter-spacing: 0.25em; color: var(--star); }
+  .talent-info .t-profile { font-family: var(--jp-serif); font-size: 13px; line-height: 2; color: var(--silver-dim); margin-top: 12px; }
+  .talent-info .t-work { font-family: var(--en); font-size: 10px; letter-spacing: 0.25em; color: var(--silver-dim); margin-top: 16px; transition: color .4s ease; }
+  .talent-card:hover .t-work { color: var(--star); }
+
+  /* Model Snap */
+  .snaps { margin-top: 90px; }
+  .snaps-head { font-family: var(--en); font-size: 12px; letter-spacing: 0.35em; color: var(--silver); text-align: center; }
+  .snaps-head em { font-style: normal; color: var(--star); }
+  .snaps-lead { font-size: 12px; letter-spacing: 0.15em; color: var(--silver-dim); text-align: center; margin-top: 12px; }
+  .snaps-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 14px; margin-top: 34px; }
+  .snaps-grid + .snaps-grid { margin-top: 14px; }
+  .snaps-grid.wide { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+  .snap-item { position: relative; aspect-ratio: 4/5; overflow: hidden; border: 1px solid var(--line); cursor: pointer; transition: border-color .5s ease; }
+  .snaps-grid.wide .snap-item { aspect-ratio: 16/9; }
+  .snap-item:hover { border-color: var(--blue); }
+  .snap-item img { width: 100%; height: 100%; object-fit: cover; display: block; filter: saturate(.85); transition: transform 1.2s ease, filter .8s ease; }
+  .snap-item:hover img { transform: scale(1.05); filter: saturate(1); }
+  .snap-item .n { position: absolute; left: 10px; bottom: 8px; font-family: var(--en); font-size: 8px; letter-spacing: 0.3em; color: var(--silver); text-shadow: 0 0 8px #000; }
+  /* Lightbox */
+  .lightbox { position: fixed; inset: 0; z-index: 50; background: rgba(4,7,17,0.94); display: none; align-items: center; justify-content: center; cursor: zoom-out; }
+  .lightbox.open { display: flex; }
+  .lightbox img { max-width: 92vw; max-height: 88vh; border: 1px solid var(--blue); }
+
+  /* Works */
+  .works { padding: 60px 0 130px; }
+  .works .head-wrap { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+  .works h2 { font-family: var(--jp-serif); font-size: 22px; font-weight: 600; margin: 14px 0 36px; }
+  .works-note {
+    max-width: 1100px;
+    margin: 0 auto 28px;
+    padding: 0 24px;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    color: var(--silver-dim);
+  }
+  .works-row {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 6px max(24px, calc((100vw - 1100px)/2 + 24px)) 24px;
+    scrollbar-width: none;
+  }
+  .works-row::-webkit-scrollbar { display: none; }
+  .work-card {
+    flex: 0 0 auto;
+    width: min(300px, 74vw);
+    scroll-snap-align: start;
+    cursor: pointer;
+    transition: transform .5s ease;
+  }
+  .work-card:hover { transform: scale(1.03); }
+  .work-frame {
+    aspect-ratio: 2/3;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    transition: border-color .5s ease, box-shadow .5s ease;
+  }
+  .work-card:hover .work-frame { border-color: var(--blue); }
+  .work-card.pulse .work-frame { border-color: var(--star); box-shadow: 0 0 34px rgba(127,168,201,.25); }
+  .work-frame video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.85; }
+  .work-glow { position: absolute; inset: 0; }
+  .work-meta {
+    position: absolute; left: 0; right: 0; bottom: 0;
+    padding: 70px 20px 22px;
+    background: linear-gradient(transparent, rgba(10,10,15,0.92) 62%);
+  }
+  .work-meta .exp { font-size: 10.5px; letter-spacing: 0.2em; color: var(--star); margin-bottom: 8px; }
+  .work-meta h3 { font-family: var(--en); font-size: 21px; font-weight: 600; letter-spacing: 0.05em; line-height: 1.3; color: var(--silver); }
+  .work-meta .sub { font-family: var(--en); font-size: 10px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--silver-dim); margin-top: 6px; }
+  .work-meta .story { font-family: var(--jp-serif); font-size: 12px; line-height: 1.9; color: var(--silver-dim); margin-top: 12px; transition: color .5s ease; }
+  .work-card:hover .story { color: var(--silver); }
+
+  /* Shorts */
+  .shorts { max-width: 1100px; margin: 90px auto 0; padding: 0 24px; }
+  .shorts .shorts-head { font-family: var(--en); font-size: 12px; letter-spacing: 0.35em; color: var(--silver); }
+  .shorts .shorts-head em { font-style: normal; color: var(--star); }
+  .shorts .shorts-lead { font-size: 12px; letter-spacing: 0.15em; color: var(--silver-dim); margin-top: 12px; }
+  .shorts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-top: 34px; }
+  .short-item video, .short-item img { width: 100%; aspect-ratio: 16/9; display: block; background: #000; border: 1px solid var(--line); transition: border-color .5s ease; object-fit: cover; }
+  .short-item:hover video, .short-item:hover img { border-color: var(--blue); }
+  .short-item .s-label { font-family: var(--en); font-size: 10px; letter-spacing: 0.3em; color: var(--star); margin-top: 14px; }
+  .short-item .s-note { font-family: var(--jp-serif); font-size: 12px; color: var(--silver-dim); margin-top: 8px; line-height: 1.9; }
+  .release-strip {
+    max-width: 1100px;
+    margin: 54px auto 0;
+    padding: 0 24px;
+  }
+  .release-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+  .release-card {
+    background: var(--bg);
+    padding: 26px 24px;
+  }
+  .release-card .state {
+    font-family: var(--en);
+    font-size: 10px;
+    letter-spacing: 0.32em;
+    color: var(--star);
+  }
+  .release-card h3 {
+    margin-top: 14px;
+    font-family: var(--jp-serif);
+    font-size: 22px;
+    color: var(--silver);
+  }
+  .release-card p {
+    margin-top: 12px;
+    font-size: 12px;
+    line-height: 2;
+    color: var(--silver-dim);
+  }
+
+  /* Stories */
+  .stories { padding: 100px 24px 140px; background: linear-gradient(var(--bg), var(--navy) 50%, var(--bg)); }
+  .stories-inner { max-width: 760px; margin: 0 auto; }
+  .stories p.lead { font-size: 13px; color: var(--silver-dim); text-align: center; line-height: 2; margin-bottom: 70px; }
+  .story-link {
+    display: block; width: 100%;
+    background: none; border: none; border-bottom: 1px solid var(--line);
+    padding: 34px 8px; cursor: pointer; text-align: center;
+  }
+  .story-link .exp { font-family: var(--jp-serif); font-size: clamp(17px, 3.6vw, 24px); letter-spacing: 0.1em; color: var(--silver); }
+  .story-link .arrow { display: block; font-family: var(--en); font-size: 13px; color: var(--star); margin: 16px 0; }
+  .story-link .work { font-family: var(--en); font-size: 15px; letter-spacing: 0.2em; color: var(--silver-dim); }
+  .story-link:hover .work { color: var(--star); transition: color .4s ease; }
+
+  /* Bible */
+  .bible { padding: 150px 24px; text-align: center; }
+  .bible-item { margin-bottom: 100px; }
+  .bible-item .en { font-family: var(--en); font-size: clamp(19px, 4.4vw, 32px); font-weight: 500; letter-spacing: 0.12em; color: var(--silver); }
+  .bible-item .jp { font-family: var(--jp-serif); font-size: 12px; letter-spacing: 0.3em; color: var(--silver-dim); margin-top: 18px; }
+  .bible .note { font-size: 11px; letter-spacing: 0.2em; color: #4A5066; }
+
+  /* People */
+  .people { padding: 100px 24px 140px; max-width: 900px; margin: 0 auto; }
+  .people-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+  .person { background: var(--bg); padding: 36px 24px; text-align: center; }
+  .person .role { font-family: var(--en); font-size: 10px; letter-spacing: 0.35em; color: var(--star); margin-bottom: 18px; }
+  .person .past { font-family: var(--jp-serif); font-size: 14px; line-height: 1.9; color: var(--silver); }
+  .person .arrow { font-family: var(--en); font-size: 12px; color: var(--silver-dim); margin: 10px 0; }
+  .person .now { font-family: var(--jp-serif); font-size: 13px; line-height: 1.9; color: var(--silver-dim); }
+
+  /* Join */
+  .join { padding: 130px 24px; text-align: center; background: linear-gradient(var(--bg), var(--navy)); }
+  .join h2 { font-family: var(--jp-serif); font-size: clamp(19px, 4vw, 28px); font-weight: 600; line-height: 2.2; margin: 50px 0; }
+  .join .btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .join a {
+    font-family: var(--en); font-size: 11px; letter-spacing: 0.3em;
+    padding: 16px 38px; text-decoration: none;
+    transition: background .4s ease, color .4s ease;
+  }
+  .join a.primary { border: 1px solid var(--star); color: var(--star); }
+  .join a.primary:hover { background: var(--star); color: var(--bg); }
+  .join a.secondary { border: 1px solid var(--blue); color: var(--silver-dim); }
+  .join a.secondary:hover { border-color: var(--star); color: var(--silver); }
+
+  /* Footer */
+  footer {
+    position: relative;
+    height: 74vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  footer canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .footer-inner { position: relative; text-align: center; }
+  .footer-inner .l1, .footer-inner .l2 { font-family: var(--en); font-size: clamp(13px, 2.8vw, 18px); letter-spacing: 0.4em; }
+  .footer-inner .l1 { color: var(--silver); }
+  .footer-inner .l2 { color: var(--star); }
+  .footer-inner .arrow { font-family: var(--en); font-size: 13px; color: var(--star); margin: 22px 0; }
+  .footer-inner .brand { font-family: var(--en); font-size: 10px; letter-spacing: 0.5em; color: var(--silver-dim); margin-top: 80px; }
+  .footer-inner .tagline { font-family: var(--en); font-size: 9px; letter-spacing: 0.45em; color: var(--star); margin-top: 18px; }
+  .footer-inner .copy { font-size: 9px; letter-spacing: 0.2em; color: #3A4056; margin-top: 16px; }
+</style>
+</head>
+<body>
+
+<!-- ============ HERO — 映画のオープニング ============ -->
+<section class="hero" id="top">
+  <video id="openingVideo" muted playsinline preload="none"></video>
+  <canvas id="heroStars"></canvas>
+  <div class="hero-inner" id="heroInner">
+    <div class="hero-logo-wrap">
+      <img class="hero-logo" src="assets/FLY77STAR_Logo.png" alt="FLY77STAR. logo" />
+    </div>
+    <h1>FLY77STAR.<span>STUDIO</span></h1>
+    <p class="tagline-en">LEAVE&nbsp;&nbsp;LIGHT&nbsp;&nbsp;BEHIND.</p>
+    <p class="tagline-jp">すべての物語は、ひとつの光から始まる。</p>
+  </div>
+  <div class="scroll-cue" id="scrollCue">SCROLL</div>
+  <button class="skip-btn" id="skipBtn">SKIP&nbsp;OPENING</button>
+  <button class="replay-btn hidden" id="replayBtn">▶&nbsp;REPLAY&nbsp;OPENING</button>
+</section>
+
+<!-- ============ 01 VISION ============ -->
+<section class="vision">
+  <div class="reveal">
+    <p class="label">01 — VISION</p>
+    <h2 style="margin-top:50px">From One Light,<br />Infinite Possibilities.</h2>
+    <p class="jp-lead">ひとつの光から、無限の可能性へ。</p>
+    <p class="body">
+      FLY77STAR. は、音楽・映像・物語・AIクリエイティブをつなぐ未来型スタジオです。<br />
+      物語と表現を横断しながら、アーティストと世界観をひとつのブランドへ束ねていきます。
+    </p>
+    <div class="brand-intro">
+      <h3>ABOUT FLY77STAR.</h3>
+      <p>FLY77STAR. は、音楽・映像・物語・AIクリエイティブをつなぐ未来型スタジオです。</p>
+      <p>SE77NTH. / KAI / RUI / RUKA / HINA / LIEN が、それぞれの物語を歩みながら、ひとつの世界を作っていきます。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 PHILOSOPHY ============ -->
+<section class="philosophy">
+  <div class="reveal sec-head">
+    <p class="label">02 — PHILOSOPHY</p>
+  </div>
+  <div class="reveal phil-grid">
+    <div class="phil-cell">
+      <div class="mark">✦</div>
+      <h3>LIGHTS</h3>
+      <p>共に創る仲間たち。<br />それぞれの個性が光となり、<br />作品とブランドを創り上げる。</p>
+    </div>
+    <div class="phil-cell">
+      <div class="mark">✧</div>
+      <h3>STARS</h3>
+      <p>応援してくれる仲間たち。<br />その想いが、光を強くし、<br />未来を広げていく。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 TALENT ============ -->
+<section class="talent" id="talent">
+  <div class="reveal sec-head">
+    <p class="label">03 — TALENT</p>
+    <h2>所属タレント</h2>
+  </div>
+  <div class="talent-grid" id="talentGrid"></div>
+
+  <div class="snaps reveal">
+    <p class="snaps-head">RUI — <em>MODEL SNAP</em></p>
+    <p class="snaps-lead">クリックで拡大。</p>
+    <div class="snaps-grid" id="snapsGrid"></div>
+    <div class="snaps-grid wide" id="ruiWideSnapsGrid"></div>
+  </div>
+
+  <div class="snaps reveal">
+    <p class="snaps-head">RUKA — <em>MODEL SNAP</em></p>
+    <p class="snaps-lead">RUKAの新しいフォト。クリックで拡大。</p>
+    <div class="snaps-grid wide" id="rukaSnapsGrid"></div>
+  </div>
+</section>
+
+<!-- ============ 04 OFFICIAL LINKS ============ -->
+<section class="official-links">
+  <div class="reveal sec-head">
+    <p class="label">04 — OFFICIAL LINKS</p>
+    <h2>公式リンク</h2>
+  </div>
+  <div class="links-grid reveal">
+    <a class="link-card" href="https://www.tiktok.com/@fly77star" target="_blank" rel="noreferrer">
+      <span class="k">TIKTOK</span>
+      <span class="v">@fly77star</span>
+      <span class="n">ショート動画と最新導線。</span>
+    </a>
+    <a class="link-card" href="https://www.instagram.com/fly77star/" target="_blank" rel="noreferrer">
+      <span class="k">INSTAGRAM</span>
+      <span class="v">@fly77star</span>
+      <span class="n">ビジュアル、ポートレート、世界観更新。</span>
+    </a>
+    <a class="link-card" href="https://x.com/FLY77STAR_JP" target="_blank" rel="noreferrer">
+      <span class="k">X OFFICIAL</span>
+      <span class="v">@FLY77STAR_JP</span>
+      <span class="n">作品公開、YouTube、TikTok、note、ブランド発表の補助導線。</span>
+    </a>
+    <a class="link-card" href="https://x.com/FLY77STAR_LAB" target="_blank" rel="noreferrer">
+      <span class="k">X LAB</span>
+      <span class="v">@FLY77STAR_LAB</span>
+      <span class="n">AI制作ログ、検証、制作過程の裏側。</span>
+    </a>
+    <a class="link-card" href="https://flystar77-studio.netlify.app" target="_blank" rel="noreferrer">
+      <span class="k">WEB</span>
+      <span class="v">flystar77-studio.netlify.app</span>
+      <span class="n">FLY77STAR. 公式Webサイト。</span>
+    </a>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox"><img id="lightboxImg" src="" alt="" /></div>
+
+<!-- ============ 04 WORKS ============ -->
+<section class="works" id="works">
+  <div class="reveal head-wrap">
+    <p class="label">05 — WORKS</p>
+    <h2>作品</h2>
+  </div>
+  <p class="works-note reveal">公開中の映像と、公開準備中の作品導線をまとめています。</p>
+  <div class="works-row reveal" id="worksRow"></div>
+
+  <div class="shorts reveal">
+    <p class="shorts-head">DISTANCE — <em>SHORT VER.</em></p>
+    <p class="shorts-lead">本編から、ふたつの切り取り方。音を出してご覧ください。</p>
+    <div class="shorts-grid">
+      <div class="short-item">
+        <img src="assets/short_intro_poster.jpg" alt="Distance short intro poster" loading="lazy" />
+        <p class="s-label">SHORT VER. 01 — INTRO PREVIEW</p>
+        <p class="s-note">管理用パッケージでは静止ポスターのみ保持。短尺動画は外部管理。</p>
+      </div>
+      <div class="short-item">
+        <img src="assets/short_sabi_poster.jpg" alt="Distance short chorus poster" loading="lazy" />
+        <p class="s-label">SHORT VER. 02 — CHORUS PREVIEW</p>
+        <p class="s-note">管理用パッケージでは静止ポスターのみ保持。短尺動画は外部管理。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="shorts reveal">
+    <p class="shorts-head">SCREENING ROOM — <em>FULL VER.</em></p>
+    <p class="shorts-lead">本編をノーカットで。音を出してご覧ください。</p>
+    <div class="shorts-grid">
+      <div class="short-item">
+        <video src="assets/step_teaser.mp4" poster="assets/step_full_poster.jpg" controls preload="none" playsinline></video>
+        <p class="s-label">STEP by STEP — TEASER</p>
+        <p class="s-note">フル動画は外部管理。Git管理版では軽量 teaser を使用。</p>
+      </div>
+      <div class="short-item">
+        <video src="assets/distance_teaser.mp4" poster="assets/distance_full_poster.jpg" controls preload="none" playsinline></video>
+        <p class="s-label">Distance — TEASER</p>
+        <p class="s-note">フル動画は外部管理。Git管理版では軽量 teaser を使用。</p>
+      </div>
+      <div class="short-item">
+        <video src="assets/tomorrow_teaser.mp4" poster="assets/tomorrow_full_poster.jpg" controls preload="none" playsinline></video>
+        <p class="s-label">TOMORROW — TEASER</p>
+        <p class="s-note">フル動画は外部管理。Git管理版では軽量 teaser を使用。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="shorts reveal">
+    <p class="shorts-head">FANG ENERGY — <em>CM SPOT</em></p>
+    <p class="shorts-lead">STEP by STEP、広告用スポット2バージョン。</p>
+    <div class="shorts-grid">
+      <div class="short-item">
+        <img src="assets/fang_cm_30s_poster.jpg" alt="FANG CM 30s poster" loading="lazy" />
+        <p class="s-label">CM 30sec PREVIEW</p>
+        <p class="s-note">動画本体は外部管理。ポスターのみ Git 管理。</p>
+      </div>
+      <div class="short-item">
+        <img src="assets/fang_cm_15s_poster.jpg" alt="FANG CM 15s poster" loading="lazy" />
+        <p class="s-label">CM 15sec PREVIEW</p>
+        <p class="s-note">動画本体は外部管理。ポスターのみ Git 管理。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="release-strip reveal">
+    <div class="release-grid">
+      <div class="release-card">
+        <p class="state">PREPARING FOR RELEASE</p>
+        <h3>RUI『Distance』</h3>
+        <p>YouTube公開導線の整備とあわせて、正式公開準備中。</p>
+      </div>
+      <div class="release-card">
+        <p class="state">PREPARING FOR RELEASE</p>
+        <h3>SE77NTH.『WAKE UP』</h3>
+        <p>世界観整理、公開導線、ブランド露出を含めて掲載準備中。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 STORIES ============ -->
+<section class="stories">
+  <div class="stories-inner">
+    <div class="reveal sec-head" style="margin-bottom:18px">
+      <p class="label">06 — STORIES</p>
+      <h2>経験から、物語を探す。</h2>
+    </div>
+    <p class="reveal lead">作品名ではなく、あなたに近い「経験」から。</p>
+    <div id="storyList"></div>
+  </div>
+</section>
+
+<!-- ============ 05 STUDIO BIBLE ============ -->
+<section class="bible">
+  <div class="reveal" style="margin-bottom:90px">
+    <p class="label">07 — STUDIO BIBLE</p>
+  </div>
+  <div id="bibleList"></div>
+  <p class="reveal note">— Production Bible より、ほんの一部。</p>
+</section>
+
+<!-- ============ 06 THE PEOPLE ============ -->
+<section class="people">
+  <div class="reveal sec-head">
+    <p class="label">08 — THE PEOPLE</p>
+    <h2>経験が、肩書きになる。</h2>
+  </div>
+  <div class="people-grid" id="peopleGrid"></div>
+</section>
+
+<!-- ============ 07 JOIN US ============ -->
+<section class="join">
+  <div class="reveal">
+    <p class="label">09 — JOIN US</p>
+    <h2>あなたの経験を、<br />次の誰かの希望にしませんか。</h2>
+    <div class="btns">
+      <a class="primary" href="mailto:join@flystar77.studio">JOIN&nbsp;US</a>
+      <a class="secondary" href="mailto:contact@flystar77.studio">制作のご依頼</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER — 夜空へ還る ============ -->
+<footer>
+  <canvas id="footStars"></canvas>
+  <div class="footer-inner reveal">
+    <p class="l1">FROM ONE LIGHT</p>
+    <p class="arrow">↓</p>
+    <p class="l2">INFINITE POSSIBILITIES</p>
+    <p class="brand">FLY77STAR. STUDIO</p>
+    <p class="tagline">LEAVE LIGHT BEHIND.</p>
+    <p class="copy">© 2026 FLY77STAR. STUDIO — ひとつの光から、無限の可能性へ。</p>
+  </div>
+</footer>
+
+<script>
+/* ---------- データ：作品は WORKS に1件追加するだけ ----------
+   video を指定するとカード背景で静かにループ再生されます。 */
+const WORKS = [
+  {
+    id: "W-0000",
+    title: "Distance",
+    en: "RUI / Preparing for Release",
+    experience: "公開準備中",
+    story: "RUI『Distance』を公開準備中。",
+    duration: "Soon",
+    tone: ["#10192A", "#7FA8C9"],
+    video: "assets/distance_teaser.mp4",
+  },
+  {
+    id: "W-0001",
+    title: "STEP by STEP",
+    en: "Episode 1: RETURN",
+    experience: "元バンドマン",
+    story: "一度ステージを降りた者は、必ず戻りたくなる。",
+    duration: "2:30",
+    tone: ["#12233A", "#7FA8C9"],
+    video: "assets/step_teaser.mp4",
+  },
+  {
+    id: "W-0002",
+    title: "Distance",
+    en: "A Long-Distance Story",
+    experience: "遠距離恋愛",
+    story: "離れていても、組紐はほどけない。",
+    duration: "4:23",
+    tone: ["#0E1A2E", "#6A8FD4"],
+    video: "assets/distance_teaser.mp4",
+  },
+  {
+    id: "W-0005",
+    title: "TOMORROW",
+    en: "Turning to Gold",
+    experience: "働く女性",
+    story: "明日があるから、今を歌う。",
+    duration: "2:01",
+    tone: ["#2A1E28", "#D08FA8"],
+    video: "assets/tomorrow_teaser.mp4",
+  },
+  {
+    id: "W-0003",
+    title: "LIFE is BACK",
+    en: "Coming Soon",
+    experience: "人生をやり直した男",
+    story: "もう一度、はじめから。",
+    duration: "—",
+    tone: ["#101C26", "#8FB8D0"],
+  },
+  {
+    id: "W-0004",
+    title: "WAKE UP",
+    en: "SE77NTH. / Preparing for Release",
+    experience: "公開準備中",
+    story: "SE77NTH.『WAKE UP』を公開準備中。",
+    duration: "Soon",
+    tone: ["#12121C", "#555C70"],
+  },
+];
+
+/* ---------- 所属タレント：TALENTS に1件追加するだけ ---------- */
+const TALENTS = [
+  {
+    name: "RUI",
+    kana: "ルイ",
+    exp: "元バンドマン",
+    profile: "一度ステージを降りた男。<br />もう一度、光の中へ。",
+    photo: "assets/talent_rui.jpg",
+    workId: "W-0001",
+    workTitle: "STEP by STEP",
+  },
+  {
+    name: "RUKA",
+    kana: "ルカ",
+    exp: "遠距離恋愛",
+    profile: "離れた街で、<br />同じ星を見上げている。",
+    photo: "assets/talent_ruka.jpg",
+    workId: "W-0002",
+    workTitle: "Distance / TOMORROW",
+  },
+];
+
+const BIBLE = [
+  ["Always Choose Reality.", "常に、リアルを選ぶ。"],
+  ["Emotion Before Spectacle.", "派手さより、感情を。"],
+  ["Silence Is Dialogue.", "沈黙もまた、台詞である。"],
+];
+
+const PEOPLE = [
+  ["映像監督", "元バンドマン", "今は、映画を作る。"],
+  ["スタイリスト", "古着屋の店主だった", "今は、人物に物語を着せる。"],
+  ["DJ", "深夜のクラブで10年", "今は、映像に鼓動を与える。"],
+  ["フォトグラファー", "旅を撮り続けた", "今は、一瞬を未来へ残す。"],
+];
+
+const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+/* ---------- HERO：動画 → 星空＋ロゴへ静かに ---------- */
+const video = document.getElementById("openingVideo");
+const heroCanvas = document.getElementById("heroStars");
+const heroInner = document.getElementById("heroInner");
+const scrollCue = document.getElementById("scrollCue");
+const skipBtn = document.getElementById("skipBtn");
+const replayBtn = document.getElementById("replayBtn");
+let heroDone = false;
+
+function endOpening() {
+  if (heroDone) return;
+  heroDone = true;
+  video.pause();
+  video.classList.add("fade-out");
+  heroCanvas.classList.add("show");
+  heroInner.classList.add("show");
+  scrollCue.classList.add("show");
+  skipBtn.classList.add("hidden");
+  setTimeout(() => replayBtn.classList.remove("hidden"), 2600);
+}
+function playOpening() {
+  heroDone = false;
+  replayBtn.classList.add("hidden");
+  heroInner.classList.remove("show");
+  heroCanvas.classList.remove("show");
+  scrollCue.classList.remove("show");
+  video.classList.remove("fade-out");
+  video.currentTime = 0;
+  const p = video.play();
+  if (p) p.catch(endOpening); // 自動再生がブロックされたら静止ヒーローへ
+  skipBtn.classList.remove("hidden");
+}
+video.addEventListener("ended", endOpening);
+skipBtn.addEventListener("click", endOpening);
+replayBtn.addEventListener("click", playOpening);
+if (reduced || !video.getAttribute("src")) { endOpening(); } else { playOpening(); }
+
+/* ---------- 星空キャンバス ---------- */
+function starField(canvas, shooting = true) {
+  const ctx = canvas.getContext("2d");
+  const resize = () => { canvas.width = canvas.offsetWidth; canvas.height = canvas.offsetHeight; };
+  resize();
+  window.addEventListener("resize", resize);
+  const stars = Array.from({ length: 140 }, () => ({
+    x: Math.random(), y: Math.random(),
+    r: Math.random() * 1.1 + 0.2,
+    p: Math.random() * Math.PI * 2,
+    s: Math.random() * 0.015 + 0.004,
+  }));
+  let streak = null, nextStreak = 220;
+  function draw() {
+    const W = canvas.width, H = canvas.height;
+    ctx.clearRect(0, 0, W, H);
+    for (const st of stars) {
+      st.p += st.s;
+      const a = reduced ? 0.7 : 0.35 + Math.sin(st.p) * 0.35;
+      ctx.beginPath();
+      ctx.arc(st.x * W, st.y * H, st.r, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(199,204,216,${Math.max(0.08, a)})`;
+      ctx.fill();
+    }
+    if (shooting && !reduced) {
+      nextStreak--;
+      if (!streak && nextStreak <= 0) {
+        streak = { x: Math.random() * 0.5 * W, y: Math.random() * 0.3 * H, life: 0 };
+        nextStreak = 500 + Math.random() * 500;
+      }
+      if (streak) {
+        streak.life++;
+        const prog = streak.life / 60;
+        const sx = streak.x + prog * W * 0.35;
+        const sy = streak.y + prog * H * 0.18;
+        const grad = ctx.createLinearGradient(sx - 90, sy - 45, sx, sy);
+        grad.addColorStop(0, "rgba(127,168,201,0)");
+        grad.addColorStop(1, `rgba(127,168,201,${0.8 * (1 - prog)})`);
+        ctx.strokeStyle = grad;
+        ctx.lineWidth = 1.4;
+        ctx.beginPath();
+        ctx.moveTo(sx - 90, sy - 45);
+        ctx.lineTo(sx, sy);
+        ctx.stroke();
+        if (prog >= 1) streak = null;
+      }
+    }
+    requestAnimationFrame(draw);
+  }
+  requestAnimationFrame(draw);
+}
+starField(heroCanvas);
+starField(document.getElementById("footStars"));
+
+/* ---------- 共通：作品カードへスクロール ---------- */
+function goToWork(id) {
+  const el = document.getElementById("work-" + id);
+  if (!el) return;
+  el.scrollIntoView({ behavior: reduced ? "auto" : "smooth", block: "center", inline: "center" });
+  el.classList.add("pulse");
+  setTimeout(() => el.classList.remove("pulse"), 2600);
+}
+
+/* ---------- TALENT カード生成 ---------- */
+const talentGrid = document.getElementById("talentGrid");
+for (const t of TALENTS) {
+  const card = document.createElement("div");
+  card.className = "talent-card reveal";
+  card.innerHTML = `
+    <div class="talent-photo">
+      <img src="${t.photo}" alt="${t.name}" loading="lazy" />
+      <p class="t-name">${t.name}<span>${t.kana}</span></p>
+    </div>
+    <div class="talent-info">
+      <p class="t-exp">「${t.exp}」の経験を持つ</p>
+      <p class="t-profile">${t.profile}</p>
+      <p class="t-work">FEATURED — ${t.workTitle} →</p>
+    </div>`;
+  card.addEventListener("click", () => goToWork(t.workId));
+  talentGrid.appendChild(card);
+}
+
+/* ---------- WORKS カード生成 ---------- */
+const worksRow = document.getElementById("worksRow");
+for (const w of WORKS) {
+  const card = document.createElement("div");
+  card.className = "work-card";
+  card.id = "work-" + w.id;
+  card.innerHTML = `
+    <div class="work-frame" style="background: linear-gradient(160deg, ${w.tone[0]} 0%, var(--bg) 78%);">
+      ${w.video ? `<video src="${w.video}" muted loop playsinline autoplay></video>` : ""}
+      <div class="work-glow" style="background: radial-gradient(ellipse at 50% 26%, ${w.tone[1]}2E 0%, transparent 58%);"></div>
+      <div class="work-meta">
+        ${w.experience ? `<p class="exp">${w.experience} の物語</p>` : ""}
+        <h3>${w.title}</h3>
+        <p class="sub">${w.en} / ${w.duration}</p>
+        <p class="story">${w.story}</p>
+      </div>
+    </div>`;
+  worksRow.appendChild(card);
+}
+
+/* ---------- STORIES 生成 ---------- */
+const storyList = document.getElementById("storyList");
+for (const w of WORKS.filter(w => w.experience)) {
+  const btn = document.createElement("button");
+  btn.className = "story-link reveal";
+  btn.innerHTML = `
+    <span class="exp">${w.experience}</span>
+    <span class="arrow">↓</span>
+    <span class="work">${w.title}</span>`;
+  btn.addEventListener("click", () => goToWork(w.id));
+  storyList.appendChild(btn);
+}
+
+/* ---------- BIBLE / PEOPLE 生成 ---------- */
+const bibleList = document.getElementById("bibleList");
+for (const [en, jp] of BIBLE) {
+  const d = document.createElement("div");
+  d.className = "bible-item reveal";
+  d.innerHTML = `<p class="en">${en}</p><p class="jp">${jp}</p>`;
+  bibleList.appendChild(d);
+}
+const peopleGrid = document.getElementById("peopleGrid");
+for (const [role, past, now] of PEOPLE) {
+  const d = document.createElement("div");
+  d.className = "person reveal";
+  d.innerHTML = `<p class="role">${role}</p><p class="past">${past}</p><p class="arrow">↓</p><p class="now">${now}</p>`;
+  peopleGrid.appendChild(d);
+}
+
+/* ---------- MODEL SNAP：SNAPS に1件追加するだけ ---------- */
+const RUI_SNAPS = [
+  ["assets/rui_snap_01.jpg", "01 — SIGNING DAY"],
+  ["assets/rui_snap_02.jpg", "02 — MIDNIGHT CURB"],
+  ["assets/rui_snap_03.jpg", "03 — MORNING LIGHT"],
+  ["assets/rui_snap_04.jpg", "04 — CROSSROAD"],
+  ["assets/rui_snap_05.jpg", "05 — BACK STREET"],
+  ["assets/rui_snap_06.jpg", "06 — LEATHER"],
+  ["assets/rui_snap_07.jpg", "07 — PORTRAIT"],
+];
+const RUI_WIDE_SNAPS = [
+  ["assets/rui_snap_08.jpg", "08 — CROSSWALK"],
+  ["assets/rui_snap_09.jpg", "09 — STREET SIGN"],
+  ["assets/rui_snap_10.jpg", "10 — WHITE SHIRT"],
+  ["assets/rui_snap_11.jpg", "11 — CLOSE FRAME"],
+];
+const RUKA_SNAPS = [
+  ["assets/ruka_snap_01.jpg", "01 — BACK STREET"],
+  ["assets/ruka_snap_02.jpg", "02 — STUDIO ROOM"],
+  ["assets/ruka_snap_03.jpg", "03 — SUNSET DRIVE"],
+  ["assets/ruka_snap_04.jpg", "04 — BACK SEAT"],
+  ["assets/ruka_snap_05.jpg", "05 — CITY WALK"],
+  ["assets/ruka_snap_06.jpg", "06 — WINDSHIELD"],
+  ["assets/ruka_snap_07.jpg", "07 — PASSENGER"],
+  ["assets/ruka_snap_08.jpg", "08 — CURB SIDE"],
+  ["assets/ruka_snap_09.jpg", "09 — BLUE DENIM"],
+  ["assets/ruka_snap_10.jpg", "10 — CAR DOOR"],
+  ["assets/ruka_snap_11.jpg", "11 — CLOSE UP"],
+  ["assets/ruka_snap_12.jpg", "12 — WALL PORTRAIT"],
+];
+const snapsGrid = document.getElementById("snapsGrid");
+const ruiWideSnapsGrid = document.getElementById("ruiWideSnapsGrid");
+const rukaSnapsGrid = document.getElementById("rukaSnapsGrid");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightboxImg");
+function renderSnaps(grid, snaps) {
+  for (const [src, cap] of snaps) {
+    const d = document.createElement("div");
+    d.className = "snap-item";
+    d.innerHTML = `<img src="${src}" alt="${cap}" loading="lazy" /><p class="n">${cap}</p>`;
+    d.addEventListener("click", () => {
+      lightboxImg.src = src;
+      lightbox.classList.add("open");
+    });
+    grid.appendChild(d);
+  }
+}
+renderSnaps(snapsGrid, RUI_SNAPS);
+renderSnaps(ruiWideSnapsGrid, RUI_WIDE_SNAPS);
+renderSnaps(rukaSnapsGrid, RUKA_SNAPS);
+lightbox.addEventListener("click", () => lightbox.classList.remove("open"));
+document.addEventListener("keydown", (e) => { if (e.key === "Escape") lightbox.classList.remove("open"); });
+
+/* ---------- SHORT VER. / FULL VER.：ひとつ再生したら他は停止 ---------- */
+const shortVideos = document.querySelectorAll(".short-item video");
+shortVideos.forEach(v => v.addEventListener("play", () => {
+  shortVideos.forEach(o => { if (o !== v) o.pause(); });
+}));
+
+/* ---------- Reveal ---------- */
+if (reduced) {
+  document.querySelectorAll(".reveal").forEach(el => el.classList.add("show"));
+} else {
+  const obs = new IntersectionObserver(entries => {
+    for (const e of entries) if (e.isIntersecting) { e.target.classList.add("show"); obs.unobserve(e.target); }
+  }, { threshold: 0.15 });
+  document.querySelectorAll(".reveal").forEach(el => obs.observe(el));
+}
+</script>
+</body>
+</html>

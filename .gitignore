@@ -7,6 +7,10 @@
 Exports/*.mp4
 Projects/*/Export/*.mp4
 
+# Netlify site: keep teaser-size assets only in git-managed copy.
+Web/netlify_site/assets/*.mp4
+!Web/netlify_site/assets/*_teaser.mp4
+
 # OS/editor noise
 .vscode/
 .idea/
