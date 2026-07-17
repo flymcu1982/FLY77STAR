@@ -40,6 +40,34 @@ FLY77STAR. 公式SNS・Webサイト一覧は [`OFFICIAL_INFO.md`](OFFICIAL_INFO.
 
 **現在**: 運用方針の記録を完了。チャンネル移行の本番作業は YU最終承認待ち。
 
+## 公式Gmail AI社員運用体制（2026-07-17）
+
+詳細: 以下5つのドキュメントを参照
+- [`OFFICIAL_GMAIL_OPERATIONS.md`](OFFICIAL_GMAIL_OPERATIONS.md) — 全体運用マニュアル
+- [`AI_MAIL_REVIEW_RULES.md`](AI_MAIL_REVIEW_RULES.md) — メール分析・判定ルール
+- [`GMAIL_LABEL_POLICY.md`](GMAIL_LABEL_POLICY.md) — ラベル運用ポリシー
+- [`MAIL_RESPONSE_APPROVAL_FLOW.md`](MAIL_RESPONSE_APPROVAL_FLOW.md) — メール返信承認フロー
+- [`CODEX_GMAIL_AUTOMATION.md`](CODEX_GMAIL_AUTOMATION.md) — Codex 自動化実行指示
+
+**実装状況**（FLY77STAR U.実装完了）:
+- Gmail アカウント: `fly77star.official@gmail.com` 作成・ログイン・リカバリー設定完了
+- AI社員役割: Mail Reception Department（読み取り・分類・報告）
+- 日報: 毎日 18:00 に YU へ報告（重要度別・カテゴリ別分類）
+- 返信フロー: AI が下書き作成 → YU が承認・修正 → YU が送信
+
+**運用フェーズ**:
+- **Phase 1（現在）**: 毎日のメール確認・分類・報告（手動）
+- **Phase 2（2026-07-24～）**: 週間レポート・月間監査の自動化（Codex）
+- **Phase 3（2026-08-07～）**: 返信下書き自動準備（Codex）
+- **Phase 4（TBD）**: Gmail API / OAuth 統合
+
+**重要ルール**:
+- ✅ AI社員: メール読み取り、分類、下書き作成、日報報告
+- ❌ AI社員: パスワード管理、メール送信、ラベル自動付与、削除
+- 👤 YU のみ: Gmail ログイン、OAuth認証、メール送信、削除、ラベル管理
+
+**現在**: Phase 1 運用開始準備完了。AI社員が毎朝 09:00 からメール確認を開始予定。
+
 ## 進行中の企画・プロジェクト
 
 ### 制作中

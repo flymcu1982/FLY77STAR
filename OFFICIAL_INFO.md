@@ -19,9 +19,9 @@
 | サービス | 名称 | URL |
 |---|---|---|
 | 公式サイト | FLY77STAR-studio.netlify.app | https://fly77star-studio.netlify.app/ |
-| YouTube（4K） | FLY77STAR.（@yuyama6664 移行中） | https://www.youtube.com/@yuyama6664 |
-| YouTube（1K） | FLY77STAR.（@yuyama6664 移行中） | https://www.youtube.com/@yuyama6664 |
-| Gmail（公式） | 作成予定 | YU指定・YU最終承認待ち |
+| YouTube（4K） | FLY77STAR. | https://www.youtube.com/@FLY77STAR |
+| YouTube（1K） | FLY77STAR. | https://www.youtube.com/@FLY77STAR |
+| Gmail（公式） | fly77star.official@gmail.com | AI社員運用体制実装完了 |
 | Note | FLY77STAR | https://note.com/fly77star （予定） |
 
 ## 公開作品・公開予定
