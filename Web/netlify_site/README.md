@@ -1,6 +1,11 @@
-# FLY77STAR Web / Netlify Site
+# FLY77STAR. Web / Netlify Site
 
-このフォルダは、現行 Netlify 公開サイト `fly77star-studio.netlify.app` の Git 管理受け皿です。
+このフォルダは、現行 Netlify 公開サイト `flystar77-studio.netlify.app` （表示URL: `FLY77STAR-studio.netlify.app`）の Git 管理受け皿です。
+
+## 公式リンク
+
+**公式サイト**: https://flystar77-studio.netlify.app/  
+**SNS・公式情報**: [`../../OFFICIAL_INFO.md`](../../OFFICIAL_INFO.md) 参照
 
 ## Current Status
 

@@ -454,6 +454,23 @@
   .join a.secondary { border: 1px solid var(--blue); color: var(--silver-dim); }
   .join a.secondary:hover { border-color: var(--star); color: var(--silver); }
 
+  /* Social / Official Links */
+  .social { padding: 90px 24px 100px; text-align: center; background: var(--bg); }
+  .social h3 { font-family: var(--jp-serif); font-size: 18px; font-weight: 600; margin-bottom: 40px; }
+  .social-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 24px; max-width: 1000px; margin: 0 auto; }
+  .social-link {
+    text-decoration: none;
+    padding: 24px;
+    border: 1px solid var(--line);
+    transition: border-color .4s ease, background .4s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .social-link:hover { border-color: var(--star); background: rgba(127,168,201,0.05); }
+  .social-link .platform { font-family: var(--en); font-size: 11px; letter-spacing: 0.35em; color: var(--star); }
+  .social-link .handle { font-family: var(--jp-sans); font-size: 14px; color: var(--silver); font-weight: 500; }
+
   /* Footer */
   footer {
     position: relative;
@@ -747,6 +764,29 @@
       <a class="primary" href="mailto:join@flystar77.studio">JOIN&nbsp;US</a>
       <a class="secondary" href="mailto:contact@flystar77.studio">制作のご依頼</a>
     </div>
+  </div>
+</section>
+
+<!-- ============ SOCIAL / OFFICIAL LINKS ============ -->
+<section class="social reveal">
+  <h3>FLY77STAR. 公式リンク</h3>
+  <div class="social-grid">
+    <a class="social-link" href="https://www.tiktok.com/@fly77star" target="_blank" rel="noopener noreferrer">
+      <p class="platform">TIKTOK</p>
+      <p class="handle">@fly77star</p>
+    </a>
+    <a class="social-link" href="https://www.instagram.com/fly77star" target="_blank" rel="noopener noreferrer">
+      <p class="platform">INSTAGRAM</p>
+      <p class="handle">@fly77star</p>
+    </a>
+    <a class="social-link" href="https://x.com/FLY77STAR_JP" target="_blank" rel="noopener noreferrer">
+      <p class="platform">X（公式）</p>
+      <p class="handle">@FLY77STAR_JP</p>
+    </a>
+    <a class="social-link" href="https://x.com/FLY77STAR_LAB" target="_blank" rel="noopener noreferrer">
+      <p class="platform">X（LAB）</p>
+      <p class="handle">@FLY77STAR_LAB</p>
+    </a>
   </div>
 </section>
 

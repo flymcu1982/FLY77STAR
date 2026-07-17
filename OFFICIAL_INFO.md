@@ -36,6 +36,8 @@
 - **MV公開情報** — SNS全体で発信
 - **Shorts更新** — TikTok / Instagram / YouTube Shorts
 - **Note** — 制作日誌・インタビュー・舞台裏情報
+  - 製作: 2026年7月末予定
+  - 公開: 『Distance』YouTube 8月配信時（同時公開）
 
 ## 関連ドキュメント
 

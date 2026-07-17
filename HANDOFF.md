@@ -19,6 +19,9 @@ FLY77STAR. 公式SNS・Webサイト一覧は [`OFFICIAL_INFO.md`](OFFICIAL_INFO.
 - 『Distance』(RUI) — ショート2本公開中、YouTube 2026年8月配信予定
 - 『WAKE UP』(SE77NTH.) — 公開準備中
 
+**コンテンツ製作スケジュール**:
+- **Note公式アカウント** — 2026年7月末製作予定、『Distance』YouTube配信時（8月）に同時公開
+
 **YouTube解像度方針**:
 - 4K と 1K の2系統で運用する
 

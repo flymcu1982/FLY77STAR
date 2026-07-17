@@ -1,8 +1,12 @@
-# FLYSTAR77 STUDIO
+# FLY77STAR. STUDIO
 
 このリポジトリはAI映像制作システムです。
 
-FLYSTAR77 STUDIO OS v1.0として、制作、編集、広報、品質管理、自動化までを管理します。
+FLY77STAR. STUDIO OS v1.0として、制作、編集、広報、品質管理、自動化までを管理します。
+
+**公式サイト・SNS**: [`OFFICIAL_INFO.md`](OFFICIAL_INFO.md) 参照
+
+デジタルクリエイター・音楽・映像・物語・AIクリエイティブをつなぐ未来型スタジオです。
 
 最初に読むファイル
 
