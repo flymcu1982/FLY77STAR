@@ -24,6 +24,19 @@ FLY77STAR. 公式SNS・Webサイト一覧は [`OFFICIAL_INFO.md`](OFFICIAL_INFO.
 
 **情報発信チャネル**: SNS全体でMV・Shorts・noteの公開情報を発信。
 
+## YouTube 運用方針(2026-07-17)
+
+詳細: [`YOUTUBE_OPERATIONS.md`](YOUTUBE_OPERATIONS.md) 参照
+
+**決定事項**（FLY77STAR U.最終承認済み）:
+- 配信解像度: 4K と 1K
+- 公式チャンネル: 既存 `@yuyama6664` をブランド移行（新規開設しない）
+- 既存動画: 削除禁止、分類管理（公開継続/限定公開/非公開/再編集活用）
+- 公式Gmail: 新規作成 OK（アドレス未確定、YU指定）
+- 本番操作（ハンドル確定・バナー変更・公開設定変更・新作公開）: YU最終承認待ち
+
+**現在**: 運用方針の記録を完了。チャンネル移行の本番作業は YU最終承認待ち。
+
 ## 現在のプロジェクト
 
 WAKE UP(`Projects/WAKE_UP/`)
