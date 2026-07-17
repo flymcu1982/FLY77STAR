@@ -54,21 +54,22 @@ FLY77STAR. の全SNSプラットフォーム実装について、YU が実装完
 ---
 
 ### Instagram
-- [ ] `fly77star.official@gmail.com` でアカウント作成完了
-- [ ] ハンドル確定：`@_____________` （第一候補 / 第二候補 / 第三候補）
-- [ ] メール認証完了
-- [ ] Creator Account に切り替え完了
-- [ ] プロフィール画像（FLY77STAR_Logo.png）アップロード完了
-- [ ] プロフィール名設定完了：`FLY77STAR.`
-- [ ] Bio 設定完了
-- [ ] Website リンク設定完了
-- [ ] メールリカバリー追加完了：`fly77star.official@gmail.com`
+- [x] `fly77star.official@gmail.com` でアカウント作成完了
+- [x] ハンドル確定：`@fly77star` （第三候補：最終フォールバック）
+- [x] メール認証完了
+- [ ] Creator Account に切り替え完了（確認待機中）
+- [x] プロフィール画像（FLY77STAR_Logo.png）アップロード完了
+- [x] プロフィール名設定完了：`FLY77STAR.`
+- [x] Bio 設定完了：「AIでMV・アーティスト・物語をつくるスタジオ。RUI『Distance』/SE77NTH.『WAKE UP』公開準備中。」
+- [x] Website リンク設定完了：1件登録
+- [x] メールリカバリー追加完了：`fly77star.official@gmail.com`
 
-**Status:** ☐ Pending / ☑ Completed  
-**Confirmed Handle:** `@_____________`  
-**Account Type:** ☑ Creator Account  
-**Completion Date:** ________________  
-**Notes:** ________________
+**Status:** ☐ Pending / ☑ Completed (Creator Account切り替え待機中)  
+**Confirmed Handle:** `@fly77star`  
+**Account Type:** ⏳ プロアカウント切り替え待機中  
+**Profile URL:** https://www.instagram.com/fly77star  
+**Completion Date:** 2026-07-17  
+**Notes:** プロフィール・アイコン・リンク設定完了。Creator Account 切り替え確認待機中
 
 ---
 
@@ -109,15 +110,15 @@ FLY77STAR. の全SNSプラットフォーム実装について、YU が実装完
 ## Phase 2: Profile Content Verification（プロフィール内容確認）
 
 ### All Platforms
-- [ ] すべてのプロフィール文が `SNS_PROFILE_TEMPLATES.md` と一致
-- [ ] SE77NTH. キャラクター表記統一確認（KAI / RUI / RUKA / HINA / LIEN）
-- [ ] すべての Website リンクが機能確認
-- [ ] プロフィール画像が正式Fロゴであることを確認（77/777中央ロゴなし）
-- [ ] モバイル表示でのプロフィール確認完了
+- [x] すべてのプロフィール文が `SNS_PROFILE_TEMPLATES.md` と一致（TikTok・Instagram確認完了）
+- [x] SE77NTH. キャラクター表記統一確認（KAI / RUI / RUKA / HINA / LIEN）
+- [x] すべての Website リンクが機能確認（TikTok・Instagram）
+- [x] プロフィール画像が正式Fロゴであることを確認（77/777中央ロゴなし）
+- [x] モバイル表示でのプロフィール確認完了
 
 **Status:** ☐ Pending / ☑ Completed  
-**Verification Date:** ________________  
-**Notes:** ________________
+**Verification Date:** 2026-07-17  
+**Notes:** TikTok・Instagram プロフィール確認完了。X JP/LAB 待機中
 
 ---
 

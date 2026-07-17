@@ -1,14 +1,14 @@
 {
   "document_info": {
     "title": "SNS Handle Tracker（ハンドル取得記録表）",
-    "version": "1.1",
+    "version": "1.2",
     "last_updated": "2026-07-17",
-    "status": "実装中：Gmail ✅、TikTok ✅、Instagram ⏳、X JP/LAB ✅",
+    "status": "実装中：Gmail ✅、TikTok ✅、Instagram ✅（Creator切替待機中）、X JP/LAB ✅",
     "description": "各SNSプラットフォームで取得したハンドル（ユーザーネーム）の記録表。YU が手動でアカウント登録時に、実際に取得できたハンドルを記入。",
     "progress": {
-      "completed": 4,
+      "completed": 5,
       "total": 5,
-      "completion_rate": "80%"
+      "completion_rate": "100%（Creator Account切り替え待機中）"
     }
   },
   "platform_handles": {
@@ -50,27 +50,27 @@
         {
           "priority": 1,
           "suggested_handle": "@FLY77STAR_STUDIO",
-          "status": "待機中",
-          "notes": "第一候補：推奨"
+          "status": "取得不可"
         },
         {
           "priority": 2,
           "suggested_handle": "@FLY77STAR_OFFICIAL",
-          "status": "待機中",
-          "notes": "第二候補"
+          "status": "取得不可"
         },
         {
           "priority": 3,
           "suggested_handle": "@FLY77STAR",
-          "status": "待機中",
-          "notes": "第三候補：最終フォールバック"
+          "status": "取得不可"
         }
       ],
-      "confirmed_handle": null,
-      "handle_status": "取得待機中",
-      "acquisition_date": null,
-      "account_type": "Creator Account に切り替え予定",
-      "notes": "Instagram はクリエイターアカウント必須。実際に取得できたハンドルを記入"
+      "confirmed_handle": "@fly77star",
+      "handle_status": "取得済み ✅",
+      "acquisition_date": "2026-07-17",
+      "profile_url": "https://www.instagram.com/fly77star",
+      "account_type": "Creator Account 切り替え確認待機中",
+      "display_name": "FLY77STAR.",
+      "bio": "Music × Film × Story × AI Creative Studio. SE77NTH. / KAI / RUI / RUKA / HINA / LIEN。MV制作過程と作品情報を発信。",
+      "notes": "表示名・プロフィール文・アイコン・リンク設定完了。Creator Account切り替え確認待機中"
     },
     "x_jp": {
       "platform": "X (Twitter) - Official",
@@ -105,16 +105,17 @@
   "summary": {
     "completed_accounts": {
       "gmail": "✅ fly77star.official@gmail.com 作成完了",
-      "tiktok": "✅ @fly77star ハンドル確定",
+      "tiktok": "✅ @fly77star ハンドル確定 & プロフィール設定完了",
+      "instagram": "✅ @fly77star ハンドル確定 & プロフィール設定完了",
       "x_jp": "✅ @FLY77STAR_JP 既存アカウント",
       "x_lab": "✅ @FLY77STAR_LAB 既存アカウント"
     },
     "pending_accounts": {
-      "instagram": "⏳ 新規作成待機中 - ハンドル確定待機中"
+      "instagram_creator_switch": "⏳ Creator Account 切り替え確認待機中"
     }
   },
   "yu_approval": {
-    "status": "承認待機中",
+    "status": "プロフィール設定完了・Creator Account切り替え確認待機中",
     "checklist": [
       {
         "item": "Gmail アカウント作成・ハンドル確認",
@@ -129,7 +130,10 @@
       },
       {
         "item": "Instagram アカウント作成・ハンドル確認",
-        "completed": false
+        "completed": true,
+        "date": "2026-07-17",
+        "confirmed_handle": "@fly77star",
+        "status": "プロフィール設定完了・Creator Account切り替え待機中"
       },
       {
         "item": "X @FLY77STAR_JP メールリカバリー追加完了",
@@ -141,7 +145,9 @@
       },
       {
         "item": "すべてのハンドル確定・確認完了",
-        "completed": false
+        "completed": true,
+        "date": "2026-07-17",
+        "summary": "Gmail ✅ / TikTok @fly77star ✅ / Instagram @fly77star ✅ / X JP/LAB ✅"
       }
     ]
   },
