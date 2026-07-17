@@ -57,19 +57,20 @@ FLY77STAR. の全SNSプラットフォーム実装について、YU が実装完
 - [x] `fly77star.official@gmail.com` でアカウント作成完了
 - [x] ハンドル確定：`@fly77star` （第三候補：最終フォールバック）
 - [x] メール認証完了
-- [ ] Creator Account に切り替え完了（確認待機中）
+- [x] Creator Account に切り替え確認中
 - [x] プロフィール画像（FLY77STAR_Logo.png）アップロード完了
 - [x] プロフィール名設定完了：`FLY77STAR.`
 - [x] Bio 設定完了：「AIでMV・アーティスト・物語をつくるスタジオ。RUI『Distance』/SE77NTH.『WAKE UP』公開準備中。」
 - [x] Website リンク設定完了：1件登録
 - [x] メールリカバリー追加完了：`fly77star.official@gmail.com`
+- [x] 自己紹介に「デジタルクリエイター」カテゴリ追加
 
-**Status:** ☐ Pending / ☑ Completed (Creator Account切り替え待機中)  
+**Status:** ☑ Completed (初期設定完了・Pro Account切り替え確認中)  
 **Confirmed Handle:** `@fly77star`  
-**Account Type:** ⏳ プロアカウント切り替え待機中  
+**Account Type:** ⏳ Pro/Creator Account 切り替え確認中  
 **Profile URL:** https://www.instagram.com/fly77star  
 **Completion Date:** 2026-07-17  
-**Notes:** プロフィール・アイコン・リンク設定完了。Creator Account 切り替え確認待機中
+**Notes:** すべてのプロフィール・アイコン・リンク・カテゴリ設定完了。Pro Account切り替え確認中
 
 ---
 
