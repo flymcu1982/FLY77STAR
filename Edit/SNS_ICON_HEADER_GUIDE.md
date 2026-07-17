@@ -123,9 +123,9 @@ Profile > Edit profile > Profile photo > Change photo
 
 ---
 
-### Header Image (Banner)
+### Header Image (Banner) - @FLY77STAR_JP (Official)
 
-**File:** Custom header design (Optional - use as needed)
+**Status:** ✅ Required
 
 **Specs:**
 - **Recommended Size:** 1500×500px
@@ -140,37 +140,79 @@ Profile > Edit profile > Profile photo > Change photo
 Profile > Edit profile > Header photo > Upload
 ```
 
-**Options for X Header:**
+**Design Specification - JP Official:**
 
-**Option A: Simple Text + Logo**
 ```
-- FLY77STAR. logo (left-center)
-- "From One Light, Infinite Possibilities" (right side)
-- Subtle gradient or dark background
-- No animated elements (static only)
-```
+【要素】
+- 中央：正式 FLY77STAR. Fロゴ
+- 左下：FLY77STAR.
+- 右上：From One Light, Infinite Possibilities.
+- 右下：ひとつの光から、無限の可能性へ。
 
-**Option B: Artistic Mood Board**
-```
-- Subtle color gradient matching brand
-- Small logo or symbol
-- Minimal text (tagline only)
-- Professional, cinematic aesthetic
-```
+【カラー】
+- 背景：黒 / ミッドナイトネイビー（深い紺）
+- アクセント：シルバー / 青い光（電気的な青）
+- 帯：グラデーション（黒 → ミッドナイトネイビー → 青い光）
 
-**Option C: No Header (Default)**
-```
-- Use platform default
-- Keep profile focus on profile picture + bio text
-- Simple, clean approach
+【スタイル】
+- 静止画のみ（動画不可）
+- プロフェッショナル・シネマティック
+- 未来型スタジオのイメージ
+- 高コントラスト・読みやすいテキスト
 ```
 
 **Best Practices:**
 - Must be static image (X does not support video headers)
 - No text that will be cut off on mobile
 - High contrast, readable text
-- Brand colors (blues, silvers from logo)
+- Brand colors consistent with logo
 - File must not exceed 5MB
+
+---
+
+### Header Image (Banner) - @FLY77STAR_LAB (Lab Account)
+
+**Status:** ✅ Required
+
+**Specs:**
+- **Recommended Size:** 1500×500px
+- **Display Size:** 1500×500px (desktop), 1200×315px (mobile)
+- **File Type:** PNG, JPG
+- **File Size:** Max 5MB
+- **Aspect Ratio:** 3:1 (1500×500)
+- **Format:** Rectangular (no auto-crop, use as-is)
+
+**Upload Location:**
+```
+Profile > Edit profile > Header photo > Upload
+```
+
+**Design Specification - LAB:**
+
+```
+【要素】
+- 中央：正式 FLY77STAR. Fロゴ
+- 左：FLY77STAR. LAB
+- 中央下：Behind the Making
+- 右：AI Production / CANON / Prompt / QC / Studio OS
+
+【カラー】
+- 背景：黒 / ダークグレー（実験室感）
+- アクセント：ネオングリーン / 電気的な青 / シルバー
+- 帯：テッキーな感じ（グリッド・デジタル感）
+
+【スタイル】
+- 実験室・制作現場感を強調
+- JP公式より少しカジュアル・テック感
+- 制作プロセスの透明性を表現
+- グリッドやモニター的なデザイン要素
+```
+
+**Best Practices:**
+- Must be static image
+- Emphasize laboratory / behind-the-scenes aesthetics
+- Tech-forward design language
+- High visibility for small text elements
 
 ---
 
@@ -323,7 +365,37 @@ File available at: Assets/FLY77STAR_Logo.png
 
 ---
 
+## YU Final Approval Checklist
+
+アイコン・ヘッダー画像をすべてのプラットフォームに反映する前に、以下を確認してください：
+
+### Icons - All Platforms
+- [ ] Assets/FLY77STAR_Logo.png が正式Fロゴであることを確認
+- [ ] アイコンを TikTok に設定
+- [ ] アイコンを Instagram に設定
+- [ ] アイコンを X @FLY77STAR_JP に設定
+- [ ] アイコンを X @FLY77STAR_LAB に設定
+
+### Headers - X Accounts
+- [ ] X @FLY77STAR_JP ヘッダー画像（黒/ミッドナイトネイビー/シルバー/青い光）デザイン確認
+- [ ] X @FLY77STAR_JP ヘッダー画像（1500×500px）がアップロード可能なサイズ確認
+- [ ] X @FLY77STAR_LAB ヘッダー画像（実験室・制作現場感）デザイン確認
+- [ ] X @FLY77STAR_LAB ヘッダー画像（1500×500px）がアップロード可能なサイズ確認
+
+### General
+- [ ] すべての画像が静止画（動画なし）であることを確認
+- [ ] すべてのファイルサイズが制限以内（5MB以下）であることを確認
+- [ ] モバイル表示でのテキスト切れがないことを確認
+- [ ] 高コントラスト・読みやすいテキストであることを確認
+
+**YU 署名:** ________________  
+**日時:** ________________  
+**デザイン確認メモ:** ________________
+
+---
+
 **Document Status:** Ready for YU implementation  
 **Maintained by:** Claude Code (CTO)  
-**Last Verified:** 2026-07-17  
+**Version:** 2.0 - JP Official & LAB header specifications  
+**Last Updated:** 2026-07-17  
 **Asset Status:** ✅ All icons/logos ready for upload

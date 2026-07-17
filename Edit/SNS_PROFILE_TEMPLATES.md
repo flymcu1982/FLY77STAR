@@ -36,7 +36,7 @@ FLY77STAR.
 
 ### Bio
 ```
-🎬✨ Music × Storytelling × AI. Imagining the future. Creating it now.
+Music × Film × Story × AI Creative Studio. SE77NTH. | KAI / RUI / RUKA / HINA / LIEN. MV制作過程と作品情報を発信。
 ```
 
 ### Website Link
@@ -47,8 +47,9 @@ https://flystar77-studio.netlify.app
 ### Additional Notes (Internal)
 - **Profile picture:** Assets/FLY77STAR_Logo.png
 - **Account type:** Standard (Creator upgrade option: later)
-- **Primary use:** Promotion, short-form content, engagement
-- **Content focus:** Work releases, behind-the-scenes hooks, character spotlights
+- **Primary use:** Shorts中心、制作過程と作品導線
+- **Content focus:** MV制作過程、キャラクター紹介、作品情報、作品へのリード
+- **Character focus:** SE77NTH. (KAI / RUI / RUKA / HINA / LIEN)
 
 ---
 
@@ -61,7 +62,7 @@ FLY77STAR.
 
 ### Bio
 ```
-🎬✨ Music × Storytelling × AI. Imagining the future. Creating it now.
+Music × Film × Story × AI Creative Studio. SE77NTH. | KAI / RUI / RUKA / HINA / LIEN. MV制作過程と作品情報を発信。
 ```
 
 ### Website Link
@@ -73,8 +74,9 @@ https://flystar77-studio.netlify.app
 - **Profile picture:** Assets/FLY77STAR_Logo.png
 - **Account type:** Creator Account (mandatory for analytics)
 - **Category:** Entertainment or Artist
-- **Primary use:** Visual storytelling, reels, stills, aesthetic branding
-- **Content focus:** Still frames, character portraits, production mood, behind-the-scenes stills
+- **Primary use:** Reels中心、制作過程と作品導線
+- **Content focus:** MV Reels、キャラクター紹介、制作ビハインド・スティル、制作雰囲気、アート制作過程
+- **Character focus:** SE77NTH. (KAI / RUI / RUKA / HINA / LIEN)
 
 ---
 
@@ -87,8 +89,12 @@ FLY77STAR.
 
 ### Bio
 ```
-公式告知、作品公開、YouTube / TikTok / note 導線
-Official announcements & work releases. Music × Film × Storytelling × AI.
+FLY77STAR. 公式｜音楽・映像・物語・AIクリエイティブをつなぐ未来型スタジオ。SE77NTH. / KAI / RUI / RUKA / HINA / LIEN。MV・Shorts・note公開情報を発信。
+```
+
+### Alternative Bio (English)
+```
+FLY77STAR Official | AI × Film × Music × Story Studio. Connecting art, music, and technology. Latest work announcements on YouTube, TikTok, note.
 ```
 
 ### Website Link
@@ -102,11 +108,12 @@ Japan Tokyo
 ```
 
 ### Additional Notes (Internal)
-- **Profile picture:** Assets/FLY77STAR_Logo.png （確認済みまたは更新）
-- **Account status:** Active / Verified
-- **Primary use:** Official announcements, work launches, cross-platform promotion
-- **Content focus:** Latest releases, YouTube/TikTok guides, official updates
+- **Profile picture:** Assets/FLY77STAR_Logo.png （正式Fロゴ）
+- **Account status:** Active / Official
+- **Primary use:** 公式告知、作品公開、YouTube / TikTok / note導線
+- **Content focus:** 新作公開情報、プロジェクト告知、クロスプラットフォーム導線、SE77NTH.関連ニュース
 - **Email recovery:** fly77star.official@gmail.com （YU手動追加）
+- **Character focus:** SE77NTH. (KAI / RUI / RUKA / HINA / LIEN)
 
 ---
 
@@ -119,8 +126,12 @@ FLY77STAR. Lab
 
 ### Bio
 ```
-AI制作ログ、失敗生成、プロンプト検証、AI社員運用、制作裏側
-AI Production Lab - Process Notes, Experiments, Prompt Validation, Behind-the-Scenes
+FLY77STAR. LAB｜AI MV制作の実験室。プロンプト、失敗生成、修正、CANON管理、AI社員運用、制作ノートを記録。
+```
+
+### Alternative Bio (English)
+```
+FLY77STAR Lab | AI Production Laboratory. Prompt logs, failed attempts, fixes, CANON management, AI team operations, production notes.
 ```
 
 ### Website Link
@@ -134,12 +145,13 @@ Japan Tokyo (Lab)
 ```
 
 ### Additional Notes (Internal)
-- **Profile picture:** Assets/FLY77STAR_Logo.png または Lab テーマのアイコン（オプション）
-- **Account status:** Active / Semi-public Documentation
-- **Primary use:** AI production process sharing, experiment logs, internal team operations visibility
-- **Content focus:** AI generation logs, failed attempts, prompt testing, CANON management, workflow documentation
+- **Profile picture:** Assets/FLY77STAR_Logo.png （正式Fロゴ）
+- **Account status:** Active / Production Process Documentation
+- **Primary use:** AI制作ログ、失敗生成、プロンプト検証、CANON管理、AI社員運用、制作裏側
+- **Content focus:** AI生成ログ、失敗生成例と修正、プロンプト検証、CANON管理記録、制作過程ノート、AI社員運用状況
 - **Email recovery:** fly77star.official@gmail.com （YU手動追加）
-- **Launch policy:** Handle reservation only or later activation acceptable
+- **Launch policy:** 実験室・制作現場感を出す、完成品だけでなく完成までの過程を公開
+- **Tone:** データドリブン、透明性重視、失敗からの学習を重視
 
 ---
 
@@ -222,6 +234,26 @@ When updating profile text:
 
 ---
 
+---
+
+## YU Final Approval Checklist
+
+プロフィール文をすべてのプラットフォームに反映する前に、以下を確認してください：
+
+- [ ] X @FLY77STAR_JP プロフィール文確認
+- [ ] X @FLY77STAR_LAB プロフィール文確認
+- [ ] TikTok プロフィール文確認
+- [ ] Instagram プロフィール文確認
+- [ ] SE77NTH.キャラクター表記統一確認
+- [ ] 各プラットフォームのWebサイトリンク確認
+- [ ] 全プラットフォーム完了確認
+
+**YU 署名:** ________________  
+**日時:** ________________
+
+---
+
 **Document maintained by:** Claude Code (CTO)  
 **Copy-paste ready:** ✅ All text ready for direct pasting into SNS fields  
-**Last verified:** 2026-07-17
+**Version:** 2.0 - Platform-specific profiles with role division  
+**Last updated:** 2026-07-17

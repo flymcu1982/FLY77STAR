@@ -1,0 +1,152 @@
+{
+  "document_info": {
+    "title": "SNS Handle Tracker（ハンドル取得記録表）",
+    "version": "1.0",
+    "last_updated": "2026-07-17",
+    "status": "YU実装前・ハンドル取得待機中",
+    "description": "各SNSプラットフォームで取得したハンドル（ユーザーネーム）の記録表。YU が手動でアカウント登録時に、実際に取得できたハンドルを記入。"
+  },
+  "platform_handles": {
+    "tiktok": {
+      "platform": "TikTok",
+      "account_name": "FLY77STAR. Official",
+      "email": "fly77star.official@gmail.com",
+      "priority_candidates": [
+        {
+          "priority": 1,
+          "suggested_handle": "@FLY77STAR_STUDIO",
+          "status": "待機中",
+          "notes": "第一候補：15文字制限内"
+        },
+        {
+          "priority": 2,
+          "suggested_handle": "@FLY77STAR_OFFICIAL",
+          "status": "待機中",
+          "notes": "第二候補：18文字（制限超過の可能性あり）"
+        },
+        {
+          "priority": 3,
+          "suggested_handle": "@FLY77STAR",
+          "status": "待機中",
+          "notes": "第三候補：最終フォールバック"
+        }
+      ],
+      "confirmed_handle": null,
+      "handle_status": "取得待機中",
+      "acquisition_date": null,
+      "notes": "TikTok は15文字制限。実際に取得できたハンドルを記入"
+    },
+    "instagram": {
+      "platform": "Instagram",
+      "account_name": "FLY77STAR. Official",
+      "email": "fly77star.official@gmail.com",
+      "priority_candidates": [
+        {
+          "priority": 1,
+          "suggested_handle": "@FLY77STAR_STUDIO",
+          "status": "待機中",
+          "notes": "第一候補：推奨"
+        },
+        {
+          "priority": 2,
+          "suggested_handle": "@FLY77STAR_OFFICIAL",
+          "status": "待機中",
+          "notes": "第二候補"
+        },
+        {
+          "priority": 3,
+          "suggested_handle": "@FLY77STAR",
+          "status": "待機中",
+          "notes": "第三候補：最終フォールバック"
+        }
+      ],
+      "confirmed_handle": null,
+      "handle_status": "取得待機中",
+      "acquisition_date": null,
+      "account_type": "Creator Account に切り替え予定",
+      "notes": "Instagram はクリエイターアカウント必須。実際に取得できたハンドルを記入"
+    },
+    "x_jp": {
+      "platform": "X (Twitter) - Official",
+      "account_name": "FLY77STAR.",
+      "email": "fly77star.official@gmail.com",
+      "handle": "@FLY77STAR_JP",
+      "handle_status": "取得済み ✅",
+      "acquisition_date": "2026-07-17（既存アカウント）",
+      "profile_url": "https://twitter.com/FLY77STAR_JP",
+      "notes": "既存アカウント。メールリカバリー追加完了待機中"
+    },
+    "x_lab": {
+      "platform": "X (Twitter) - Lab",
+      "account_name": "FLY77STAR. Lab",
+      "email": "fly77star.official@gmail.com",
+      "handle": "@FLY77STAR_LAB",
+      "handle_status": "取得済み ✅",
+      "acquisition_date": "2026-07-17（既存アカウント）",
+      "profile_url": "https://twitter.com/FLY77STAR_LAB",
+      "notes": "既存アカウント。メールリカバリー追加完了待機中"
+    }
+  },
+  "gmail": {
+    "platform": "Gmail",
+    "email_address": "fly77star.official@gmail.com",
+    "status": "アカウント作成待機中",
+    "creation_date": null,
+    "2fa_status": "設定待機中",
+    "recovery_email": null,
+    "recovery_phone": null
+  },
+  "summary": {
+    "completed_accounts": {
+      "x_jp": "✅ 既存アカウント",
+      "x_lab": "✅ 既存アカウント"
+    },
+    "pending_accounts": {
+      "gmail": "⏳ 新規作成待機中",
+      "tiktok": "⏳ 新規作成待機中 - ハンドル確定待機中",
+      "instagram": "⏳ 新規作成待機中 - ハンドル確定待機中"
+    }
+  },
+  "yu_approval": {
+    "status": "承認待機中",
+    "checklist": [
+      {
+        "item": "Gmail アカウント作成・ハンドル確認",
+        "completed": false
+      },
+      {
+        "item": "TikTok アカウント作成・ハンドル確認",
+        "completed": false
+      },
+      {
+        "item": "Instagram アカウント作成・ハンドル確認",
+        "completed": false
+      },
+      {
+        "item": "X @FLY77STAR_JP メールリカバリー追加完了",
+        "completed": false
+      },
+      {
+        "item": "X @FLY77STAR_LAB メールリカバリー追加完了",
+        "completed": false
+      },
+      {
+        "item": "すべてのハンドル確定・確認完了",
+        "completed": false
+      }
+    ]
+  },
+  "metadata": {
+    "maintained_by": "Claude Code (CTO)",
+    "version_control": "Git / claude/fly77star-obsidian-structure-a010jj",
+    "related_documents": [
+      "SNS_OPERATIONS.md",
+      "SNS_MANUAL_SETUP_GUIDE.md",
+      "SNS_IMPLEMENTATION_STATUS.md",
+      "SNS_PROFILE_TEMPLATES.md",
+      "SNS_INITIAL_POSTS.md",
+      "SNS_ICON_HEADER_GUIDE.md",
+      "SNS_YU_APPROVAL_CHECKLIST.md"
+    ]
+  }
+}
