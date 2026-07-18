@@ -375,6 +375,12 @@
   .short-item:hover img { border-color: var(--blue); }
   .short-item .s-label { font-family: var(--en); font-size: 10px; letter-spacing: 0.3em; color: var(--star); margin-top: 14px; }
   .short-item .s-note { font-family: var(--jp-serif); font-size: 12px; color: var(--silver-dim); margin-top: 8px; line-height: 1.9; }
+  /* Coming Soon */
+  .coming-soon-container { width: 100%; aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, rgba(24,35,54,0.4), rgba(10,10,15,0.8)); border: 1px solid var(--line); transition: border-color .5s ease; position: relative; overflow: hidden; }
+  .short-item:hover .coming-soon-container { border-color: var(--blue); }
+  .coming-soon-inner { text-align: center; z-index: 2; }
+  .coming-soon-inner .jp-text { font-family: var(--jp-serif); font-size: 36px; font-weight: 600; color: var(--silver); letter-spacing: 0.1em; }
+  .coming-soon-inner .en-text { font-family: var(--en); font-size: 14px; letter-spacing: 0.3em; color: var(--star); margin-top: 12px; }
   .release-strip {
     max-width: 1100px;
     margin: 54px auto 0;
@@ -675,17 +681,32 @@
     <p class="shorts-lead">本編をノーカットで。音を出してご覧ください。</p>
     <div class="shorts-grid">
       <div class="short-item">
-        <img src="assets/step_full_poster.jpg" alt="STEP by STEP poster" loading="lazy" />
+        <div class="coming-soon-container">
+          <div class="coming-soon-inner">
+            <div class="jp-text">近日公開</div>
+            <div class="en-text">COMING SOON</div>
+          </div>
+        </div>
         <p class="s-label">STEP by STEP — PREPARING</p>
         <p class="s-note">動画公開は停止中。ポスターのみ掲載しています。</p>
       </div>
       <div class="short-item">
-        <img src="assets/distance_full_poster.jpg" alt="Distance poster" loading="lazy" />
+        <div class="coming-soon-container">
+          <div class="coming-soon-inner">
+            <div class="jp-text">近日公開</div>
+            <div class="en-text">COMING SOON</div>
+          </div>
+        </div>
         <p class="s-label">Distance — PREPARING FOR YOUTUBE</p>
         <p class="s-note">8月の YouTube 配信開始に向けて、フル動画掲載は停止中です。</p>
       </div>
       <div class="short-item">
-        <img src="assets/tomorrow_full_poster.jpg" alt="TOMORROW poster" loading="lazy" />
+        <div class="coming-soon-container">
+          <div class="coming-soon-inner">
+            <div class="jp-text">近日公開</div>
+            <div class="en-text">COMING SOON</div>
+          </div>
+        </div>
         <p class="s-label">TOMORROW — PREPARING</p>
         <p class="s-note">動画公開は停止中。ポスターのみ掲載しています。</p>
       </div>
@@ -697,12 +718,22 @@
     <p class="shorts-lead">STEP by STEP、広告用スポット2バージョン。</p>
     <div class="shorts-grid">
       <div class="short-item">
-        <img src="assets/fang_cm_30s_poster.jpg" alt="FANG CM 30s poster" loading="lazy" />
+        <div class="coming-soon-container">
+          <div class="coming-soon-inner">
+            <div class="jp-text">近日公開</div>
+            <div class="en-text">COMING SOON</div>
+          </div>
+        </div>
         <p class="s-label">CM 30sec — ARCHIVED</p>
         <p class="s-note">動画公開は停止中。ポスターのみ掲載しています。</p>
       </div>
       <div class="short-item">
-        <img src="assets/fang_cm_15s_poster.jpg" alt="FANG CM 15s poster" loading="lazy" />
+        <div class="coming-soon-container">
+          <div class="coming-soon-inner">
+            <div class="jp-text">近日公開</div>
+            <div class="en-text">COMING SOON</div>
+          </div>
+        </div>
         <p class="s-label">CM 15sec — ARCHIVED</p>
         <p class="s-note">動画公開は停止中。ポスターのみ掲載しています。</p>
       </div>
