@@ -14,3 +14,13 @@ Web/netlify_site/assets/*.mp4
 # OS/editor noise
 .vscode/
 .idea/
+
+# Node.js / npm
+node_modules/
+package-lock.json
+npm-debug.log
+
+# Environment variables (Git excluded)
+.env
+.env.local
+.env.*.local
