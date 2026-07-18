@@ -79,6 +79,36 @@ FLY77STAR. 公式SNS・Webサイト一覧は [`OFFICIAL_INFO.md`](OFFICIAL_INFO.
 - `Edit/DAILY_STUDIO_REPORT_TEMPLATE.md` — 夜 18:00 日報フォーマット
 - `Edit/GMAIL_OPERATIONS_LAUNCH.md` — 実運用開始記録
 
+## SNS DM 返信運用体制（2026-07-18）
+
+詳細: 以下4つのドキュメントを参照
+- [`SNS_DM_OPERATIONS.md`](Edit/SNS_DM_OPERATIONS.md) — SNS DM 運用全体マニュアル
+- [`SNS_DM_DAILY_CHECKLIST.md`](Edit/SNS_DM_DAILY_CHECKLIST.md) — 朝 09:00 チェックシート
+- [`SNS_DM_DRAFT_PREPARATION.md`](Edit/SNS_DM_DRAFT_PREPARATION.md) — 午後 15:00 下書きテンプレート
+- [`SNS_DM_APPROVAL_FLOW.md`](Edit/SNS_DM_APPROVAL_FLOW.md) — YU 承認フロー・コマンド仕様
+
+**実装方針**（FLY77STAR U.実装完了）:
+- SNS プラットフォーム: TikTok, Instagram, X 公式
+- 運用フロー: DM 自動取得 → 下書き作成 → YU 承認 → 自動送信
+- 返信テンプレート: 6 種類（制作依頼・コラボ・ファン・ビジネス・URGENT・対応不可）
+- 承認コマンド: 【送信】【修正】【確認中】【削除】の 4 種類
+
+**重要ルール**:
+- ✅ AI社員: DM 取得、分類、下書き作成、提示
+- ❌ AI社員: YU 承認なしの実際の DM 送信、SNS ログイン
+- 👤 YU のみ: SNS ログイン、【送信】【修正】等のコマンド実行、DM ブロック・削除
+
+**現在**: ✅ Phase 1 実運用開始承認完了（2026-07-18）。2026-07-19 朝 09:00 から運用開始。
+
+**運用手順（2026-07-19 以降）**:
+1. **朝 09:00** — YU が `SNS_DM_DAILY_CHECKLIST.md` で TikTok/Instagram/X の新着 DM を確認・分類
+2. **午後 15:00** — Claude Code が `SNS_DM_DRAFT_PREPARATION.md` で返信下書きを自動生成・提示
+3. **YU 承認実行** — YU が【送信】【修正】等のコマンドで指示
+4. **送信実行** — 【送信】承認後のみ SNS に自動送信・ログ記録
+5. **夜 18:00** — Claude Code が日報に SNS DM 処理結果を追記・YU へ報告
+
+---
+
 ## 進行中の企画・プロジェクト
 
 ### 制作中
