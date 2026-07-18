@@ -107,6 +107,65 @@ FLY77STAR. 公式SNS・Webサイト一覧は [`OFFICIAL_INFO.md`](OFFICIAL_INFO.
 4. **送信実行** — 【送信】承認後のみ SNS に自動送信・ログ記録
 5. **夜 18:00** — Claude Code が日報に SNS DM 処理結果を追記・YU へ報告
 
+## SNS API 統合実装（Phase 2: 2026-07-25～2026-07-31）
+
+**実装スケジュール**（FLY77STAR U. 承認待ちで準備完了）:
+
+詳細は以下3つのドキュメント参照:
+- [`SNS_API_INTEGRATION_PLAN.md`](Edit/SNS_API_INTEGRATION_PLAN.md) — 7日実装スケジュール・日程・テスト計画
+- [`SNS_API_TECHNICAL_SPEC.md`](Edit/SNS_API_TECHNICAL_SPEC.md) — Python実装仕様・クラス・メソッド・エラーハンドリング
+- [`MORNING_OPERATIONS_STARTUP.md`](Edit/MORNING_OPERATIONS_STARTUP.md) — 7月19日朝09:00本運用開始準備・チェックリスト
+
+**実装対象（4プラットフォーム）**:
+1. **YouTube Data API v3** (2026-07-25/26)
+   - チャンネル情報取得、最新動画一覧、コメント取得・分類、視聴統計
+   
+2. **Meta Graph API for Instagram** (2026-07-27/28)
+   - DM スレッド一覧、メッセージ取得、メッセージ送信、自動分類
+   
+3. **X API v2** (2026-07-29/30)
+   - DM スレッド一覧、メッセージ取得、DM 送信、メンション一覧取得
+   
+4. **TikTok Creator API** (2026-07-31)
+   - クリエイター情報、動画視聴統計、フォロワー情報、アナリティクス
+
+**実装環境**:
+- 言語: Python 3.10+
+- フレームワーク: Requests + asyncio（非同期対応）
+- ファイル構成:
+  - `scripts/sns_api_manager.py` — 統合マネージャー
+  - `scripts/youtube_api_client.py` — YouTube クライアント
+  - `scripts/instagram_api_client.py` — Instagram クライアント
+  - `scripts/twitter_api_client.py` — X クライアント
+  - `scripts/tiktok_api_client.py` — TikTok クライアント
+  - `scripts/sns_api_config.py` — 設定管理（APIキー）
+  - `scripts/sns_api_utils.py` — ユーティリティ関数
+  - `tests/test_*_api.py` — 各プラットフォームユニットテスト
+  - `tests/test_sns_integration.py` — 統合テスト
+
+**実装完了条件**（2026-07-31 23:59 まで）:
+- ✅ 全4つのAPIクライアント実装完了
+- ✅ ユニットテスト 100% パス
+- ✅ 本番テスト完了・動作確認
+- ✅ エラーハンドリング・リトライロジック実装
+- ✅ ログ記録・デバッグ出力確認
+- ✅ 全ドキュメント完成
+
+**重要なルール**:
+- Python 3 stdlib のみ（requirements.txt なし、venv 不要）
+- .env ファイルに API キー保存（.gitignore に .env を追加）
+- YU 最終承認なしに実際の API 呼び出しは実行しない
+- 非同期対応により複数プラットフォームの並列取得に対応
+- 指数バックオフによる自動リトライ（1s, 2s, 4s）
+
+**次段階（Phase 3: 2026-08-01～）**:
+- Phase 2 で実装した API クライアントとメール/DM 手動操作フロー統合
+- 完全自動化: 朝 09:00 に全プラットフォーム自動取得・分類・報告
+- 返信下書き自動生成・YU 承認フロー（【送信】【修正】等のコマンド継続）
+- 複数プラットフォーム統合管理ダッシュボード
+
+**現在**: ✅ Phase 2 実装計画・技術仕様書完成（2026-07-18）。2026-07-25 から実装開始待ち。
+
 ---
 
 ## 進行中の企画・プロジェクト
