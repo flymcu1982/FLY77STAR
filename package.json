@@ -1,6 +1,31 @@
 {
+  "name": "FLY77STAR",
+  "version": "1.0.0",
+  "description": "FLY77STAR Studio - AI Video Production Management System & AI News Digest",
+  "main": "index.js",
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "start": "next start",
+    "test": "npm run validate",
+    "validate": "python3 scripts/validate_structure.py --project Distances"
+  },
   "dependencies": {
     "dotenv": "^17.4.2",
-    "nodemailer": "^9.0.3"
+    "nodemailer": "^9.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "next": "^14.0.0",
+    "googleapis": "^118.0.0",
+    "xml2js": "^0.6.2",
+    "lucide-react": "^0.263.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "typescript": "^5.1.0",
+    "next-env": "^11.6.0"
   }
 }
+

@@ -1,0 +1,64 @@
+# FLY77STAR AI News Digest - Netlify Configuration
+
+[build]
+  command = "npm run build"
+  functions = "netlify/functions"
+  publish = "out"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/ai-news-digest"
+  to = "/ai-news-digest.html"
+  status = 200
+
+# Scheduled Functions - 3日ごとに実行
+[[functions]]
+  name = "ai-news-sync"
+  schedule = "0 9 */3 * *"
+
+# Environment variables
+[context.production.environment]
+  GOOGLE_PROJECT_ID = "from-netlify-dashboard"
+  GOOGLE_PRIVATE_KEY_ID = "from-netlify-dashboard"
+  GOOGLE_PRIVATE_KEY = "from-netlify-dashboard"
+  GOOGLE_CLIENT_EMAIL = "from-netlify-dashboard"
+  GOOGLE_CLIENT_ID = "from-netlify-dashboard"
+  GMAIL_USER = "from-netlify-dashboard"
+  GMAIL_APP_PASSWORD = "from-netlify-dashboard"
+  YU_EMAIL = "from-netlify-dashboard"
+
+# Development environment
+[context.develop.environment]
+  GOOGLE_PROJECT_ID = "dev-project"
+  GOOGLE_PRIVATE_KEY_ID = "dev-key-id"
+  GOOGLE_PRIVATE_KEY = "dev-key"
+  GOOGLE_CLIENT_EMAIL = "dev@example.com"
+  GOOGLE_CLIENT_ID = "dev-client"
+  GMAIL_USER = "dev@gmail.com"
+  GMAIL_APP_PASSWORD = "dev-password"
+  YU_EMAIL = "yu@example.com"
+
+# Headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+
+# Cache control
+[[headers]]
+  for = "/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
