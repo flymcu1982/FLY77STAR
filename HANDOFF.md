@@ -66,7 +66,18 @@ FLY77STAR. 公式SNS・Webサイト一覧は [`OFFICIAL_INFO.md`](OFFICIAL_INFO.
 - ❌ AI社員: パスワード管理、メール送信、ラベル自動付与、削除
 - 👤 YU のみ: Gmail ログイン、OAuth認証、メール送信、削除、ラベル管理
 
-**現在**: Phase 1 運用開始準備完了。AI社員が毎朝 09:00 からメール確認を開始予定。
+**現在**: ✅ Phase 1 実運用開始承認完了（2026-07-18）。2026-07-19 朝 09:00 から運用開始。
+
+**運用手順（2026-07-19 以降）**:
+1. **朝 09:00** — YU が `DAILY_MAIL_REVIEW_CHECKLIST.md` に従い Gmail メール確認・分類・ラベル振り分け実施
+2. **午後 15:00** — Claude Code が `AFTERNOON_DRAFT_PREPARATION.md` で返信下書き自動生成
+3. **夜 18:00** — Claude Code が `DAILY_STUDIO_REPORT_TEMPLATE.md` で日報作成・YU へ報告
+
+**実装ファイル**:
+- `Edit/DAILY_MAIL_REVIEW_CHECKLIST.md` — 朝 09:00 チェックシート
+- `Edit/AFTERNOON_DRAFT_PREPARATION.md` — 午後 15:00 返信下書きテンプレート
+- `Edit/DAILY_STUDIO_REPORT_TEMPLATE.md` — 夜 18:00 日報フォーマット
+- `Edit/GMAIL_OPERATIONS_LAUNCH.md` — 実運用開始記録
 
 ## 進行中の企画・プロジェクト
 
@@ -89,7 +100,7 @@ FLY77STAR. 公式SNS・Webサイト一覧は [`OFFICIAL_INFO.md`](OFFICIAL_INFO.
 
 WAKE UP(`Projects/WAKE_UP/`)
 
-## Web / Netlify 引き継ぎ(2026-07-17)
+## Web / Netlify 引き継ぎ(2026-07-17 / 更新: 2026-07-18)
 
 FLY77STAR 公式Webサイトまわりで、以下を確認・反映済み。
 
@@ -97,6 +108,13 @@ FLY77STAR 公式Webサイトまわりで、以下を確認・反映済み。
    - 新URL: `https://fly77star-studio.netlify.app/`
    - 旧URL: `https://flystar77-studio.netlify.app/`
    - 2026-07-17時点で、新URLは `HTTP 200`、旧URLは `HTTP 404` を確認済み
+
+2. **Works セクション動画ギャラリー修正（2026-07-18）**
+   - ✅ Distance SHORT VER. (2本) — ビデオプレイヤー表示・再生可能
+   - ✅ SCREENING ROOM / FANG ENERGY — 他の動画を「近日公開」プレースホルダーに変更
+   - 近日公開コンポーネント: 日本語「近日公開」 + 英文「COMING SOON」表示
+   - すべての説明文・詳細ラベルは保持
+   - 修正ファイル: `Web/netlify_site/index.html`
 
 2. **正式管理対象**
    - Git上の管理先: `Web/netlify_site/`
