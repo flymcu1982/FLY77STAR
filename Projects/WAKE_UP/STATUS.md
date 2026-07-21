@@ -4,6 +4,15 @@ Production Start: 2026-07-10 / 現在フェーズ: **Production Phase 5(Pilot Pr
 
 **⚠️ Legacy notice(2026-07-16)**: 本ファイル以下のCUT01〜12構成は、2026-07-16受領のFLY77STAR CANON(`/CANON_FLY77STAR_20260716_final.md`)とは異なる物語構成(旧12カット、渋谷スクランブル交差点開始)。Director判断確定までLegacy扱い。詳細: `HANDOFF.md`、`Storyboard/00_LEGACY_STRUCTURE_NOTICE.md`。
 
+## CANON準拠 Scene 1(オープニング)Storyboard完成(2026-07-21)
+
+CANON(§6 ACT01 SHIBUYA_NIGHT Panel 1-2)準拠の新オープニングを制作。夜の渋谷上空→降下→クラブ入口→AYA・MIU・NANA登場までのワンカット風構成(4パネル、約20秒、BPM95.7)。Legacy CUT01〜12は無変更。
+
+- [x] `Storyboard/WAKE_UP_CANON_SCENE01_OPENING.md`(ショット構成/演出意図/画像・動画Prompt/制作注意点)
+- [x] `Storyboard/WAKE_UP_CANON_SCENE01_OPENING_絵コンテ.md`(Panel Storyboard)
+- [x] `Storyboard/WAKE_UP_CANON_SCENE01_PANEL04_クラブ出口3人_DirectorNotes.md`(重要Panel: 主人公初登場)
+- [ ] Director確認待ち3点: ①クラブ店名・外観(LOC_CLUB_EXT01の正式Location Master昇格) ②3人のクラブナイト衣装(Costume Bible登録) ③総尺20秒の確定(曲イントロ実尺との照合)
+
 ## Phase5: Pilot Production(2026-07-11)
 
 対象: Scene01 / CUT01(Panel01〜03)。一括制作ではなく段階的に進める。
