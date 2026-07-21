@@ -4,6 +4,19 @@ Production Start: 2026-07-10 / 現在フェーズ: **Production Phase 5(Pilot Pr
 
 **⚠️ Legacy notice(2026-07-16)**: 本ファイル以下のCUT01〜12構成は、2026-07-16受領のFLY77STAR CANON(`/CANON_FLY77STAR_20260716_final.md`)とは異なる物語構成(旧12カット、渋谷スクランブル交差点開始)。Director判断確定までLegacy扱い。詳細: `HANDOFF.md`、`Storyboard/00_LEGACY_STRUCTURE_NOTICE.md`。
 
+## 🟡 HOLD: CANON準拠 Scene 1(オープニング) — 制作コスト対効果により停止(2026-07-21)
+
+**Director Decision(2026-07-21)**: Scene 1の新規生成作業を停止。理由: C1 Visual Canon参照ファイル連携に追加対応が必要/再生成のクレジット消費・作業時間がWAKE UP完成優先方針に見合わない/最優先目標は新規オープニングの追求ではなくWAKE UP全体の完成。
+
+- Panel 2/3/4の追加生成: **停止**(未QCジョブ `f8f04d2e`/`48fd75f3` は放置、投入済みクレジットのみで打ち切り)
+- Seedance 2.0ワンカット生成: **不実行**
+- 保存(再開候補): Production Package(`WAKE_UP_CANON_SCENE01_PRODUCTION_PACKAGE.md`)/Panel 1採用画像(job `29955416`)/Storyboard一式/Decision Log
+- **再開条件**: ①C1参照画像を確実に直接アップロードできる環境の整備、または②低コストでVisual Canonを維持できる生成手段の確認
+- Decision Log: `Obsidian_Vault/03_Company/Decisions/2026-07-21_WAKE_UP_Scene1生成停止_HOLD.md`
+- 以後は既存C1素材またはLegacy素材を使用し、次の未完成工程へ戻る
+
+以下は停止時点までの記録(保存)。
+
 ## CANON準拠 Scene 1(オープニング)Storyboard完成(2026-07-21)
 
 CANON(§6 ACT01 SHIBUYA_NIGHT Panel 1-2)準拠の新オープニングを制作。夜の渋谷上空→降下→クラブ入口→AYA・MIU・NANA登場までのワンカット風構成(4パネル、約20秒、BPM95.7)。Legacy CUT01〜12は無変更。
