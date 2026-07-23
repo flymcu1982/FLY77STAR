@@ -8,6 +8,15 @@ type: project
 
 **⚠️ Legacy notice(2026-07-16)**: 2026-07-16受領のFLY77STAR CANON(GitHub `/CANON_FLY77STAR_20260716_final.md`)§6には、下記とは異なるWAKE UPの物語構成(クラブ出口4:30AM→ダイナー4パネル構成)が記載されている。どちらを正式採用とするか、または統合するかはDirector判断待ち。判断が確定するまで、下記Story Bibleおよび関連するGitHub `Projects/WAKE_UP/Storyboard/CUT01〜12`一式はLegacy(参考資料)として扱う。詳細: GitHub `HANDOFF.md`「CANON受領」、`Projects/WAKE_UP/Storyboard/00_LEGACY_STRUCTURE_NOTICE.md`。
 
+## 最新状況(2026-07-23、Director更新・最優先前提)
+
+**『WAKE UP』は未完成ではなく完成段階。** Codexと編集を行い、構成・物語・映像・音響の最終QCまで進んだ。現在は**1080p最終書き出し前の微調整・確認段階**。
+
+- 有料制作ノート『WAKE UP 制作ノート』の題材は**WAKE UPを維持**（実制作情報が最も多く蓄積: 長編MVの企画/脚本/絵コンテ、キャラ固定、顔・衣装・アクセサリー連続性、会話・ダンス・ライブ生成、Higgsfield/Cinema Studio/Seedance等の使い分け、720p/780p/1080p/4K判断、生成失敗と不採用理由、制作費・クレジット管理、Codexとの編集・QC、採用・停止判断）。
+- `SE77NTH.`は**将来最初に独立展開するアーティスト**（公式MV/リハーサル風ショート/メンバー企画/疑似ドキュメンタリーを展開予定）。
+- 関連公開: `Distances` 2026-08-10 YouTube公開（作品世界を見せる最初の導線）／無料note『FLY77STAR.の物語 Vol.1』2026-08-07 20:00公開。
+- **注**: この完成段階の記録は制作進捗の最新前提。下記のCANON(4パネル)とLegacy(12カット)いずれの構成を正式採用/統合とするかの**構造判断は本更新の対象外**（従来どおりDirector判断待ち）。
+
 ## Story Bible(2026-07-10改訂。旧コンセプトを置き換え)
 
 - アーティスト: [[10_Characters/SE77NTH|SE77NTH.]]
